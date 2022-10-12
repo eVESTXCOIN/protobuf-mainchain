@@ -47,11 +47,12 @@ php:
 
 #objective-c
 objc:
-    @protoc --proto_path=/proto/ --objc_out=objc /proto/vrp/*.proto
+	@protoc --proto_path=/proto/ --objc_out=objc /proto/vrp/*.proto
 
 #dart
 dart:
-    @protoc --proto_path=/proto/ --dart_out=dart /proto/vrp/*.proto
+	dart_dependencies
+	@protoc --proto_path=/proto/ --dart_out=dart /proto/vrp/*.proto
 
 #swift
 #brew install swift-protobuf
@@ -64,3 +65,9 @@ swift:
 #swift
 swift_dependencies:
 	@brew install swift-protobuf
+
+#dart
+dart_dependencies:
+	@flutter
+	@dart pub global activate protoc_plugin
+	@export PATH="$PATH":"$HOME/.pub-cache/bin"
