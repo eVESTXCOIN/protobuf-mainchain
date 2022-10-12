@@ -1,0 +1,13 @@
+syntax = "proto3";
+package vrp;
+option java_package = "com.vrp.protobuf.transaction";
+option csharp_namespace = "VRP";
+option go_package = "github.com/eVESTXCOIN/govrp/grpc/generated/vrp";
+
+message Recipient {
+    oneof recipient {
+        // First 20 bytes of the result of the Keccak256(Blake2b256(publicKey)) hashing function.
+        bytes public_key_hash = 1;
+        string alias = 2;
+    };
+}

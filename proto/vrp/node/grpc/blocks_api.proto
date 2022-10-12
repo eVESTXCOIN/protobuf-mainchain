@@ -1,0 +1,41 @@
+syntax = "proto3";
+package vrp.node.grpc;
+option java_package = "com.vrp.api.grpc";
+option csharp_namespace = "VRP.Node.Grpc";
+option go_package = "github.com/eVESTXCOIN/govrp/grpc/generated/vrp/node/grpc";
+
+import "vrp/block.proto";
+import "google/protobuf/empty.proto";
+import "google/protobuf/wrappers.proto";
+
+service BlocksApi {
+    rpc GetBlock (BlockRequest) returns (BlockWithHeight);
+    rpc GetBlockRange (BlockRangeRequest) returns (stream BlockWithHeight);
+    rpc GetCurrentHeight (google.protobuf.Empty) returns (google.protobuf.UInt32Value);
+}
+
+message BlockRequest {
+    oneof request {
+        bytes block_id = 1;
+        int32 height = 2;
+        bytes reference = 3;
+    }
+
+    bool include_transactions = 1000;
+}
+
+message BlockRangeRequest {
+    uint32 from_height = 1;
+    uint32 to_height = 2;
+    oneof filter {
+        bytes generator_public_key = 3;
+        bytes generator_address = 4;
+    }
+
+    bool include_transactions = 1000;
+}
+
+message BlockWithHeight {
+    Block block = 1;
+    uint32 height = 2;
+}

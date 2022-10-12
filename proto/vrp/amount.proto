@@ -1,0 +1,10 @@
+syntax = "proto3";
+package vrp;
+option java_package = "com.vrp.protobuf";
+option csharp_namespace = "VRP";
+option go_package = "github.com/eVESTXCOIN/govrp/grpc/generated/vrp";
+
+message Amount {
+    bytes asset_id = 1;
+    int64 amount = 2;
+};

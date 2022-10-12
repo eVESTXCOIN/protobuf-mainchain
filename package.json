@@ -1,0 +1,40 @@
+{
+  "name": "@evestx/protobuf-mainchain",
+  "version": "0.2.0",
+  "description": "eVESTX Mainchain protobuf schemas with methods for encoding and decoding protobuf messages as well as working with gRPC services.",
+  "main": "js/index.js",
+  "types": "js/index.d.ts",
+  "dependencies": {
+    "@types/long": "^4.0.0",
+    "commonjs": "^0.0.1",
+    "protobufjs": "^6.8.8",
+    "protoc": "^1.0.4",
+    "semver": "^7.3.7"
+  },
+  "scripts": {
+    "build": "rm -rf js && mkdir js && npm run commonjs && npm run type && npm run es6 && npm run commonjs -- --no-comments",
+    "type": "pbts -o js/index.d.ts --no-comments js/index.js",
+    "commonjs": "pbjs -t static-module --force-long --no-create --no-verify --no-convert --no-delimited --no-beautify -w commonjs -o js/index.js \"proto/vrp/**/*.proto\"",
+    "es6": "pbjs -t static-module --force-long --no-create --no-verify --no-convert --no-delimited --no-beautify -w es6 -o js/index.min.js \"proto/vrp/**/*.proto\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "js",
+    "proto"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eVESTXCOIN/protobuf-mainchain.git"
+  },
+  "keywords": [
+    "protobuf",
+    "mainchain",
+    "gRPC"
+  ],
+  "author": "Diego H. O. R. Antunes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eVESTXCOIN/protobuf-mainchain/issues"
+  },
+  "homepage": "https://github.com/eVESTXCOIN/protobuf-mainchain#readme"
+}
