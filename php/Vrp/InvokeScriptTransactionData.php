@@ -34,7 +34,7 @@ class InvokeScriptTransactionData extends \Google\Protobuf\Internal\Message
      *
      *     @type \Vrp\Recipient $d_app
      *     @type string $function_call
-     *     @type \Vrp\Amount[]|\Google\Protobuf\Internal\RepeatedField $payments
+     *     @type array<\Vrp\Amount>|\Google\Protobuf\Internal\RepeatedField $payments
      * }
      */
     public function __construct($data = NULL) {
@@ -44,11 +44,21 @@ class InvokeScriptTransactionData extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.Recipient d_app = 1;</code>
-     * @return \Vrp\Recipient
+     * @return \Vrp\Recipient|null
      */
     public function getDApp()
     {
         return $this->d_app;
+    }
+
+    public function hasDApp()
+    {
+        return isset($this->d_app);
+    }
+
+    public function clearDApp()
+    {
+        unset($this->d_app);
     }
 
     /**
@@ -97,7 +107,7 @@ class InvokeScriptTransactionData extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .vrp.Amount payments = 3;</code>
-     * @param \Vrp\Amount[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Vrp\Amount>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setPayments($var)

@@ -64,17 +64,17 @@ class InvokeScriptResult extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type \Vrp\DataTransactionData\DataEntry[]|\Google\Protobuf\Internal\RepeatedField $data
-     *     @type \Vrp\InvokeScriptResult\Payment[]|\Google\Protobuf\Internal\RepeatedField $transfers
-     *     @type \Vrp\InvokeScriptResult\Issue[]|\Google\Protobuf\Internal\RepeatedField $issues
-     *     @type \Vrp\InvokeScriptResult\Reissue[]|\Google\Protobuf\Internal\RepeatedField $reissues
-     *     @type \Vrp\InvokeScriptResult\Burn[]|\Google\Protobuf\Internal\RepeatedField $burns
+     *     @type array<\Vrp\DataTransactionData\DataEntry>|\Google\Protobuf\Internal\RepeatedField $data
+     *     @type array<\Vrp\InvokeScriptResult\Payment>|\Google\Protobuf\Internal\RepeatedField $transfers
+     *     @type array<\Vrp\InvokeScriptResult\Issue>|\Google\Protobuf\Internal\RepeatedField $issues
+     *     @type array<\Vrp\InvokeScriptResult\Reissue>|\Google\Protobuf\Internal\RepeatedField $reissues
+     *     @type array<\Vrp\InvokeScriptResult\Burn>|\Google\Protobuf\Internal\RepeatedField $burns
      *     @type \Vrp\InvokeScriptResult\ErrorMessage $error_message
-     *     @type \Vrp\InvokeScriptResult\SponsorFee[]|\Google\Protobuf\Internal\RepeatedField $sponsor_fees
-     *     @type \Vrp\InvokeScriptResult\Lease[]|\Google\Protobuf\Internal\RepeatedField $leases
-     *     @type \Vrp\InvokeScriptResult\LeaseCancel[]|\Google\Protobuf\Internal\RepeatedField $lease_cancels
-     *     @type \Vrp\InvokeScriptResult\Invocation[]|\Google\Protobuf\Internal\RepeatedField $invokes
-     *     @type \Vrp\InvokeScriptResult\PrivatePayment[]|\Google\Protobuf\Internal\RepeatedField $private_payment
+     *     @type array<\Vrp\InvokeScriptResult\SponsorFee>|\Google\Protobuf\Internal\RepeatedField $sponsor_fees
+     *     @type array<\Vrp\InvokeScriptResult\Lease>|\Google\Protobuf\Internal\RepeatedField $leases
+     *     @type array<\Vrp\InvokeScriptResult\LeaseCancel>|\Google\Protobuf\Internal\RepeatedField $lease_cancels
+     *     @type array<\Vrp\InvokeScriptResult\Invocation>|\Google\Protobuf\Internal\RepeatedField $invokes
+     *     @type array<\Vrp\InvokeScriptResult\PrivatePayment>|\Google\Protobuf\Internal\RepeatedField $private_payment
      * }
      */
     public function __construct($data = NULL) {
@@ -93,7 +93,7 @@ class InvokeScriptResult extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .vrp.DataTransactionData.DataEntry data = 1;</code>
-     * @param \Vrp\DataTransactionData\DataEntry[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Vrp\DataTransactionData\DataEntry>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setData($var)
@@ -115,7 +115,7 @@ class InvokeScriptResult extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .vrp.InvokeScriptResult.Payment transfers = 2;</code>
-     * @param \Vrp\InvokeScriptResult\Payment[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Vrp\InvokeScriptResult\Payment>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setTransfers($var)
@@ -137,7 +137,7 @@ class InvokeScriptResult extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .vrp.InvokeScriptResult.Issue issues = 3;</code>
-     * @param \Vrp\InvokeScriptResult\Issue[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Vrp\InvokeScriptResult\Issue>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setIssues($var)
@@ -159,7 +159,7 @@ class InvokeScriptResult extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .vrp.InvokeScriptResult.Reissue reissues = 4;</code>
-     * @param \Vrp\InvokeScriptResult\Reissue[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Vrp\InvokeScriptResult\Reissue>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setReissues($var)
@@ -181,7 +181,7 @@ class InvokeScriptResult extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .vrp.InvokeScriptResult.Burn burns = 5;</code>
-     * @param \Vrp\InvokeScriptResult\Burn[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Vrp\InvokeScriptResult\Burn>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setBurns($var)
@@ -194,11 +194,21 @@ class InvokeScriptResult extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.InvokeScriptResult.ErrorMessage error_message = 6;</code>
-     * @return \Vrp\InvokeScriptResult\ErrorMessage
+     * @return \Vrp\InvokeScriptResult\ErrorMessage|null
      */
     public function getErrorMessage()
     {
         return $this->error_message;
+    }
+
+    public function hasErrorMessage()
+    {
+        return isset($this->error_message);
+    }
+
+    public function clearErrorMessage()
+    {
+        unset($this->error_message);
     }
 
     /**
@@ -208,7 +218,7 @@ class InvokeScriptResult extends \Google\Protobuf\Internal\Message
      */
     public function setErrorMessage($var)
     {
-        GPBUtil::checkMessage($var, \Vrp\InvokeScriptResult_ErrorMessage::class);
+        GPBUtil::checkMessage($var, \Vrp\InvokeScriptResult\ErrorMessage::class);
         $this->error_message = $var;
 
         return $this;
@@ -225,7 +235,7 @@ class InvokeScriptResult extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .vrp.InvokeScriptResult.SponsorFee sponsor_fees = 7;</code>
-     * @param \Vrp\InvokeScriptResult\SponsorFee[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Vrp\InvokeScriptResult\SponsorFee>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setSponsorFees($var)
@@ -247,7 +257,7 @@ class InvokeScriptResult extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .vrp.InvokeScriptResult.Lease leases = 8;</code>
-     * @param \Vrp\InvokeScriptResult\Lease[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Vrp\InvokeScriptResult\Lease>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setLeases($var)
@@ -269,7 +279,7 @@ class InvokeScriptResult extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .vrp.InvokeScriptResult.LeaseCancel lease_cancels = 9;</code>
-     * @param \Vrp\InvokeScriptResult\LeaseCancel[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Vrp\InvokeScriptResult\LeaseCancel>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setLeaseCancels($var)
@@ -291,7 +301,7 @@ class InvokeScriptResult extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .vrp.InvokeScriptResult.Invocation invokes = 10;</code>
-     * @param \Vrp\InvokeScriptResult\Invocation[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Vrp\InvokeScriptResult\Invocation>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setInvokes($var)
@@ -313,7 +323,7 @@ class InvokeScriptResult extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .vrp.InvokeScriptResult.PrivatePayment private_payment = 11;</code>
-     * @param \Vrp\InvokeScriptResult\PrivatePayment[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Vrp\InvokeScriptResult\PrivatePayment>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setPrivatePayment($var)

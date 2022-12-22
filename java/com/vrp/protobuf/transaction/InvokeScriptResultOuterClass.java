@@ -310,177 +310,6 @@ public final class InvokeScriptResultOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private InvokeScriptResult(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 10: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                data_ = new java.util.ArrayList<com.vrp.protobuf.transaction.TransactionOuterClass.DataTransactionData.DataEntry>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              data_.add(
-                  input.readMessage(com.vrp.protobuf.transaction.TransactionOuterClass.DataTransactionData.DataEntry.parser(), extensionRegistry));
-              break;
-            }
-            case 18: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                transfers_ = new java.util.ArrayList<com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Payment>();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              transfers_.add(
-                  input.readMessage(com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Payment.parser(), extensionRegistry));
-              break;
-            }
-            case 26: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                issues_ = new java.util.ArrayList<com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Issue>();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              issues_.add(
-                  input.readMessage(com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Issue.parser(), extensionRegistry));
-              break;
-            }
-            case 34: {
-              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
-                reissues_ = new java.util.ArrayList<com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Reissue>();
-                mutable_bitField0_ |= 0x00000008;
-              }
-              reissues_.add(
-                  input.readMessage(com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Reissue.parser(), extensionRegistry));
-              break;
-            }
-            case 42: {
-              if (!((mutable_bitField0_ & 0x00000010) != 0)) {
-                burns_ = new java.util.ArrayList<com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Burn>();
-                mutable_bitField0_ |= 0x00000010;
-              }
-              burns_.add(
-                  input.readMessage(com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Burn.parser(), extensionRegistry));
-              break;
-            }
-            case 50: {
-              com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.ErrorMessage.Builder subBuilder = null;
-              if (errorMessage_ != null) {
-                subBuilder = errorMessage_.toBuilder();
-              }
-              errorMessage_ = input.readMessage(com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.ErrorMessage.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(errorMessage_);
-                errorMessage_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 58: {
-              if (!((mutable_bitField0_ & 0x00000020) != 0)) {
-                sponsorFees_ = new java.util.ArrayList<com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.SponsorFee>();
-                mutable_bitField0_ |= 0x00000020;
-              }
-              sponsorFees_.add(
-                  input.readMessage(com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.SponsorFee.parser(), extensionRegistry));
-              break;
-            }
-            case 66: {
-              if (!((mutable_bitField0_ & 0x00000040) != 0)) {
-                leases_ = new java.util.ArrayList<com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Lease>();
-                mutable_bitField0_ |= 0x00000040;
-              }
-              leases_.add(
-                  input.readMessage(com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Lease.parser(), extensionRegistry));
-              break;
-            }
-            case 74: {
-              if (!((mutable_bitField0_ & 0x00000080) != 0)) {
-                leaseCancels_ = new java.util.ArrayList<com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.LeaseCancel>();
-                mutable_bitField0_ |= 0x00000080;
-              }
-              leaseCancels_.add(
-                  input.readMessage(com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.LeaseCancel.parser(), extensionRegistry));
-              break;
-            }
-            case 82: {
-              if (!((mutable_bitField0_ & 0x00000100) != 0)) {
-                invokes_ = new java.util.ArrayList<com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Invocation>();
-                mutable_bitField0_ |= 0x00000100;
-              }
-              invokes_.add(
-                  input.readMessage(com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Invocation.parser(), extensionRegistry));
-              break;
-            }
-            case 90: {
-              if (!((mutable_bitField0_ & 0x00000200) != 0)) {
-                privatePayment_ = new java.util.ArrayList<com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.PrivatePayment>();
-                mutable_bitField0_ |= 0x00000200;
-              }
-              privatePayment_.add(
-                  input.readMessage(com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.PrivatePayment.parser(), extensionRegistry));
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          data_ = java.util.Collections.unmodifiableList(data_);
-        }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          transfers_ = java.util.Collections.unmodifiableList(transfers_);
-        }
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          issues_ = java.util.Collections.unmodifiableList(issues_);
-        }
-        if (((mutable_bitField0_ & 0x00000008) != 0)) {
-          reissues_ = java.util.Collections.unmodifiableList(reissues_);
-        }
-        if (((mutable_bitField0_ & 0x00000010) != 0)) {
-          burns_ = java.util.Collections.unmodifiableList(burns_);
-        }
-        if (((mutable_bitField0_ & 0x00000020) != 0)) {
-          sponsorFees_ = java.util.Collections.unmodifiableList(sponsorFees_);
-        }
-        if (((mutable_bitField0_ & 0x00000040) != 0)) {
-          leases_ = java.util.Collections.unmodifiableList(leases_);
-        }
-        if (((mutable_bitField0_ & 0x00000080) != 0)) {
-          leaseCancels_ = java.util.Collections.unmodifiableList(leaseCancels_);
-        }
-        if (((mutable_bitField0_ & 0x00000100) != 0)) {
-          invokes_ = java.util.Collections.unmodifiableList(invokes_);
-        }
-        if (((mutable_bitField0_ & 0x00000200) != 0)) {
-          privatePayment_ = java.util.Collections.unmodifiableList(privatePayment_);
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.internal_static_vrp_InvokeScriptResult_descriptor;
@@ -546,61 +375,6 @@ public final class InvokeScriptResultOuterClass {
       public final com.google.protobuf.UnknownFieldSet
       getUnknownFields() {
         return this.unknownFields;
-      }
-      private Payment(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        this();
-        if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
-        }
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
-        try {
-          boolean done = false;
-          while (!done) {
-            int tag = input.readTag();
-            switch (tag) {
-              case 0:
-                done = true;
-                break;
-              case 10: {
-
-                address_ = input.readBytes();
-                break;
-              }
-              case 18: {
-                com.vrp.protobuf.AmountOuterClass.Amount.Builder subBuilder = null;
-                if (amount_ != null) {
-                  subBuilder = amount_.toBuilder();
-                }
-                amount_ = input.readMessage(com.vrp.protobuf.AmountOuterClass.Amount.parser(), extensionRegistry);
-                if (subBuilder != null) {
-                  subBuilder.mergeFrom(amount_);
-                  amount_ = subBuilder.buildPartial();
-                }
-
-                break;
-              }
-              default: {
-                if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
-                  done = true;
-                }
-                break;
-              }
-            }
-          }
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.setUnfinishedMessage(this);
-        } catch (java.io.IOException e) {
-          throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
-        } finally {
-          this.unknownFields = unknownFields.build();
-          makeExtensionsImmutable();
-        }
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
@@ -672,7 +446,7 @@ public final class InvokeScriptResultOuterClass {
         if (amount_ != null) {
           output.writeMessage(2, getAmount());
         }
-        unknownFields.writeTo(output);
+        getUnknownFields().writeTo(output);
       }
 
       @java.lang.Override
@@ -689,7 +463,7 @@ public final class InvokeScriptResultOuterClass {
           size += com.google.protobuf.CodedOutputStream
             .computeMessageSize(2, getAmount());
         }
-        size += unknownFields.getSerializedSize();
+        size += getUnknownFields().getSerializedSize();
         memoizedSize = size;
         return size;
       }
@@ -711,7 +485,7 @@ public final class InvokeScriptResultOuterClass {
           if (!getAmount()
               .equals(other.getAmount())) return false;
         }
-        if (!unknownFields.equals(other.unknownFields)) return false;
+        if (!getUnknownFields().equals(other.getUnknownFields())) return false;
         return true;
       }
 
@@ -728,7 +502,7 @@ public final class InvokeScriptResultOuterClass {
           hash = (37 * hash) + AMOUNT_FIELD_NUMBER;
           hash = (53 * hash) + getAmount().hashCode();
         }
-        hash = (29 * hash) + unknownFields.hashCode();
+        hash = (29 * hash) + getUnknownFields().hashCode();
         memoizedHashCode = hash;
         return hash;
       }
@@ -845,18 +619,13 @@ public final class InvokeScriptResultOuterClass {
 
         // Construct using com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Payment.newBuilder()
         private Builder() {
-          maybeForceBuilderInitialization();
+
         }
 
         private Builder(
             com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
           super(parent);
-          maybeForceBuilderInitialization();
-        }
-        private void maybeForceBuilderInitialization() {
-          if (com.google.protobuf.GeneratedMessageV3
-                  .alwaysUseFieldBuilders) {
-          }
+
         }
         @java.lang.Override
         public Builder clear() {
@@ -955,7 +724,7 @@ public final class InvokeScriptResultOuterClass {
           if (other.hasAmount()) {
             mergeAmount(other.getAmount());
           }
-          this.mergeUnknownFields(other.unknownFields);
+          this.mergeUnknownFields(other.getUnknownFields());
           onChanged();
           return this;
         }
@@ -970,17 +739,42 @@ public final class InvokeScriptResultOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Payment parsedMessage = null;
+          if (extensionRegistry == null) {
+            throw new java.lang.NullPointerException();
+          }
           try {
-            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+            boolean done = false;
+            while (!done) {
+              int tag = input.readTag();
+              switch (tag) {
+                case 0:
+                  done = true;
+                  break;
+                case 10: {
+                  address_ = input.readBytes();
+
+                  break;
+                } // case 10
+                case 18: {
+                  input.readMessage(
+                      getAmountFieldBuilder().getBuilder(),
+                      extensionRegistry);
+
+                  break;
+                } // case 18
+                default: {
+                  if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                    done = true; // was an endgroup tag
+                  }
+                  break;
+                } // default:
+              } // switch (tag)
+            } // while (!done)
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Payment) e.getUnfinishedMessage();
             throw e.unwrapIOException();
           } finally {
-            if (parsedMessage != null) {
-              mergeFrom(parsedMessage);
-            }
-          }
+            onChanged();
+          } // finally
           return this;
         }
 
@@ -1169,7 +963,18 @@ public final class InvokeScriptResultOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-          return new Payment(input, extensionRegistry);
+          Builder builder = newBuilder();
+          try {
+            builder.mergeFrom(input, extensionRegistry);
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            throw e.setUnfinishedMessage(builder.buildPartial());
+          } catch (com.google.protobuf.UninitializedMessageException e) {
+            throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+          } catch (java.io.IOException e) {
+            throw new com.google.protobuf.InvalidProtocolBufferException(e)
+                .setUnfinishedMessage(builder.buildPartial());
+          }
+          return builder.buildPartial();
         }
       };
 
@@ -1242,61 +1047,6 @@ public final class InvokeScriptResultOuterClass {
       getUnknownFields() {
         return this.unknownFields;
       }
-      private PrivatePayment(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        this();
-        if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
-        }
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
-        try {
-          boolean done = false;
-          while (!done) {
-            int tag = input.readTag();
-            switch (tag) {
-              case 0:
-                done = true;
-                break;
-              case 10: {
-
-                address_ = input.readBytes();
-                break;
-              }
-              case 18: {
-                com.vrp.protobuf.AmountOuterClass.Amount.Builder subBuilder = null;
-                if (amount_ != null) {
-                  subBuilder = amount_.toBuilder();
-                }
-                amount_ = input.readMessage(com.vrp.protobuf.AmountOuterClass.Amount.parser(), extensionRegistry);
-                if (subBuilder != null) {
-                  subBuilder.mergeFrom(amount_);
-                  amount_ = subBuilder.buildPartial();
-                }
-
-                break;
-              }
-              default: {
-                if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
-                  done = true;
-                }
-                break;
-              }
-            }
-          }
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.setUnfinishedMessage(this);
-        } catch (java.io.IOException e) {
-          throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
-        } finally {
-          this.unknownFields = unknownFields.build();
-          makeExtensionsImmutable();
-        }
-      }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.internal_static_vrp_InvokeScriptResult_PrivatePayment_descriptor;
@@ -1367,7 +1117,7 @@ public final class InvokeScriptResultOuterClass {
         if (amount_ != null) {
           output.writeMessage(2, getAmount());
         }
-        unknownFields.writeTo(output);
+        getUnknownFields().writeTo(output);
       }
 
       @java.lang.Override
@@ -1384,7 +1134,7 @@ public final class InvokeScriptResultOuterClass {
           size += com.google.protobuf.CodedOutputStream
             .computeMessageSize(2, getAmount());
         }
-        size += unknownFields.getSerializedSize();
+        size += getUnknownFields().getSerializedSize();
         memoizedSize = size;
         return size;
       }
@@ -1406,7 +1156,7 @@ public final class InvokeScriptResultOuterClass {
           if (!getAmount()
               .equals(other.getAmount())) return false;
         }
-        if (!unknownFields.equals(other.unknownFields)) return false;
+        if (!getUnknownFields().equals(other.getUnknownFields())) return false;
         return true;
       }
 
@@ -1423,7 +1173,7 @@ public final class InvokeScriptResultOuterClass {
           hash = (37 * hash) + AMOUNT_FIELD_NUMBER;
           hash = (53 * hash) + getAmount().hashCode();
         }
-        hash = (29 * hash) + unknownFields.hashCode();
+        hash = (29 * hash) + getUnknownFields().hashCode();
         memoizedHashCode = hash;
         return hash;
       }
@@ -1540,18 +1290,13 @@ public final class InvokeScriptResultOuterClass {
 
         // Construct using com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.PrivatePayment.newBuilder()
         private Builder() {
-          maybeForceBuilderInitialization();
+
         }
 
         private Builder(
             com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
           super(parent);
-          maybeForceBuilderInitialization();
-        }
-        private void maybeForceBuilderInitialization() {
-          if (com.google.protobuf.GeneratedMessageV3
-                  .alwaysUseFieldBuilders) {
-          }
+
         }
         @java.lang.Override
         public Builder clear() {
@@ -1650,7 +1395,7 @@ public final class InvokeScriptResultOuterClass {
           if (other.hasAmount()) {
             mergeAmount(other.getAmount());
           }
-          this.mergeUnknownFields(other.unknownFields);
+          this.mergeUnknownFields(other.getUnknownFields());
           onChanged();
           return this;
         }
@@ -1665,17 +1410,42 @@ public final class InvokeScriptResultOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.PrivatePayment parsedMessage = null;
+          if (extensionRegistry == null) {
+            throw new java.lang.NullPointerException();
+          }
           try {
-            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+            boolean done = false;
+            while (!done) {
+              int tag = input.readTag();
+              switch (tag) {
+                case 0:
+                  done = true;
+                  break;
+                case 10: {
+                  address_ = input.readBytes();
+
+                  break;
+                } // case 10
+                case 18: {
+                  input.readMessage(
+                      getAmountFieldBuilder().getBuilder(),
+                      extensionRegistry);
+
+                  break;
+                } // case 18
+                default: {
+                  if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                    done = true; // was an endgroup tag
+                  }
+                  break;
+                } // default:
+              } // switch (tag)
+            } // while (!done)
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.PrivatePayment) e.getUnfinishedMessage();
             throw e.unwrapIOException();
           } finally {
-            if (parsedMessage != null) {
-              mergeFrom(parsedMessage);
-            }
-          }
+            onChanged();
+          } // finally
           return this;
         }
 
@@ -1864,7 +1634,18 @@ public final class InvokeScriptResultOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-          return new PrivatePayment(input, extensionRegistry);
+          Builder builder = newBuilder();
+          try {
+            builder.mergeFrom(input, extensionRegistry);
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            throw e.setUnfinishedMessage(builder.buildPartial());
+          } catch (com.google.protobuf.UninitializedMessageException e) {
+            throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+          } catch (java.io.IOException e) {
+            throw new com.google.protobuf.InvalidProtocolBufferException(e)
+                .setUnfinishedMessage(builder.buildPartial());
+          }
+          return builder.buildPartial();
         }
       };
 
@@ -1991,91 +1772,6 @@ public final class InvokeScriptResultOuterClass {
       public final com.google.protobuf.UnknownFieldSet
       getUnknownFields() {
         return this.unknownFields;
-      }
-      private Issue(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        this();
-        if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
-        }
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
-        try {
-          boolean done = false;
-          while (!done) {
-            int tag = input.readTag();
-            switch (tag) {
-              case 0:
-                done = true;
-                break;
-              case 10: {
-
-                assetId_ = input.readBytes();
-                break;
-              }
-              case 18: {
-                java.lang.String s = input.readStringRequireUtf8();
-
-                name_ = s;
-                break;
-              }
-              case 26: {
-                java.lang.String s = input.readStringRequireUtf8();
-
-                description_ = s;
-                break;
-              }
-              case 34: {
-                java.lang.String s = input.readStringRequireUtf8();
-
-                image_ = s;
-                break;
-              }
-              case 40: {
-
-                amount_ = input.readInt64();
-                break;
-              }
-              case 48: {
-
-                decimals_ = input.readInt32();
-                break;
-              }
-              case 56: {
-
-                reissuable_ = input.readBool();
-                break;
-              }
-              case 66: {
-
-                script_ = input.readBytes();
-                break;
-              }
-              case 72: {
-
-                nonce_ = input.readInt64();
-                break;
-              }
-              default: {
-                if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
-                  done = true;
-                }
-                break;
-              }
-            }
-          }
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.setUnfinishedMessage(this);
-        } catch (java.io.IOException e) {
-          throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
-        } finally {
-          this.unknownFields = unknownFields.build();
-          makeExtensionsImmutable();
-        }
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
@@ -2287,13 +1983,13 @@ public final class InvokeScriptResultOuterClass {
         if (!assetId_.isEmpty()) {
           output.writeBytes(1, assetId_);
         }
-        if (!getNameBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 2, name_);
         }
-        if (!getDescriptionBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(description_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 3, description_);
         }
-        if (!getImageBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(image_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 4, image_);
         }
         if (amount_ != 0L) {
@@ -2311,7 +2007,7 @@ public final class InvokeScriptResultOuterClass {
         if (nonce_ != 0L) {
           output.writeInt64(9, nonce_);
         }
-        unknownFields.writeTo(output);
+        getUnknownFields().writeTo(output);
       }
 
       @java.lang.Override
@@ -2324,13 +2020,13 @@ public final class InvokeScriptResultOuterClass {
           size += com.google.protobuf.CodedOutputStream
             .computeBytesSize(1, assetId_);
         }
-        if (!getNameBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, name_);
         }
-        if (!getDescriptionBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(description_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, description_);
         }
-        if (!getImageBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(image_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, image_);
         }
         if (amount_ != 0L) {
@@ -2353,7 +2049,7 @@ public final class InvokeScriptResultOuterClass {
           size += com.google.protobuf.CodedOutputStream
             .computeInt64Size(9, nonce_);
         }
-        size += unknownFields.getSerializedSize();
+        size += getUnknownFields().getSerializedSize();
         memoizedSize = size;
         return size;
       }
@@ -2386,7 +2082,7 @@ public final class InvokeScriptResultOuterClass {
             .equals(other.getScript())) return false;
         if (getNonce()
             != other.getNonce()) return false;
-        if (!unknownFields.equals(other.unknownFields)) return false;
+        if (!getUnknownFields().equals(other.getUnknownFields())) return false;
         return true;
       }
 
@@ -2418,7 +2114,7 @@ public final class InvokeScriptResultOuterClass {
         hash = (37 * hash) + NONCE_FIELD_NUMBER;
         hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
             getNonce());
-        hash = (29 * hash) + unknownFields.hashCode();
+        hash = (29 * hash) + getUnknownFields().hashCode();
         memoizedHashCode = hash;
         return hash;
       }
@@ -2535,18 +2231,13 @@ public final class InvokeScriptResultOuterClass {
 
         // Construct using com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Issue.newBuilder()
         private Builder() {
-          maybeForceBuilderInitialization();
+
         }
 
         private Builder(
             com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
           super(parent);
-          maybeForceBuilderInitialization();
-        }
-        private void maybeForceBuilderInitialization() {
-          if (com.google.protobuf.GeneratedMessageV3
-                  .alwaysUseFieldBuilders) {
-          }
+
         }
         @java.lang.Override
         public Builder clear() {
@@ -2682,7 +2373,7 @@ public final class InvokeScriptResultOuterClass {
           if (other.getNonce() != 0L) {
             setNonce(other.getNonce());
           }
-          this.mergeUnknownFields(other.unknownFields);
+          this.mergeUnknownFields(other.getUnknownFields());
           onChanged();
           return this;
         }
@@ -2697,17 +2388,75 @@ public final class InvokeScriptResultOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Issue parsedMessage = null;
+          if (extensionRegistry == null) {
+            throw new java.lang.NullPointerException();
+          }
           try {
-            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+            boolean done = false;
+            while (!done) {
+              int tag = input.readTag();
+              switch (tag) {
+                case 0:
+                  done = true;
+                  break;
+                case 10: {
+                  assetId_ = input.readBytes();
+
+                  break;
+                } // case 10
+                case 18: {
+                  name_ = input.readStringRequireUtf8();
+
+                  break;
+                } // case 18
+                case 26: {
+                  description_ = input.readStringRequireUtf8();
+
+                  break;
+                } // case 26
+                case 34: {
+                  image_ = input.readStringRequireUtf8();
+
+                  break;
+                } // case 34
+                case 40: {
+                  amount_ = input.readInt64();
+
+                  break;
+                } // case 40
+                case 48: {
+                  decimals_ = input.readInt32();
+
+                  break;
+                } // case 48
+                case 56: {
+                  reissuable_ = input.readBool();
+
+                  break;
+                } // case 56
+                case 66: {
+                  script_ = input.readBytes();
+
+                  break;
+                } // case 66
+                case 72: {
+                  nonce_ = input.readInt64();
+
+                  break;
+                } // case 72
+                default: {
+                  if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                    done = true; // was an endgroup tag
+                  }
+                  break;
+                } // default:
+              } // switch (tag)
+            } // while (!done)
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Issue) e.getUnfinishedMessage();
             throw e.unwrapIOException();
           } finally {
-            if (parsedMessage != null) {
-              mergeFrom(parsedMessage);
-            }
-          }
+            onChanged();
+          } // finally
           return this;
         }
 
@@ -3163,7 +2912,18 @@ public final class InvokeScriptResultOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-          return new Issue(input, extensionRegistry);
+          Builder builder = newBuilder();
+          try {
+            builder.mergeFrom(input, extensionRegistry);
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            throw e.setUnfinishedMessage(builder.buildPartial());
+          } catch (com.google.protobuf.UninitializedMessageException e) {
+            throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+          } catch (java.io.IOException e) {
+            throw new com.google.protobuf.InvalidProtocolBufferException(e)
+                .setUnfinishedMessage(builder.buildPartial());
+          }
+          return builder.buildPartial();
         }
       };
 
@@ -3232,58 +2992,6 @@ public final class InvokeScriptResultOuterClass {
       public final com.google.protobuf.UnknownFieldSet
       getUnknownFields() {
         return this.unknownFields;
-      }
-      private Reissue(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        this();
-        if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
-        }
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
-        try {
-          boolean done = false;
-          while (!done) {
-            int tag = input.readTag();
-            switch (tag) {
-              case 0:
-                done = true;
-                break;
-              case 10: {
-
-                assetId_ = input.readBytes();
-                break;
-              }
-              case 16: {
-
-                amount_ = input.readInt64();
-                break;
-              }
-              case 24: {
-
-                isReissuable_ = input.readBool();
-                break;
-              }
-              default: {
-                if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
-                  done = true;
-                }
-                break;
-              }
-            }
-          }
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.setUnfinishedMessage(this);
-        } catch (java.io.IOException e) {
-          throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
-        } finally {
-          this.unknownFields = unknownFields.build();
-          makeExtensionsImmutable();
-        }
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
@@ -3354,7 +3062,7 @@ public final class InvokeScriptResultOuterClass {
         if (isReissuable_ != false) {
           output.writeBool(3, isReissuable_);
         }
-        unknownFields.writeTo(output);
+        getUnknownFields().writeTo(output);
       }
 
       @java.lang.Override
@@ -3375,7 +3083,7 @@ public final class InvokeScriptResultOuterClass {
           size += com.google.protobuf.CodedOutputStream
             .computeBoolSize(3, isReissuable_);
         }
-        size += unknownFields.getSerializedSize();
+        size += getUnknownFields().getSerializedSize();
         memoizedSize = size;
         return size;
       }
@@ -3396,7 +3104,7 @@ public final class InvokeScriptResultOuterClass {
             != other.getAmount()) return false;
         if (getIsReissuable()
             != other.getIsReissuable()) return false;
-        if (!unknownFields.equals(other.unknownFields)) return false;
+        if (!getUnknownFields().equals(other.getUnknownFields())) return false;
         return true;
       }
 
@@ -3415,7 +3123,7 @@ public final class InvokeScriptResultOuterClass {
         hash = (37 * hash) + IS_REISSUABLE_FIELD_NUMBER;
         hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
             getIsReissuable());
-        hash = (29 * hash) + unknownFields.hashCode();
+        hash = (29 * hash) + getUnknownFields().hashCode();
         memoizedHashCode = hash;
         return hash;
       }
@@ -3532,18 +3240,13 @@ public final class InvokeScriptResultOuterClass {
 
         // Construct using com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Reissue.newBuilder()
         private Builder() {
-          maybeForceBuilderInitialization();
+
         }
 
         private Builder(
             com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
           super(parent);
-          maybeForceBuilderInitialization();
-        }
-        private void maybeForceBuilderInitialization() {
-          if (com.google.protobuf.GeneratedMessageV3
-                  .alwaysUseFieldBuilders) {
-          }
+
         }
         @java.lang.Override
         public Builder clear() {
@@ -3640,7 +3343,7 @@ public final class InvokeScriptResultOuterClass {
           if (other.getIsReissuable() != false) {
             setIsReissuable(other.getIsReissuable());
           }
-          this.mergeUnknownFields(other.unknownFields);
+          this.mergeUnknownFields(other.getUnknownFields());
           onChanged();
           return this;
         }
@@ -3655,17 +3358,45 @@ public final class InvokeScriptResultOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Reissue parsedMessage = null;
+          if (extensionRegistry == null) {
+            throw new java.lang.NullPointerException();
+          }
           try {
-            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+            boolean done = false;
+            while (!done) {
+              int tag = input.readTag();
+              switch (tag) {
+                case 0:
+                  done = true;
+                  break;
+                case 10: {
+                  assetId_ = input.readBytes();
+
+                  break;
+                } // case 10
+                case 16: {
+                  amount_ = input.readInt64();
+
+                  break;
+                } // case 16
+                case 24: {
+                  isReissuable_ = input.readBool();
+
+                  break;
+                } // case 24
+                default: {
+                  if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                    done = true; // was an endgroup tag
+                  }
+                  break;
+                } // default:
+              } // switch (tag)
+            } // while (!done)
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Reissue) e.getUnfinishedMessage();
             throw e.unwrapIOException();
           } finally {
-            if (parsedMessage != null) {
-              mergeFrom(parsedMessage);
-            }
-          }
+            onChanged();
+          } // finally
           return this;
         }
 
@@ -3797,7 +3528,18 @@ public final class InvokeScriptResultOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-          return new Reissue(input, extensionRegistry);
+          Builder builder = newBuilder();
+          try {
+            builder.mergeFrom(input, extensionRegistry);
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            throw e.setUnfinishedMessage(builder.buildPartial());
+          } catch (com.google.protobuf.UninitializedMessageException e) {
+            throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+          } catch (java.io.IOException e) {
+            throw new com.google.protobuf.InvalidProtocolBufferException(e)
+                .setUnfinishedMessage(builder.buildPartial());
+          }
+          return builder.buildPartial();
         }
       };
 
@@ -3861,53 +3603,6 @@ public final class InvokeScriptResultOuterClass {
       getUnknownFields() {
         return this.unknownFields;
       }
-      private Burn(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        this();
-        if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
-        }
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
-        try {
-          boolean done = false;
-          while (!done) {
-            int tag = input.readTag();
-            switch (tag) {
-              case 0:
-                done = true;
-                break;
-              case 10: {
-
-                assetId_ = input.readBytes();
-                break;
-              }
-              case 16: {
-
-                amount_ = input.readInt64();
-                break;
-              }
-              default: {
-                if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
-                  done = true;
-                }
-                break;
-              }
-            }
-          }
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.setUnfinishedMessage(this);
-        } catch (java.io.IOException e) {
-          throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
-        } finally {
-          this.unknownFields = unknownFields.build();
-          makeExtensionsImmutable();
-        }
-      }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.internal_static_vrp_InvokeScriptResult_Burn_descriptor;
@@ -3963,7 +3658,7 @@ public final class InvokeScriptResultOuterClass {
         if (amount_ != 0L) {
           output.writeInt64(2, amount_);
         }
-        unknownFields.writeTo(output);
+        getUnknownFields().writeTo(output);
       }
 
       @java.lang.Override
@@ -3980,7 +3675,7 @@ public final class InvokeScriptResultOuterClass {
           size += com.google.protobuf.CodedOutputStream
             .computeInt64Size(2, amount_);
         }
-        size += unknownFields.getSerializedSize();
+        size += getUnknownFields().getSerializedSize();
         memoizedSize = size;
         return size;
       }
@@ -3999,7 +3694,7 @@ public final class InvokeScriptResultOuterClass {
             .equals(other.getAssetId())) return false;
         if (getAmount()
             != other.getAmount()) return false;
-        if (!unknownFields.equals(other.unknownFields)) return false;
+        if (!getUnknownFields().equals(other.getUnknownFields())) return false;
         return true;
       }
 
@@ -4015,7 +3710,7 @@ public final class InvokeScriptResultOuterClass {
         hash = (37 * hash) + AMOUNT_FIELD_NUMBER;
         hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
             getAmount());
-        hash = (29 * hash) + unknownFields.hashCode();
+        hash = (29 * hash) + getUnknownFields().hashCode();
         memoizedHashCode = hash;
         return hash;
       }
@@ -4132,18 +3827,13 @@ public final class InvokeScriptResultOuterClass {
 
         // Construct using com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Burn.newBuilder()
         private Builder() {
-          maybeForceBuilderInitialization();
+
         }
 
         private Builder(
             com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
           super(parent);
-          maybeForceBuilderInitialization();
-        }
-        private void maybeForceBuilderInitialization() {
-          if (com.google.protobuf.GeneratedMessageV3
-                  .alwaysUseFieldBuilders) {
-          }
+
         }
         @java.lang.Override
         public Builder clear() {
@@ -4234,7 +3924,7 @@ public final class InvokeScriptResultOuterClass {
           if (other.getAmount() != 0L) {
             setAmount(other.getAmount());
           }
-          this.mergeUnknownFields(other.unknownFields);
+          this.mergeUnknownFields(other.getUnknownFields());
           onChanged();
           return this;
         }
@@ -4249,17 +3939,40 @@ public final class InvokeScriptResultOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Burn parsedMessage = null;
+          if (extensionRegistry == null) {
+            throw new java.lang.NullPointerException();
+          }
           try {
-            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+            boolean done = false;
+            while (!done) {
+              int tag = input.readTag();
+              switch (tag) {
+                case 0:
+                  done = true;
+                  break;
+                case 10: {
+                  assetId_ = input.readBytes();
+
+                  break;
+                } // case 10
+                case 16: {
+                  amount_ = input.readInt64();
+
+                  break;
+                } // case 16
+                default: {
+                  if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                    done = true; // was an endgroup tag
+                  }
+                  break;
+                } // default:
+              } // switch (tag)
+            } // while (!done)
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Burn) e.getUnfinishedMessage();
             throw e.unwrapIOException();
           } finally {
-            if (parsedMessage != null) {
-              mergeFrom(parsedMessage);
-            }
-          }
+            onChanged();
+          } // finally
           return this;
         }
 
@@ -4360,7 +4073,18 @@ public final class InvokeScriptResultOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-          return new Burn(input, extensionRegistry);
+          Builder builder = newBuilder();
+          try {
+            builder.mergeFrom(input, extensionRegistry);
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            throw e.setUnfinishedMessage(builder.buildPartial());
+          } catch (com.google.protobuf.UninitializedMessageException e) {
+            throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+          } catch (java.io.IOException e) {
+            throw new com.google.protobuf.InvalidProtocolBufferException(e)
+                .setUnfinishedMessage(builder.buildPartial());
+          }
+          return builder.buildPartial();
         }
       };
 
@@ -4426,56 +4150,6 @@ public final class InvokeScriptResultOuterClass {
       getUnknownFields() {
         return this.unknownFields;
       }
-      private SponsorFee(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        this();
-        if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
-        }
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
-        try {
-          boolean done = false;
-          while (!done) {
-            int tag = input.readTag();
-            switch (tag) {
-              case 0:
-                done = true;
-                break;
-              case 10: {
-                com.vrp.protobuf.AmountOuterClass.Amount.Builder subBuilder = null;
-                if (minFee_ != null) {
-                  subBuilder = minFee_.toBuilder();
-                }
-                minFee_ = input.readMessage(com.vrp.protobuf.AmountOuterClass.Amount.parser(), extensionRegistry);
-                if (subBuilder != null) {
-                  subBuilder.mergeFrom(minFee_);
-                  minFee_ = subBuilder.buildPartial();
-                }
-
-                break;
-              }
-              default: {
-                if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
-                  done = true;
-                }
-                break;
-              }
-            }
-          }
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.setUnfinishedMessage(this);
-        } catch (java.io.IOException e) {
-          throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
-        } finally {
-          this.unknownFields = unknownFields.build();
-          makeExtensionsImmutable();
-        }
-      }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.internal_static_vrp_InvokeScriptResult_SponsorFee_descriptor;
@@ -4532,7 +4206,7 @@ public final class InvokeScriptResultOuterClass {
         if (minFee_ != null) {
           output.writeMessage(1, getMinFee());
         }
-        unknownFields.writeTo(output);
+        getUnknownFields().writeTo(output);
       }
 
       @java.lang.Override
@@ -4545,7 +4219,7 @@ public final class InvokeScriptResultOuterClass {
           size += com.google.protobuf.CodedOutputStream
             .computeMessageSize(1, getMinFee());
         }
-        size += unknownFields.getSerializedSize();
+        size += getUnknownFields().getSerializedSize();
         memoizedSize = size;
         return size;
       }
@@ -4565,7 +4239,7 @@ public final class InvokeScriptResultOuterClass {
           if (!getMinFee()
               .equals(other.getMinFee())) return false;
         }
-        if (!unknownFields.equals(other.unknownFields)) return false;
+        if (!getUnknownFields().equals(other.getUnknownFields())) return false;
         return true;
       }
 
@@ -4580,7 +4254,7 @@ public final class InvokeScriptResultOuterClass {
           hash = (37 * hash) + MIN_FEE_FIELD_NUMBER;
           hash = (53 * hash) + getMinFee().hashCode();
         }
-        hash = (29 * hash) + unknownFields.hashCode();
+        hash = (29 * hash) + getUnknownFields().hashCode();
         memoizedHashCode = hash;
         return hash;
       }
@@ -4697,18 +4371,13 @@ public final class InvokeScriptResultOuterClass {
 
         // Construct using com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.SponsorFee.newBuilder()
         private Builder() {
-          maybeForceBuilderInitialization();
+
         }
 
         private Builder(
             com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
           super(parent);
-          maybeForceBuilderInitialization();
-        }
-        private void maybeForceBuilderInitialization() {
-          if (com.google.protobuf.GeneratedMessageV3
-                  .alwaysUseFieldBuilders) {
-          }
+
         }
         @java.lang.Override
         public Builder clear() {
@@ -4801,7 +4470,7 @@ public final class InvokeScriptResultOuterClass {
           if (other.hasMinFee()) {
             mergeMinFee(other.getMinFee());
           }
-          this.mergeUnknownFields(other.unknownFields);
+          this.mergeUnknownFields(other.getUnknownFields());
           onChanged();
           return this;
         }
@@ -4816,17 +4485,37 @@ public final class InvokeScriptResultOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.SponsorFee parsedMessage = null;
+          if (extensionRegistry == null) {
+            throw new java.lang.NullPointerException();
+          }
           try {
-            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+            boolean done = false;
+            while (!done) {
+              int tag = input.readTag();
+              switch (tag) {
+                case 0:
+                  done = true;
+                  break;
+                case 10: {
+                  input.readMessage(
+                      getMinFeeFieldBuilder().getBuilder(),
+                      extensionRegistry);
+
+                  break;
+                } // case 10
+                default: {
+                  if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                    done = true; // was an endgroup tag
+                  }
+                  break;
+                } // default:
+              } // switch (tag)
+            } // while (!done)
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.SponsorFee) e.getUnfinishedMessage();
             throw e.unwrapIOException();
           } finally {
-            if (parsedMessage != null) {
-              mergeFrom(parsedMessage);
-            }
-          }
+            onChanged();
+          } // finally
           return this;
         }
 
@@ -4981,7 +4670,18 @@ public final class InvokeScriptResultOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-          return new SponsorFee(input, extensionRegistry);
+          Builder builder = newBuilder();
+          try {
+            builder.mergeFrom(input, extensionRegistry);
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            throw e.setUnfinishedMessage(builder.buildPartial());
+          } catch (com.google.protobuf.UninitializedMessageException e) {
+            throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+          } catch (java.io.IOException e) {
+            throw new com.google.protobuf.InvalidProtocolBufferException(e)
+                .setUnfinishedMessage(builder.buildPartial());
+          }
+          return builder.buildPartial();
         }
       };
 
@@ -5065,71 +4765,6 @@ public final class InvokeScriptResultOuterClass {
       public final com.google.protobuf.UnknownFieldSet
       getUnknownFields() {
         return this.unknownFields;
-      }
-      private Lease(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        this();
-        if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
-        }
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
-        try {
-          boolean done = false;
-          while (!done) {
-            int tag = input.readTag();
-            switch (tag) {
-              case 0:
-                done = true;
-                break;
-              case 10: {
-                com.vrp.protobuf.transaction.RecipientOuterClass.Recipient.Builder subBuilder = null;
-                if (recipient_ != null) {
-                  subBuilder = recipient_.toBuilder();
-                }
-                recipient_ = input.readMessage(com.vrp.protobuf.transaction.RecipientOuterClass.Recipient.parser(), extensionRegistry);
-                if (subBuilder != null) {
-                  subBuilder.mergeFrom(recipient_);
-                  recipient_ = subBuilder.buildPartial();
-                }
-
-                break;
-              }
-              case 16: {
-
-                amount_ = input.readInt64();
-                break;
-              }
-              case 24: {
-
-                nonce_ = input.readInt64();
-                break;
-              }
-              case 34: {
-
-                leaseId_ = input.readBytes();
-                break;
-              }
-              default: {
-                if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
-                  done = true;
-                }
-                break;
-              }
-            }
-          }
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.setUnfinishedMessage(this);
-        } catch (java.io.IOException e) {
-          throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
-        } finally {
-          this.unknownFields = unknownFields.build();
-          makeExtensionsImmutable();
-        }
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
@@ -5229,7 +4864,7 @@ public final class InvokeScriptResultOuterClass {
         if (!leaseId_.isEmpty()) {
           output.writeBytes(4, leaseId_);
         }
-        unknownFields.writeTo(output);
+        getUnknownFields().writeTo(output);
       }
 
       @java.lang.Override
@@ -5254,7 +4889,7 @@ public final class InvokeScriptResultOuterClass {
           size += com.google.protobuf.CodedOutputStream
             .computeBytesSize(4, leaseId_);
         }
-        size += unknownFields.getSerializedSize();
+        size += getUnknownFields().getSerializedSize();
         memoizedSize = size;
         return size;
       }
@@ -5280,7 +4915,7 @@ public final class InvokeScriptResultOuterClass {
             != other.getNonce()) return false;
         if (!getLeaseId()
             .equals(other.getLeaseId())) return false;
-        if (!unknownFields.equals(other.unknownFields)) return false;
+        if (!getUnknownFields().equals(other.getUnknownFields())) return false;
         return true;
       }
 
@@ -5303,7 +4938,7 @@ public final class InvokeScriptResultOuterClass {
             getNonce());
         hash = (37 * hash) + LEASE_ID_FIELD_NUMBER;
         hash = (53 * hash) + getLeaseId().hashCode();
-        hash = (29 * hash) + unknownFields.hashCode();
+        hash = (29 * hash) + getUnknownFields().hashCode();
         memoizedHashCode = hash;
         return hash;
       }
@@ -5420,18 +5055,13 @@ public final class InvokeScriptResultOuterClass {
 
         // Construct using com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Lease.newBuilder()
         private Builder() {
-          maybeForceBuilderInitialization();
+
         }
 
         private Builder(
             com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
           super(parent);
-          maybeForceBuilderInitialization();
-        }
-        private void maybeForceBuilderInitialization() {
-          if (com.google.protobuf.GeneratedMessageV3
-                  .alwaysUseFieldBuilders) {
-          }
+
         }
         @java.lang.Override
         public Builder clear() {
@@ -5542,7 +5172,7 @@ public final class InvokeScriptResultOuterClass {
           if (other.getLeaseId() != com.google.protobuf.ByteString.EMPTY) {
             setLeaseId(other.getLeaseId());
           }
-          this.mergeUnknownFields(other.unknownFields);
+          this.mergeUnknownFields(other.getUnknownFields());
           onChanged();
           return this;
         }
@@ -5557,17 +5187,52 @@ public final class InvokeScriptResultOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Lease parsedMessage = null;
+          if (extensionRegistry == null) {
+            throw new java.lang.NullPointerException();
+          }
           try {
-            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+            boolean done = false;
+            while (!done) {
+              int tag = input.readTag();
+              switch (tag) {
+                case 0:
+                  done = true;
+                  break;
+                case 10: {
+                  input.readMessage(
+                      getRecipientFieldBuilder().getBuilder(),
+                      extensionRegistry);
+
+                  break;
+                } // case 10
+                case 16: {
+                  amount_ = input.readInt64();
+
+                  break;
+                } // case 16
+                case 24: {
+                  nonce_ = input.readInt64();
+
+                  break;
+                } // case 24
+                case 34: {
+                  leaseId_ = input.readBytes();
+
+                  break;
+                } // case 34
+                default: {
+                  if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                    done = true; // was an endgroup tag
+                  }
+                  break;
+                } // default:
+              } // switch (tag)
+            } // while (!done)
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Lease) e.getUnfinishedMessage();
             throw e.unwrapIOException();
           } finally {
-            if (parsedMessage != null) {
-              mergeFrom(parsedMessage);
-            }
-          }
+            onChanged();
+          } // finally
           return this;
         }
 
@@ -5818,7 +5483,18 @@ public final class InvokeScriptResultOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-          return new Lease(input, extensionRegistry);
+          Builder builder = newBuilder();
+          try {
+            builder.mergeFrom(input, extensionRegistry);
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            throw e.setUnfinishedMessage(builder.buildPartial());
+          } catch (com.google.protobuf.UninitializedMessageException e) {
+            throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+          } catch (java.io.IOException e) {
+            throw new com.google.protobuf.InvalidProtocolBufferException(e)
+                .setUnfinishedMessage(builder.buildPartial());
+          }
+          return builder.buildPartial();
         }
       };
 
@@ -5876,48 +5552,6 @@ public final class InvokeScriptResultOuterClass {
       getUnknownFields() {
         return this.unknownFields;
       }
-      private LeaseCancel(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        this();
-        if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
-        }
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
-        try {
-          boolean done = false;
-          while (!done) {
-            int tag = input.readTag();
-            switch (tag) {
-              case 0:
-                done = true;
-                break;
-              case 10: {
-
-                leaseId_ = input.readBytes();
-                break;
-              }
-              default: {
-                if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
-                  done = true;
-                }
-                break;
-              }
-            }
-          }
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.setUnfinishedMessage(this);
-        } catch (java.io.IOException e) {
-          throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
-        } finally {
-          this.unknownFields = unknownFields.build();
-          makeExtensionsImmutable();
-        }
-      }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.internal_static_vrp_InvokeScriptResult_LeaseCancel_descriptor;
@@ -5959,7 +5593,7 @@ public final class InvokeScriptResultOuterClass {
         if (!leaseId_.isEmpty()) {
           output.writeBytes(1, leaseId_);
         }
-        unknownFields.writeTo(output);
+        getUnknownFields().writeTo(output);
       }
 
       @java.lang.Override
@@ -5972,7 +5606,7 @@ public final class InvokeScriptResultOuterClass {
           size += com.google.protobuf.CodedOutputStream
             .computeBytesSize(1, leaseId_);
         }
-        size += unknownFields.getSerializedSize();
+        size += getUnknownFields().getSerializedSize();
         memoizedSize = size;
         return size;
       }
@@ -5989,7 +5623,7 @@ public final class InvokeScriptResultOuterClass {
 
         if (!getLeaseId()
             .equals(other.getLeaseId())) return false;
-        if (!unknownFields.equals(other.unknownFields)) return false;
+        if (!getUnknownFields().equals(other.getUnknownFields())) return false;
         return true;
       }
 
@@ -6002,7 +5636,7 @@ public final class InvokeScriptResultOuterClass {
         hash = (19 * hash) + getDescriptor().hashCode();
         hash = (37 * hash) + LEASE_ID_FIELD_NUMBER;
         hash = (53 * hash) + getLeaseId().hashCode();
-        hash = (29 * hash) + unknownFields.hashCode();
+        hash = (29 * hash) + getUnknownFields().hashCode();
         memoizedHashCode = hash;
         return hash;
       }
@@ -6119,18 +5753,13 @@ public final class InvokeScriptResultOuterClass {
 
         // Construct using com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.LeaseCancel.newBuilder()
         private Builder() {
-          maybeForceBuilderInitialization();
+
         }
 
         private Builder(
             com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
           super(parent);
-          maybeForceBuilderInitialization();
-        }
-        private void maybeForceBuilderInitialization() {
-          if (com.google.protobuf.GeneratedMessageV3
-                  .alwaysUseFieldBuilders) {
-          }
+
         }
         @java.lang.Override
         public Builder clear() {
@@ -6215,7 +5844,7 @@ public final class InvokeScriptResultOuterClass {
           if (other.getLeaseId() != com.google.protobuf.ByteString.EMPTY) {
             setLeaseId(other.getLeaseId());
           }
-          this.mergeUnknownFields(other.unknownFields);
+          this.mergeUnknownFields(other.getUnknownFields());
           onChanged();
           return this;
         }
@@ -6230,17 +5859,35 @@ public final class InvokeScriptResultOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.LeaseCancel parsedMessage = null;
+          if (extensionRegistry == null) {
+            throw new java.lang.NullPointerException();
+          }
           try {
-            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+            boolean done = false;
+            while (!done) {
+              int tag = input.readTag();
+              switch (tag) {
+                case 0:
+                  done = true;
+                  break;
+                case 10: {
+                  leaseId_ = input.readBytes();
+
+                  break;
+                } // case 10
+                default: {
+                  if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                    done = true; // was an endgroup tag
+                  }
+                  break;
+                } // default:
+              } // switch (tag)
+            } // while (!done)
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.LeaseCancel) e.getUnfinishedMessage();
             throw e.unwrapIOException();
           } finally {
-            if (parsedMessage != null) {
-              mergeFrom(parsedMessage);
-            }
-          }
+            onChanged();
+          } // finally
           return this;
         }
 
@@ -6310,7 +5957,18 @@ public final class InvokeScriptResultOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-          return new LeaseCancel(input, extensionRegistry);
+          Builder builder = newBuilder();
+          try {
+            builder.mergeFrom(input, extensionRegistry);
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            throw e.setUnfinishedMessage(builder.buildPartial());
+          } catch (com.google.protobuf.UninitializedMessageException e) {
+            throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+          } catch (java.io.IOException e) {
+            throw new com.google.protobuf.InvalidProtocolBufferException(e)
+                .setUnfinishedMessage(builder.buildPartial());
+          }
+          return builder.buildPartial();
         }
       };
 
@@ -6379,54 +6037,6 @@ public final class InvokeScriptResultOuterClass {
       public final com.google.protobuf.UnknownFieldSet
       getUnknownFields() {
         return this.unknownFields;
-      }
-      private ErrorMessage(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        this();
-        if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
-        }
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
-        try {
-          boolean done = false;
-          while (!done) {
-            int tag = input.readTag();
-            switch (tag) {
-              case 0:
-                done = true;
-                break;
-              case 8: {
-
-                code_ = input.readInt32();
-                break;
-              }
-              case 18: {
-                java.lang.String s = input.readStringRequireUtf8();
-
-                text_ = s;
-                break;
-              }
-              default: {
-                if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
-                  done = true;
-                }
-                break;
-              }
-            }
-          }
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.setUnfinishedMessage(this);
-        } catch (java.io.IOException e) {
-          throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
-        } finally {
-          this.unknownFields = unknownFields.build();
-          makeExtensionsImmutable();
-        }
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
@@ -6507,10 +6117,10 @@ public final class InvokeScriptResultOuterClass {
         if (code_ != 0) {
           output.writeInt32(1, code_);
         }
-        if (!getTextBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(text_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 2, text_);
         }
-        unknownFields.writeTo(output);
+        getUnknownFields().writeTo(output);
       }
 
       @java.lang.Override
@@ -6523,10 +6133,10 @@ public final class InvokeScriptResultOuterClass {
           size += com.google.protobuf.CodedOutputStream
             .computeInt32Size(1, code_);
         }
-        if (!getTextBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(text_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, text_);
         }
-        size += unknownFields.getSerializedSize();
+        size += getUnknownFields().getSerializedSize();
         memoizedSize = size;
         return size;
       }
@@ -6545,7 +6155,7 @@ public final class InvokeScriptResultOuterClass {
             != other.getCode()) return false;
         if (!getText()
             .equals(other.getText())) return false;
-        if (!unknownFields.equals(other.unknownFields)) return false;
+        if (!getUnknownFields().equals(other.getUnknownFields())) return false;
         return true;
       }
 
@@ -6560,7 +6170,7 @@ public final class InvokeScriptResultOuterClass {
         hash = (53 * hash) + getCode();
         hash = (37 * hash) + TEXT_FIELD_NUMBER;
         hash = (53 * hash) + getText().hashCode();
-        hash = (29 * hash) + unknownFields.hashCode();
+        hash = (29 * hash) + getUnknownFields().hashCode();
         memoizedHashCode = hash;
         return hash;
       }
@@ -6677,18 +6287,13 @@ public final class InvokeScriptResultOuterClass {
 
         // Construct using com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.ErrorMessage.newBuilder()
         private Builder() {
-          maybeForceBuilderInitialization();
+
         }
 
         private Builder(
             com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
           super(parent);
-          maybeForceBuilderInitialization();
-        }
-        private void maybeForceBuilderInitialization() {
-          if (com.google.protobuf.GeneratedMessageV3
-                  .alwaysUseFieldBuilders) {
-          }
+
         }
         @java.lang.Override
         public Builder clear() {
@@ -6780,7 +6385,7 @@ public final class InvokeScriptResultOuterClass {
             text_ = other.text_;
             onChanged();
           }
-          this.mergeUnknownFields(other.unknownFields);
+          this.mergeUnknownFields(other.getUnknownFields());
           onChanged();
           return this;
         }
@@ -6795,17 +6400,40 @@ public final class InvokeScriptResultOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.ErrorMessage parsedMessage = null;
+          if (extensionRegistry == null) {
+            throw new java.lang.NullPointerException();
+          }
           try {
-            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+            boolean done = false;
+            while (!done) {
+              int tag = input.readTag();
+              switch (tag) {
+                case 0:
+                  done = true;
+                  break;
+                case 8: {
+                  code_ = input.readInt32();
+
+                  break;
+                } // case 8
+                case 18: {
+                  text_ = input.readStringRequireUtf8();
+
+                  break;
+                } // case 18
+                default: {
+                  if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                    done = true; // was an endgroup tag
+                  }
+                  break;
+                } // default:
+              } // switch (tag)
+            } // while (!done)
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.ErrorMessage) e.getUnfinishedMessage();
             throw e.unwrapIOException();
           } finally {
-            if (parsedMessage != null) {
-              mergeFrom(parsedMessage);
-            }
-          }
+            onChanged();
+          } // finally
           return this;
         }
 
@@ -6948,7 +6576,18 @@ public final class InvokeScriptResultOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-          return new ErrorMessage(input, extensionRegistry);
+          Builder builder = newBuilder();
+          try {
+            builder.mergeFrom(input, extensionRegistry);
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            throw e.setUnfinishedMessage(builder.buildPartial());
+          } catch (com.google.protobuf.UninitializedMessageException e) {
+            throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+          } catch (java.io.IOException e) {
+            throw new com.google.protobuf.InvalidProtocolBufferException(e)
+                .setUnfinishedMessage(builder.buildPartial());
+          }
+          return builder.buildPartial();
         }
       };
 
@@ -6986,16 +6625,22 @@ public final class InvokeScriptResultOuterClass {
 
       /**
        * <code>repeated bytes args_bytes = 2 [deprecated = true];</code>
+       * @deprecated vrp.InvokeScriptResult.Call.args_bytes is deprecated.
+       *     See vrp/invoke_script_result.proto;l=81
        * @return A list containing the argsBytes.
        */
       @java.lang.Deprecated java.util.List<com.google.protobuf.ByteString> getArgsBytesList();
       /**
        * <code>repeated bytes args_bytes = 2 [deprecated = true];</code>
+       * @deprecated vrp.InvokeScriptResult.Call.args_bytes is deprecated.
+       *     See vrp/invoke_script_result.proto;l=81
        * @return The count of argsBytes.
        */
       @java.lang.Deprecated int getArgsBytesCount();
       /**
        * <code>repeated bytes args_bytes = 2 [deprecated = true];</code>
+       * @deprecated vrp.InvokeScriptResult.Call.args_bytes is deprecated.
+       *     See vrp/invoke_script_result.proto;l=81
        * @param index The index of the element to return.
        * @return The argsBytes at the given index.
        */
@@ -7055,73 +6700,6 @@ public final class InvokeScriptResultOuterClass {
       getUnknownFields() {
         return this.unknownFields;
       }
-      private Call(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        this();
-        if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
-        }
-        int mutable_bitField0_ = 0;
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
-        try {
-          boolean done = false;
-          while (!done) {
-            int tag = input.readTag();
-            switch (tag) {
-              case 0:
-                done = true;
-                break;
-              case 10: {
-                java.lang.String s = input.readStringRequireUtf8();
-
-                function_ = s;
-                break;
-              }
-              case 18: {
-                if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                  argsBytes_ = new java.util.ArrayList<com.google.protobuf.ByteString>();
-                  mutable_bitField0_ |= 0x00000001;
-                }
-                argsBytes_.add(input.readBytes());
-                break;
-              }
-              case 26: {
-                if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                  args_ = new java.util.ArrayList<com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Call.Argument>();
-                  mutable_bitField0_ |= 0x00000002;
-                }
-                args_.add(
-                    input.readMessage(com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Call.Argument.parser(), extensionRegistry));
-                break;
-              }
-              default: {
-                if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
-                  done = true;
-                }
-                break;
-              }
-            }
-          }
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.setUnfinishedMessage(this);
-        } catch (java.io.IOException e) {
-          throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
-        } finally {
-          if (((mutable_bitField0_ & 0x00000001) != 0)) {
-            argsBytes_ = java.util.Collections.unmodifiableList(argsBytes_); // C
-          }
-          if (((mutable_bitField0_ & 0x00000002) != 0)) {
-            args_ = java.util.Collections.unmodifiableList(args_);
-          }
-          this.unknownFields = unknownFields.build();
-          makeExtensionsImmutable();
-        }
-      }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.internal_static_vrp_InvokeScriptResult_Call_descriptor;
@@ -7141,16 +6719,31 @@ public final class InvokeScriptResultOuterClass {
 
         /**
          * <code>int64 integer_value = 1;</code>
+         * @return Whether the integerValue field is set.
+         */
+        boolean hasIntegerValue();
+        /**
+         * <code>int64 integer_value = 1;</code>
          * @return The integerValue.
          */
         long getIntegerValue();
 
         /**
          * <code>bytes binary_value = 2;</code>
+         * @return Whether the binaryValue field is set.
+         */
+        boolean hasBinaryValue();
+        /**
+         * <code>bytes binary_value = 2;</code>
          * @return The binaryValue.
          */
         com.google.protobuf.ByteString getBinaryValue();
 
+        /**
+         * <code>string string_value = 3;</code>
+         * @return Whether the stringValue field is set.
+         */
+        boolean hasStringValue();
         /**
          * <code>string string_value = 3;</code>
          * @return The stringValue.
@@ -7165,10 +6758,20 @@ public final class InvokeScriptResultOuterClass {
 
         /**
          * <code>bool boolean_value = 4;</code>
+         * @return Whether the booleanValue field is set.
+         */
+        boolean hasBooleanValue();
+        /**
+         * <code>bool boolean_value = 4;</code>
          * @return The booleanValue.
          */
         boolean getBooleanValue();
 
+        /**
+         * <code>bytes case_obj = 5;</code>
+         * @return Whether the caseObj field is set.
+         */
+        boolean hasCaseObj();
         /**
          * <code>bytes case_obj = 5;</code>
          * @return The caseObj.
@@ -7218,83 +6821,6 @@ public final class InvokeScriptResultOuterClass {
         public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
           return this.unknownFields;
-        }
-        private Argument(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          this();
-          if (extensionRegistry == null) {
-            throw new java.lang.NullPointerException();
-          }
-          com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-              com.google.protobuf.UnknownFieldSet.newBuilder();
-          try {
-            boolean done = false;
-            while (!done) {
-              int tag = input.readTag();
-              switch (tag) {
-                case 0:
-                  done = true;
-                  break;
-                case 8: {
-                  valueCase_ = 1;
-                  value_ = input.readInt64();
-                  break;
-                }
-                case 18: {
-                  valueCase_ = 2;
-                  value_ = input.readBytes();
-                  break;
-                }
-                case 26: {
-                  java.lang.String s = input.readStringRequireUtf8();
-                  valueCase_ = 3;
-                  value_ = s;
-                  break;
-                }
-                case 32: {
-                  valueCase_ = 4;
-                  value_ = input.readBool();
-                  break;
-                }
-                case 42: {
-                  valueCase_ = 5;
-                  value_ = input.readBytes();
-                  break;
-                }
-                case 82: {
-                  com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Call.Argument.List.Builder subBuilder = null;
-                  if (valueCase_ == 10) {
-                    subBuilder = ((com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Call.Argument.List) value_).toBuilder();
-                  }
-                  value_ =
-                      input.readMessage(com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Call.Argument.List.parser(), extensionRegistry);
-                  if (subBuilder != null) {
-                    subBuilder.mergeFrom((com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Call.Argument.List) value_);
-                    value_ = subBuilder.buildPartial();
-                  }
-                  valueCase_ = 10;
-                  break;
-                }
-                default: {
-                  if (!parseUnknownField(
-                      input, unknownFields, extensionRegistry, tag)) {
-                    done = true;
-                  }
-                  break;
-                }
-              }
-            }
-          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            throw e.setUnfinishedMessage(this);
-          } catch (java.io.IOException e) {
-            throw new com.google.protobuf.InvalidProtocolBufferException(
-                e).setUnfinishedMessage(this);
-          } finally {
-            this.unknownFields = unknownFields.build();
-            makeExtensionsImmutable();
-          }
         }
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
@@ -7364,56 +6890,6 @@ public final class InvokeScriptResultOuterClass {
           public final com.google.protobuf.UnknownFieldSet
           getUnknownFields() {
             return this.unknownFields;
-          }
-          private List(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            this();
-            if (extensionRegistry == null) {
-              throw new java.lang.NullPointerException();
-            }
-            int mutable_bitField0_ = 0;
-            com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-                com.google.protobuf.UnknownFieldSet.newBuilder();
-            try {
-              boolean done = false;
-              while (!done) {
-                int tag = input.readTag();
-                switch (tag) {
-                  case 0:
-                    done = true;
-                    break;
-                  case 10: {
-                    if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                      items_ = new java.util.ArrayList<com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Call.Argument>();
-                      mutable_bitField0_ |= 0x00000001;
-                    }
-                    items_.add(
-                        input.readMessage(com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Call.Argument.parser(), extensionRegistry));
-                    break;
-                  }
-                  default: {
-                    if (!parseUnknownField(
-                        input, unknownFields, extensionRegistry, tag)) {
-                      done = true;
-                    }
-                    break;
-                  }
-                }
-              }
-            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-              throw e.setUnfinishedMessage(this);
-            } catch (java.io.IOException e) {
-              throw new com.google.protobuf.InvalidProtocolBufferException(
-                  e).setUnfinishedMessage(this);
-            } finally {
-              if (((mutable_bitField0_ & 0x00000001) != 0)) {
-                items_ = java.util.Collections.unmodifiableList(items_);
-              }
-              this.unknownFields = unknownFields.build();
-              makeExtensionsImmutable();
-            }
           }
           public static final com.google.protobuf.Descriptors.Descriptor
               getDescriptor() {
@@ -7485,7 +6961,7 @@ public final class InvokeScriptResultOuterClass {
             for (int i = 0; i < items_.size(); i++) {
               output.writeMessage(1, items_.get(i));
             }
-            unknownFields.writeTo(output);
+            getUnknownFields().writeTo(output);
           }
 
           @java.lang.Override
@@ -7498,7 +6974,7 @@ public final class InvokeScriptResultOuterClass {
               size += com.google.protobuf.CodedOutputStream
                 .computeMessageSize(1, items_.get(i));
             }
-            size += unknownFields.getSerializedSize();
+            size += getUnknownFields().getSerializedSize();
             memoizedSize = size;
             return size;
           }
@@ -7515,7 +6991,7 @@ public final class InvokeScriptResultOuterClass {
 
             if (!getItemsList()
                 .equals(other.getItemsList())) return false;
-            if (!unknownFields.equals(other.unknownFields)) return false;
+            if (!getUnknownFields().equals(other.getUnknownFields())) return false;
             return true;
           }
 
@@ -7530,7 +7006,7 @@ public final class InvokeScriptResultOuterClass {
               hash = (37 * hash) + ITEMS_FIELD_NUMBER;
               hash = (53 * hash) + getItemsList().hashCode();
             }
-            hash = (29 * hash) + unknownFields.hashCode();
+            hash = (29 * hash) + getUnknownFields().hashCode();
             memoizedHashCode = hash;
             return hash;
           }
@@ -7647,29 +7123,24 @@ public final class InvokeScriptResultOuterClass {
 
             // Construct using com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Call.Argument.List.newBuilder()
             private Builder() {
-              maybeForceBuilderInitialization();
+
             }
 
             private Builder(
                 com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
               super(parent);
-              maybeForceBuilderInitialization();
-            }
-            private void maybeForceBuilderInitialization() {
-              if (com.google.protobuf.GeneratedMessageV3
-                      .alwaysUseFieldBuilders) {
-                getItemsFieldBuilder();
-              }
+
             }
             @java.lang.Override
             public Builder clear() {
               super.clear();
               if (itemsBuilder_ == null) {
                 items_ = java.util.Collections.emptyList();
-                bitField0_ = (bitField0_ & ~0x00000001);
               } else {
+                items_ = null;
                 itemsBuilder_.clear();
               }
+              bitField0_ = (bitField0_ & ~0x00000001);
               return this;
             }
 
@@ -7780,7 +7251,7 @@ public final class InvokeScriptResultOuterClass {
                   }
                 }
               }
-              this.mergeUnknownFields(other.unknownFields);
+              this.mergeUnknownFields(other.getUnknownFields());
               onChanged();
               return this;
             }
@@ -7795,17 +7266,43 @@ public final class InvokeScriptResultOuterClass {
                 com.google.protobuf.CodedInputStream input,
                 com.google.protobuf.ExtensionRegistryLite extensionRegistry)
                 throws java.io.IOException {
-              com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Call.Argument.List parsedMessage = null;
+              if (extensionRegistry == null) {
+                throw new java.lang.NullPointerException();
+              }
               try {
-                parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+                boolean done = false;
+                while (!done) {
+                  int tag = input.readTag();
+                  switch (tag) {
+                    case 0:
+                      done = true;
+                      break;
+                    case 10: {
+                      com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Call.Argument m =
+                          input.readMessage(
+                              com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Call.Argument.parser(),
+                              extensionRegistry);
+                      if (itemsBuilder_ == null) {
+                        ensureItemsIsMutable();
+                        items_.add(m);
+                      } else {
+                        itemsBuilder_.addMessage(m);
+                      }
+                      break;
+                    } // case 10
+                    default: {
+                      if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                        done = true; // was an endgroup tag
+                      }
+                      break;
+                    } // default:
+                  } // switch (tag)
+                } // while (!done)
               } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-                parsedMessage = (com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Call.Argument.List) e.getUnfinishedMessage();
                 throw e.unwrapIOException();
               } finally {
-                if (parsedMessage != null) {
-                  mergeFrom(parsedMessage);
-                }
-              }
+                onChanged();
+              } // finally
               return this;
             }
             private int bitField0_;
@@ -8082,7 +7579,18 @@ public final class InvokeScriptResultOuterClass {
                 com.google.protobuf.CodedInputStream input,
                 com.google.protobuf.ExtensionRegistryLite extensionRegistry)
                 throws com.google.protobuf.InvalidProtocolBufferException {
-              return new List(input, extensionRegistry);
+              Builder builder = newBuilder();
+              try {
+                builder.mergeFrom(input, extensionRegistry);
+              } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                throw e.setUnfinishedMessage(builder.buildPartial());
+              } catch (com.google.protobuf.UninitializedMessageException e) {
+                throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+              } catch (java.io.IOException e) {
+                throw new com.google.protobuf.InvalidProtocolBufferException(e)
+                    .setUnfinishedMessage(builder.buildPartial());
+              }
+              return builder.buildPartial();
             }
           };
 
@@ -8154,6 +7662,14 @@ public final class InvokeScriptResultOuterClass {
         public static final int INTEGER_VALUE_FIELD_NUMBER = 1;
         /**
          * <code>int64 integer_value = 1;</code>
+         * @return Whether the integerValue field is set.
+         */
+        @java.lang.Override
+        public boolean hasIntegerValue() {
+          return valueCase_ == 1;
+        }
+        /**
+         * <code>int64 integer_value = 1;</code>
          * @return The integerValue.
          */
         @java.lang.Override
@@ -8167,6 +7683,14 @@ public final class InvokeScriptResultOuterClass {
         public static final int BINARY_VALUE_FIELD_NUMBER = 2;
         /**
          * <code>bytes binary_value = 2;</code>
+         * @return Whether the binaryValue field is set.
+         */
+        @java.lang.Override
+        public boolean hasBinaryValue() {
+          return valueCase_ == 2;
+        }
+        /**
+         * <code>bytes binary_value = 2;</code>
          * @return The binaryValue.
          */
         @java.lang.Override
@@ -8178,6 +7702,13 @@ public final class InvokeScriptResultOuterClass {
         }
 
         public static final int STRING_VALUE_FIELD_NUMBER = 3;
+        /**
+         * <code>string string_value = 3;</code>
+         * @return Whether the stringValue field is set.
+         */
+        public boolean hasStringValue() {
+          return valueCase_ == 3;
+        }
         /**
          * <code>string string_value = 3;</code>
          * @return The stringValue.
@@ -8225,6 +7756,14 @@ public final class InvokeScriptResultOuterClass {
         public static final int BOOLEAN_VALUE_FIELD_NUMBER = 4;
         /**
          * <code>bool boolean_value = 4;</code>
+         * @return Whether the booleanValue field is set.
+         */
+        @java.lang.Override
+        public boolean hasBooleanValue() {
+          return valueCase_ == 4;
+        }
+        /**
+         * <code>bool boolean_value = 4;</code>
          * @return The booleanValue.
          */
         @java.lang.Override
@@ -8236,6 +7775,14 @@ public final class InvokeScriptResultOuterClass {
         }
 
         public static final int CASE_OBJ_FIELD_NUMBER = 5;
+        /**
+         * <code>bytes case_obj = 5;</code>
+         * @return Whether the caseObj field is set.
+         */
+        @java.lang.Override
+        public boolean hasCaseObj() {
+          return valueCase_ == 5;
+        }
         /**
          * <code>bytes case_obj = 5;</code>
          * @return The caseObj.
@@ -8315,7 +7862,7 @@ public final class InvokeScriptResultOuterClass {
           if (valueCase_ == 10) {
             output.writeMessage(10, (com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Call.Argument.List) value_);
           }
-          unknownFields.writeTo(output);
+          getUnknownFields().writeTo(output);
         }
 
         @java.lang.Override
@@ -8351,7 +7898,7 @@ public final class InvokeScriptResultOuterClass {
             size += com.google.protobuf.CodedOutputStream
               .computeMessageSize(10, (com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Call.Argument.List) value_);
           }
-          size += unknownFields.getSerializedSize();
+          size += getUnknownFields().getSerializedSize();
           memoizedSize = size;
           return size;
         }
@@ -8395,7 +7942,7 @@ public final class InvokeScriptResultOuterClass {
             case 0:
             default:
           }
-          if (!unknownFields.equals(other.unknownFields)) return false;
+          if (!getUnknownFields().equals(other.getUnknownFields())) return false;
           return true;
         }
 
@@ -8436,7 +7983,7 @@ public final class InvokeScriptResultOuterClass {
             case 0:
             default:
           }
-          hash = (29 * hash) + unknownFields.hashCode();
+          hash = (29 * hash) + getUnknownFields().hashCode();
           memoizedHashCode = hash;
           return hash;
         }
@@ -8553,22 +8100,20 @@ public final class InvokeScriptResultOuterClass {
 
           // Construct using com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Call.Argument.newBuilder()
           private Builder() {
-            maybeForceBuilderInitialization();
+
           }
 
           private Builder(
               com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
             super(parent);
-            maybeForceBuilderInitialization();
-          }
-          private void maybeForceBuilderInitialization() {
-            if (com.google.protobuf.GeneratedMessageV3
-                    .alwaysUseFieldBuilders) {
-            }
+
           }
           @java.lang.Override
           public Builder clear() {
             super.clear();
+            if (listBuilder_ != null) {
+              listBuilder_.clear();
+            }
             valueCase_ = 0;
             value_ = null;
             return this;
@@ -8699,7 +8244,7 @@ public final class InvokeScriptResultOuterClass {
                 break;
               }
             }
-            this.mergeUnknownFields(other.unknownFields);
+            this.mergeUnknownFields(other.getUnknownFields());
             onChanged();
             return this;
           }
@@ -8714,17 +8259,63 @@ public final class InvokeScriptResultOuterClass {
               com.google.protobuf.CodedInputStream input,
               com.google.protobuf.ExtensionRegistryLite extensionRegistry)
               throws java.io.IOException {
-            com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Call.Argument parsedMessage = null;
+            if (extensionRegistry == null) {
+              throw new java.lang.NullPointerException();
+            }
             try {
-              parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+              boolean done = false;
+              while (!done) {
+                int tag = input.readTag();
+                switch (tag) {
+                  case 0:
+                    done = true;
+                    break;
+                  case 8: {
+                    value_ = input.readInt64();
+                    valueCase_ = 1;
+                    break;
+                  } // case 8
+                  case 18: {
+                    value_ = input.readBytes();
+                    valueCase_ = 2;
+                    break;
+                  } // case 18
+                  case 26: {
+                    java.lang.String s = input.readStringRequireUtf8();
+                    valueCase_ = 3;
+                    value_ = s;
+                    break;
+                  } // case 26
+                  case 32: {
+                    value_ = input.readBool();
+                    valueCase_ = 4;
+                    break;
+                  } // case 32
+                  case 42: {
+                    value_ = input.readBytes();
+                    valueCase_ = 5;
+                    break;
+                  } // case 42
+                  case 82: {
+                    input.readMessage(
+                        getListFieldBuilder().getBuilder(),
+                        extensionRegistry);
+                    valueCase_ = 10;
+                    break;
+                  } // case 82
+                  default: {
+                    if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                      done = true; // was an endgroup tag
+                    }
+                    break;
+                  } // default:
+                } // switch (tag)
+              } // while (!done)
             } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-              parsedMessage = (com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Call.Argument) e.getUnfinishedMessage();
               throw e.unwrapIOException();
             } finally {
-              if (parsedMessage != null) {
-                mergeFrom(parsedMessage);
-              }
-            }
+              onChanged();
+            } // finally
             return this;
           }
           private int valueCase_ = 0;
@@ -8743,6 +8334,13 @@ public final class InvokeScriptResultOuterClass {
           }
 
 
+          /**
+           * <code>int64 integer_value = 1;</code>
+           * @return Whether the integerValue field is set.
+           */
+          public boolean hasIntegerValue() {
+            return valueCase_ == 1;
+          }
           /**
            * <code>int64 integer_value = 1;</code>
            * @return The integerValue.
@@ -8777,6 +8375,13 @@ public final class InvokeScriptResultOuterClass {
             return this;
           }
 
+          /**
+           * <code>bytes binary_value = 2;</code>
+           * @return Whether the binaryValue field is set.
+           */
+          public boolean hasBinaryValue() {
+            return valueCase_ == 2;
+          }
           /**
            * <code>bytes binary_value = 2;</code>
            * @return The binaryValue.
@@ -8814,6 +8419,14 @@ public final class InvokeScriptResultOuterClass {
             return this;
           }
 
+          /**
+           * <code>string string_value = 3;</code>
+           * @return Whether the stringValue field is set.
+           */
+          @java.lang.Override
+          public boolean hasStringValue() {
+            return valueCase_ == 3;
+          }
           /**
            * <code>string string_value = 3;</code>
            * @return The stringValue.
@@ -8905,6 +8518,13 @@ public final class InvokeScriptResultOuterClass {
 
           /**
            * <code>bool boolean_value = 4;</code>
+           * @return Whether the booleanValue field is set.
+           */
+          public boolean hasBooleanValue() {
+            return valueCase_ == 4;
+          }
+          /**
+           * <code>bool boolean_value = 4;</code>
            * @return The booleanValue.
            */
           public boolean getBooleanValue() {
@@ -8937,6 +8557,13 @@ public final class InvokeScriptResultOuterClass {
             return this;
           }
 
+          /**
+           * <code>bytes case_obj = 5;</code>
+           * @return Whether the caseObj field is set.
+           */
+          public boolean hasCaseObj() {
+            return valueCase_ == 5;
+          }
           /**
            * <code>bytes case_obj = 5;</code>
            * @return The caseObj.
@@ -9048,8 +8675,9 @@ public final class InvokeScriptResultOuterClass {
             } else {
               if (valueCase_ == 10) {
                 listBuilder_.mergeFrom(value);
+              } else {
+                listBuilder_.setMessage(value);
               }
-              listBuilder_.setMessage(value);
             }
             valueCase_ = 10;
             return this;
@@ -9147,7 +8775,18 @@ public final class InvokeScriptResultOuterClass {
               com.google.protobuf.CodedInputStream input,
               com.google.protobuf.ExtensionRegistryLite extensionRegistry)
               throws com.google.protobuf.InvalidProtocolBufferException {
-            return new Argument(input, extensionRegistry);
+            Builder builder = newBuilder();
+            try {
+              builder.mergeFrom(input, extensionRegistry);
+            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+              throw e.setUnfinishedMessage(builder.buildPartial());
+            } catch (com.google.protobuf.UninitializedMessageException e) {
+              throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+            } catch (java.io.IOException e) {
+              throw new com.google.protobuf.InvalidProtocolBufferException(e)
+                  .setUnfinishedMessage(builder.buildPartial());
+            }
+            return builder.buildPartial();
           }
         };
 
@@ -9209,6 +8848,8 @@ public final class InvokeScriptResultOuterClass {
       private java.util.List<com.google.protobuf.ByteString> argsBytes_;
       /**
        * <code>repeated bytes args_bytes = 2 [deprecated = true];</code>
+       * @deprecated vrp.InvokeScriptResult.Call.args_bytes is deprecated.
+       *     See vrp/invoke_script_result.proto;l=81
        * @return A list containing the argsBytes.
        */
       @java.lang.Override
@@ -9218,6 +8859,8 @@ public final class InvokeScriptResultOuterClass {
       }
       /**
        * <code>repeated bytes args_bytes = 2 [deprecated = true];</code>
+       * @deprecated vrp.InvokeScriptResult.Call.args_bytes is deprecated.
+       *     See vrp/invoke_script_result.proto;l=81
        * @return The count of argsBytes.
        */
       @java.lang.Deprecated public int getArgsBytesCount() {
@@ -9225,6 +8868,8 @@ public final class InvokeScriptResultOuterClass {
       }
       /**
        * <code>repeated bytes args_bytes = 2 [deprecated = true];</code>
+       * @deprecated vrp.InvokeScriptResult.Call.args_bytes is deprecated.
+       *     See vrp/invoke_script_result.proto;l=81
        * @param index The index of the element to return.
        * @return The argsBytes at the given index.
        */
@@ -9286,7 +8931,7 @@ public final class InvokeScriptResultOuterClass {
       @java.lang.Override
       public void writeTo(com.google.protobuf.CodedOutputStream output)
                           throws java.io.IOException {
-        if (!getFunctionBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(function_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 1, function_);
         }
         for (int i = 0; i < argsBytes_.size(); i++) {
@@ -9295,7 +8940,7 @@ public final class InvokeScriptResultOuterClass {
         for (int i = 0; i < args_.size(); i++) {
           output.writeMessage(3, args_.get(i));
         }
-        unknownFields.writeTo(output);
+        getUnknownFields().writeTo(output);
       }
 
       @java.lang.Override
@@ -9304,7 +8949,7 @@ public final class InvokeScriptResultOuterClass {
         if (size != -1) return size;
 
         size = 0;
-        if (!getFunctionBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(function_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, function_);
         }
         {
@@ -9320,7 +8965,7 @@ public final class InvokeScriptResultOuterClass {
           size += com.google.protobuf.CodedOutputStream
             .computeMessageSize(3, args_.get(i));
         }
-        size += unknownFields.getSerializedSize();
+        size += getUnknownFields().getSerializedSize();
         memoizedSize = size;
         return size;
       }
@@ -9341,7 +8986,7 @@ public final class InvokeScriptResultOuterClass {
             .equals(other.getArgsBytesList())) return false;
         if (!getArgsList()
             .equals(other.getArgsList())) return false;
-        if (!unknownFields.equals(other.unknownFields)) return false;
+        if (!getUnknownFields().equals(other.getUnknownFields())) return false;
         return true;
       }
 
@@ -9362,7 +9007,7 @@ public final class InvokeScriptResultOuterClass {
           hash = (37 * hash) + ARGS_FIELD_NUMBER;
           hash = (53 * hash) + getArgsList().hashCode();
         }
-        hash = (29 * hash) + unknownFields.hashCode();
+        hash = (29 * hash) + getUnknownFields().hashCode();
         memoizedHashCode = hash;
         return hash;
       }
@@ -9479,19 +9124,13 @@ public final class InvokeScriptResultOuterClass {
 
         // Construct using com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Call.newBuilder()
         private Builder() {
-          maybeForceBuilderInitialization();
+
         }
 
         private Builder(
             com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
           super(parent);
-          maybeForceBuilderInitialization();
-        }
-        private void maybeForceBuilderInitialization() {
-          if (com.google.protobuf.GeneratedMessageV3
-                  .alwaysUseFieldBuilders) {
-            getArgsFieldBuilder();
-          }
+
         }
         @java.lang.Override
         public Builder clear() {
@@ -9502,10 +9141,11 @@ public final class InvokeScriptResultOuterClass {
           bitField0_ = (bitField0_ & ~0x00000001);
           if (argsBuilder_ == null) {
             args_ = java.util.Collections.emptyList();
-            bitField0_ = (bitField0_ & ~0x00000002);
           } else {
+            args_ = null;
             argsBuilder_.clear();
           }
+          bitField0_ = (bitField0_ & ~0x00000002);
           return this;
         }
 
@@ -9636,7 +9276,7 @@ public final class InvokeScriptResultOuterClass {
               }
             }
           }
-          this.mergeUnknownFields(other.unknownFields);
+          this.mergeUnknownFields(other.getUnknownFields());
           onChanged();
           return this;
         }
@@ -9651,17 +9291,54 @@ public final class InvokeScriptResultOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Call parsedMessage = null;
+          if (extensionRegistry == null) {
+            throw new java.lang.NullPointerException();
+          }
           try {
-            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+            boolean done = false;
+            while (!done) {
+              int tag = input.readTag();
+              switch (tag) {
+                case 0:
+                  done = true;
+                  break;
+                case 10: {
+                  function_ = input.readStringRequireUtf8();
+
+                  break;
+                } // case 10
+                case 18: {
+                  com.google.protobuf.ByteString v = input.readBytes();
+                  ensureArgsBytesIsMutable();
+                  argsBytes_.add(v);
+                  break;
+                } // case 18
+                case 26: {
+                  com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Call.Argument m =
+                      input.readMessage(
+                          com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Call.Argument.parser(),
+                          extensionRegistry);
+                  if (argsBuilder_ == null) {
+                    ensureArgsIsMutable();
+                    args_.add(m);
+                  } else {
+                    argsBuilder_.addMessage(m);
+                  }
+                  break;
+                } // case 26
+                default: {
+                  if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                    done = true; // was an endgroup tag
+                  }
+                  break;
+                } // default:
+              } // switch (tag)
+            } // while (!done)
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Call) e.getUnfinishedMessage();
             throw e.unwrapIOException();
           } finally {
-            if (parsedMessage != null) {
-              mergeFrom(parsedMessage);
-            }
-          }
+            onChanged();
+          } // finally
           return this;
         }
         private int bitField0_;
@@ -9751,6 +9428,8 @@ public final class InvokeScriptResultOuterClass {
         }
         /**
          * <code>repeated bytes args_bytes = 2 [deprecated = true];</code>
+         * @deprecated vrp.InvokeScriptResult.Call.args_bytes is deprecated.
+         *     See vrp/invoke_script_result.proto;l=81
          * @return A list containing the argsBytes.
          */
         @java.lang.Deprecated public java.util.List<com.google.protobuf.ByteString>
@@ -9760,6 +9439,8 @@ public final class InvokeScriptResultOuterClass {
         }
         /**
          * <code>repeated bytes args_bytes = 2 [deprecated = true];</code>
+         * @deprecated vrp.InvokeScriptResult.Call.args_bytes is deprecated.
+         *     See vrp/invoke_script_result.proto;l=81
          * @return The count of argsBytes.
          */
         @java.lang.Deprecated public int getArgsBytesCount() {
@@ -9767,6 +9448,8 @@ public final class InvokeScriptResultOuterClass {
         }
         /**
          * <code>repeated bytes args_bytes = 2 [deprecated = true];</code>
+         * @deprecated vrp.InvokeScriptResult.Call.args_bytes is deprecated.
+         *     See vrp/invoke_script_result.proto;l=81
          * @param index The index of the element to return.
          * @return The argsBytes at the given index.
          */
@@ -9775,6 +9458,8 @@ public final class InvokeScriptResultOuterClass {
         }
         /**
          * <code>repeated bytes args_bytes = 2 [deprecated = true];</code>
+         * @deprecated vrp.InvokeScriptResult.Call.args_bytes is deprecated.
+         *     See vrp/invoke_script_result.proto;l=81
          * @param index The index to set the value at.
          * @param value The argsBytes to set.
          * @return This builder for chaining.
@@ -9791,6 +9476,8 @@ public final class InvokeScriptResultOuterClass {
         }
         /**
          * <code>repeated bytes args_bytes = 2 [deprecated = true];</code>
+         * @deprecated vrp.InvokeScriptResult.Call.args_bytes is deprecated.
+         *     See vrp/invoke_script_result.proto;l=81
          * @param value The argsBytes to add.
          * @return This builder for chaining.
          */
@@ -9805,6 +9492,8 @@ public final class InvokeScriptResultOuterClass {
         }
         /**
          * <code>repeated bytes args_bytes = 2 [deprecated = true];</code>
+         * @deprecated vrp.InvokeScriptResult.Call.args_bytes is deprecated.
+         *     See vrp/invoke_script_result.proto;l=81
          * @param values The argsBytes to add.
          * @return This builder for chaining.
          */
@@ -9818,6 +9507,8 @@ public final class InvokeScriptResultOuterClass {
         }
         /**
          * <code>repeated bytes args_bytes = 2 [deprecated = true];</code>
+         * @deprecated vrp.InvokeScriptResult.Call.args_bytes is deprecated.
+         *     See vrp/invoke_script_result.proto;l=81
          * @return This builder for chaining.
          */
         @java.lang.Deprecated public Builder clearArgsBytes() {
@@ -10099,7 +9790,18 @@ public final class InvokeScriptResultOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-          return new Call(input, extensionRegistry);
+          Builder builder = newBuilder();
+          try {
+            builder.mergeFrom(input, extensionRegistry);
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            throw e.setUnfinishedMessage(builder.buildPartial());
+          } catch (com.google.protobuf.UninitializedMessageException e) {
+            throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+          } catch (java.io.IOException e) {
+            throw new com.google.protobuf.InvalidProtocolBufferException(e)
+                .setUnfinishedMessage(builder.buildPartial());
+          }
+          return builder.buildPartial();
         }
       };
 
@@ -10211,87 +9913,6 @@ public final class InvokeScriptResultOuterClass {
       public final com.google.protobuf.UnknownFieldSet
       getUnknownFields() {
         return this.unknownFields;
-      }
-      private Invocation(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        this();
-        if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
-        }
-        int mutable_bitField0_ = 0;
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
-        try {
-          boolean done = false;
-          while (!done) {
-            int tag = input.readTag();
-            switch (tag) {
-              case 0:
-                done = true;
-                break;
-              case 10: {
-
-                dApp_ = input.readBytes();
-                break;
-              }
-              case 18: {
-                com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Call.Builder subBuilder = null;
-                if (call_ != null) {
-                  subBuilder = call_.toBuilder();
-                }
-                call_ = input.readMessage(com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Call.parser(), extensionRegistry);
-                if (subBuilder != null) {
-                  subBuilder.mergeFrom(call_);
-                  call_ = subBuilder.buildPartial();
-                }
-
-                break;
-              }
-              case 26: {
-                if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                  payments_ = new java.util.ArrayList<com.vrp.protobuf.AmountOuterClass.Amount>();
-                  mutable_bitField0_ |= 0x00000001;
-                }
-                payments_.add(
-                    input.readMessage(com.vrp.protobuf.AmountOuterClass.Amount.parser(), extensionRegistry));
-                break;
-              }
-              case 34: {
-                com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Builder subBuilder = null;
-                if (stateChanges_ != null) {
-                  subBuilder = stateChanges_.toBuilder();
-                }
-                stateChanges_ = input.readMessage(com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.parser(), extensionRegistry);
-                if (subBuilder != null) {
-                  subBuilder.mergeFrom(stateChanges_);
-                  stateChanges_ = subBuilder.buildPartial();
-                }
-
-                break;
-              }
-              default: {
-                if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
-                  done = true;
-                }
-                break;
-              }
-            }
-          }
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.setUnfinishedMessage(this);
-        } catch (java.io.IOException e) {
-          throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
-        } finally {
-          if (((mutable_bitField0_ & 0x00000001) != 0)) {
-            payments_ = java.util.Collections.unmodifiableList(payments_);
-          }
-          this.unknownFields = unknownFields.build();
-          makeExtensionsImmutable();
-        }
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
@@ -10435,7 +10056,7 @@ public final class InvokeScriptResultOuterClass {
         if (stateChanges_ != null) {
           output.writeMessage(4, getStateChanges());
         }
-        unknownFields.writeTo(output);
+        getUnknownFields().writeTo(output);
       }
 
       @java.lang.Override
@@ -10460,7 +10081,7 @@ public final class InvokeScriptResultOuterClass {
           size += com.google.protobuf.CodedOutputStream
             .computeMessageSize(4, getStateChanges());
         }
-        size += unknownFields.getSerializedSize();
+        size += getUnknownFields().getSerializedSize();
         memoizedSize = size;
         return size;
       }
@@ -10489,7 +10110,7 @@ public final class InvokeScriptResultOuterClass {
           if (!getStateChanges()
               .equals(other.getStateChanges())) return false;
         }
-        if (!unknownFields.equals(other.unknownFields)) return false;
+        if (!getUnknownFields().equals(other.getUnknownFields())) return false;
         return true;
       }
 
@@ -10514,7 +10135,7 @@ public final class InvokeScriptResultOuterClass {
           hash = (37 * hash) + STATECHANGES_FIELD_NUMBER;
           hash = (53 * hash) + getStateChanges().hashCode();
         }
-        hash = (29 * hash) + unknownFields.hashCode();
+        hash = (29 * hash) + getUnknownFields().hashCode();
         memoizedHashCode = hash;
         return hash;
       }
@@ -10631,19 +10252,13 @@ public final class InvokeScriptResultOuterClass {
 
         // Construct using com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Invocation.newBuilder()
         private Builder() {
-          maybeForceBuilderInitialization();
+
         }
 
         private Builder(
             com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
           super(parent);
-          maybeForceBuilderInitialization();
-        }
-        private void maybeForceBuilderInitialization() {
-          if (com.google.protobuf.GeneratedMessageV3
-                  .alwaysUseFieldBuilders) {
-            getPaymentsFieldBuilder();
-          }
+
         }
         @java.lang.Override
         public Builder clear() {
@@ -10658,10 +10273,11 @@ public final class InvokeScriptResultOuterClass {
           }
           if (paymentsBuilder_ == null) {
             payments_ = java.util.Collections.emptyList();
-            bitField0_ = (bitField0_ & ~0x00000001);
           } else {
+            payments_ = null;
             paymentsBuilder_.clear();
           }
+          bitField0_ = (bitField0_ & ~0x00000001);
           if (stateChangesBuilder_ == null) {
             stateChanges_ = null;
           } else {
@@ -10798,7 +10414,7 @@ public final class InvokeScriptResultOuterClass {
           if (other.hasStateChanges()) {
             mergeStateChanges(other.getStateChanges());
           }
-          this.mergeUnknownFields(other.unknownFields);
+          this.mergeUnknownFields(other.getUnknownFields());
           onChanged();
           return this;
         }
@@ -10813,17 +10429,62 @@ public final class InvokeScriptResultOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Invocation parsedMessage = null;
+          if (extensionRegistry == null) {
+            throw new java.lang.NullPointerException();
+          }
           try {
-            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+            boolean done = false;
+            while (!done) {
+              int tag = input.readTag();
+              switch (tag) {
+                case 0:
+                  done = true;
+                  break;
+                case 10: {
+                  dApp_ = input.readBytes();
+
+                  break;
+                } // case 10
+                case 18: {
+                  input.readMessage(
+                      getCallFieldBuilder().getBuilder(),
+                      extensionRegistry);
+
+                  break;
+                } // case 18
+                case 26: {
+                  com.vrp.protobuf.AmountOuterClass.Amount m =
+                      input.readMessage(
+                          com.vrp.protobuf.AmountOuterClass.Amount.parser(),
+                          extensionRegistry);
+                  if (paymentsBuilder_ == null) {
+                    ensurePaymentsIsMutable();
+                    payments_.add(m);
+                  } else {
+                    paymentsBuilder_.addMessage(m);
+                  }
+                  break;
+                } // case 26
+                case 34: {
+                  input.readMessage(
+                      getStateChangesFieldBuilder().getBuilder(),
+                      extensionRegistry);
+
+                  break;
+                } // case 34
+                default: {
+                  if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                    done = true; // was an endgroup tag
+                  }
+                  break;
+                } // default:
+              } // switch (tag)
+            } // while (!done)
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Invocation) e.getUnfinishedMessage();
             throw e.unwrapIOException();
           } finally {
-            if (parsedMessage != null) {
-              mergeFrom(parsedMessage);
-            }
-          }
+            onChanged();
+          } // finally
           return this;
         }
         private int bitField0_;
@@ -11372,7 +11033,18 @@ public final class InvokeScriptResultOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-          return new Invocation(input, extensionRegistry);
+          Builder builder = newBuilder();
+          try {
+            builder.mergeFrom(input, extensionRegistry);
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            throw e.setUnfinishedMessage(builder.buildPartial());
+          } catch (com.google.protobuf.UninitializedMessageException e) {
+            throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+          } catch (java.io.IOException e) {
+            throw new com.google.protobuf.InvalidProtocolBufferException(e)
+                .setUnfinishedMessage(builder.buildPartial());
+          }
+          return builder.buildPartial();
         }
       };
 
@@ -11865,7 +11537,7 @@ public final class InvokeScriptResultOuterClass {
       for (int i = 0; i < privatePayment_.size(); i++) {
         output.writeMessage(11, privatePayment_.get(i));
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -11918,7 +11590,7 @@ public final class InvokeScriptResultOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(11, privatePayment_.get(i));
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -11958,7 +11630,7 @@ public final class InvokeScriptResultOuterClass {
           .equals(other.getInvokesList())) return false;
       if (!getPrivatePaymentList()
           .equals(other.getPrivatePaymentList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -12013,7 +11685,7 @@ public final class InvokeScriptResultOuterClass {
         hash = (37 * hash) + PRIVATE_PAYMENT_FIELD_NUMBER;
         hash = (53 * hash) + getPrivatePaymentList().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -12130,62 +11802,52 @@ public final class InvokeScriptResultOuterClass {
 
       // Construct using com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getDataFieldBuilder();
-          getTransfersFieldBuilder();
-          getIssuesFieldBuilder();
-          getReissuesFieldBuilder();
-          getBurnsFieldBuilder();
-          getSponsorFeesFieldBuilder();
-          getLeasesFieldBuilder();
-          getLeaseCancelsFieldBuilder();
-          getInvokesFieldBuilder();
-          getPrivatePaymentFieldBuilder();
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
         if (dataBuilder_ == null) {
           data_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
+          data_ = null;
           dataBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000001);
         if (transfersBuilder_ == null) {
           transfers_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
         } else {
+          transfers_ = null;
           transfersBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000002);
         if (issuesBuilder_ == null) {
           issues_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
         } else {
+          issues_ = null;
           issuesBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000004);
         if (reissuesBuilder_ == null) {
           reissues_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000008);
         } else {
+          reissues_ = null;
           reissuesBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000008);
         if (burnsBuilder_ == null) {
           burns_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000010);
         } else {
+          burns_ = null;
           burnsBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000010);
         if (errorMessageBuilder_ == null) {
           errorMessage_ = null;
         } else {
@@ -12194,34 +11856,39 @@ public final class InvokeScriptResultOuterClass {
         }
         if (sponsorFeesBuilder_ == null) {
           sponsorFees_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000020);
         } else {
+          sponsorFees_ = null;
           sponsorFeesBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000020);
         if (leasesBuilder_ == null) {
           leases_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000040);
         } else {
+          leases_ = null;
           leasesBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000040);
         if (leaseCancelsBuilder_ == null) {
           leaseCancels_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000080);
         } else {
+          leaseCancels_ = null;
           leaseCancelsBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000080);
         if (invokesBuilder_ == null) {
           invokes_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000100);
         } else {
+          invokes_ = null;
           invokesBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000100);
         if (privatePaymentBuilder_ == null) {
           privatePayment_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000200);
         } else {
+          privatePayment_ = null;
           privatePaymentBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000200);
         return this;
       }
 
@@ -12655,7 +12322,7 @@ public final class InvokeScriptResultOuterClass {
             }
           }
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -12670,17 +12337,167 @@ public final class InvokeScriptResultOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 10: {
+                com.vrp.protobuf.transaction.TransactionOuterClass.DataTransactionData.DataEntry m =
+                    input.readMessage(
+                        com.vrp.protobuf.transaction.TransactionOuterClass.DataTransactionData.DataEntry.parser(),
+                        extensionRegistry);
+                if (dataBuilder_ == null) {
+                  ensureDataIsMutable();
+                  data_.add(m);
+                } else {
+                  dataBuilder_.addMessage(m);
+                }
+                break;
+              } // case 10
+              case 18: {
+                com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Payment m =
+                    input.readMessage(
+                        com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Payment.parser(),
+                        extensionRegistry);
+                if (transfersBuilder_ == null) {
+                  ensureTransfersIsMutable();
+                  transfers_.add(m);
+                } else {
+                  transfersBuilder_.addMessage(m);
+                }
+                break;
+              } // case 18
+              case 26: {
+                com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Issue m =
+                    input.readMessage(
+                        com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Issue.parser(),
+                        extensionRegistry);
+                if (issuesBuilder_ == null) {
+                  ensureIssuesIsMutable();
+                  issues_.add(m);
+                } else {
+                  issuesBuilder_.addMessage(m);
+                }
+                break;
+              } // case 26
+              case 34: {
+                com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Reissue m =
+                    input.readMessage(
+                        com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Reissue.parser(),
+                        extensionRegistry);
+                if (reissuesBuilder_ == null) {
+                  ensureReissuesIsMutable();
+                  reissues_.add(m);
+                } else {
+                  reissuesBuilder_.addMessage(m);
+                }
+                break;
+              } // case 34
+              case 42: {
+                com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Burn m =
+                    input.readMessage(
+                        com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Burn.parser(),
+                        extensionRegistry);
+                if (burnsBuilder_ == null) {
+                  ensureBurnsIsMutable();
+                  burns_.add(m);
+                } else {
+                  burnsBuilder_.addMessage(m);
+                }
+                break;
+              } // case 42
+              case 50: {
+                input.readMessage(
+                    getErrorMessageFieldBuilder().getBuilder(),
+                    extensionRegistry);
+
+                break;
+              } // case 50
+              case 58: {
+                com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.SponsorFee m =
+                    input.readMessage(
+                        com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.SponsorFee.parser(),
+                        extensionRegistry);
+                if (sponsorFeesBuilder_ == null) {
+                  ensureSponsorFeesIsMutable();
+                  sponsorFees_.add(m);
+                } else {
+                  sponsorFeesBuilder_.addMessage(m);
+                }
+                break;
+              } // case 58
+              case 66: {
+                com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Lease m =
+                    input.readMessage(
+                        com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Lease.parser(),
+                        extensionRegistry);
+                if (leasesBuilder_ == null) {
+                  ensureLeasesIsMutable();
+                  leases_.add(m);
+                } else {
+                  leasesBuilder_.addMessage(m);
+                }
+                break;
+              } // case 66
+              case 74: {
+                com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.LeaseCancel m =
+                    input.readMessage(
+                        com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.LeaseCancel.parser(),
+                        extensionRegistry);
+                if (leaseCancelsBuilder_ == null) {
+                  ensureLeaseCancelsIsMutable();
+                  leaseCancels_.add(m);
+                } else {
+                  leaseCancelsBuilder_.addMessage(m);
+                }
+                break;
+              } // case 74
+              case 82: {
+                com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Invocation m =
+                    input.readMessage(
+                        com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.Invocation.parser(),
+                        extensionRegistry);
+                if (invokesBuilder_ == null) {
+                  ensureInvokesIsMutable();
+                  invokes_.add(m);
+                } else {
+                  invokesBuilder_.addMessage(m);
+                }
+                break;
+              } // case 82
+              case 90: {
+                com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.PrivatePayment m =
+                    input.readMessage(
+                        com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult.PrivatePayment.parser(),
+                        extensionRegistry);
+                if (privatePaymentBuilder_ == null) {
+                  ensurePrivatePaymentIsMutable();
+                  privatePayment_.add(m);
+                } else {
+                  privatePaymentBuilder_.addMessage(m);
+                }
+                break;
+              } // case 90
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.vrp.protobuf.transaction.InvokeScriptResultOuterClass.InvokeScriptResult) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -15236,7 +15053,18 @@ public final class InvokeScriptResultOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new InvokeScriptResult(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 

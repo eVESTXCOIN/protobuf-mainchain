@@ -39,11 +39,21 @@ class ReissueTransactionData extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.Amount asset_amount = 1;</code>
-     * @return \Vrp\Amount
+     * @return \Vrp\Amount|null
      */
     public function getAssetAmount()
     {
         return $this->asset_amount;
+    }
+
+    public function hasAssetAmount()
+    {
+        return isset($this->asset_amount);
+    }
+
+    public function clearAssetAmount()
+    {
+        unset($this->asset_amount);
     }
 
     /**

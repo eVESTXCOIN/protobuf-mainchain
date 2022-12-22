@@ -4,6 +4,7 @@
 require 'google/protobuf'
 
 require 'vrp/amount_pb'
+
 Google::Protobuf::DescriptorPool.generated_pool.build do
   add_file("vrp/order.proto", :syntax => :proto3) do
     add_message "vrp.AssetPair" do

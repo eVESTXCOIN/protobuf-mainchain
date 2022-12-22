@@ -43,6 +43,11 @@ class Argument extends \Google\Protobuf\Internal\Message
         return $this->readOneof(1);
     }
 
+    public function hasIntegerValue()
+    {
+        return $this->hasOneof(1);
+    }
+
     /**
      * Generated from protobuf field <code>int64 integer_value = 1;</code>
      * @param int|string $var
@@ -63,6 +68,11 @@ class Argument extends \Google\Protobuf\Internal\Message
     public function getBinaryValue()
     {
         return $this->readOneof(2);
+    }
+
+    public function hasBinaryValue()
+    {
+        return $this->hasOneof(2);
     }
 
     /**
@@ -87,6 +97,11 @@ class Argument extends \Google\Protobuf\Internal\Message
         return $this->readOneof(3);
     }
 
+    public function hasStringValue()
+    {
+        return $this->hasOneof(3);
+    }
+
     /**
      * Generated from protobuf field <code>string string_value = 3;</code>
      * @param string $var
@@ -107,6 +122,11 @@ class Argument extends \Google\Protobuf\Internal\Message
     public function getBooleanValue()
     {
         return $this->readOneof(4);
+    }
+
+    public function hasBooleanValue()
+    {
+        return $this->hasOneof(4);
     }
 
     /**
@@ -131,6 +151,11 @@ class Argument extends \Google\Protobuf\Internal\Message
         return $this->readOneof(5);
     }
 
+    public function hasCaseObj()
+    {
+        return $this->hasOneof(5);
+    }
+
     /**
      * Generated from protobuf field <code>bytes case_obj = 5;</code>
      * @param string $var
@@ -146,11 +171,16 @@ class Argument extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.InvokeScriptResult.Call.Argument.List list = 10;</code>
-     * @return \Vrp\InvokeScriptResult\Call\Argument\PBList
+     * @return \Vrp\InvokeScriptResult\Call\Argument\PBList|null
      */
     public function getList()
     {
         return $this->readOneof(10);
+    }
+
+    public function hasList()
+    {
+        return $this->hasOneof(10);
     }
 
     /**
@@ -160,7 +190,7 @@ class Argument extends \Google\Protobuf\Internal\Message
      */
     public function setList($var)
     {
-        GPBUtil::checkMessage($var, \Vrp\InvokeScriptResult_Call_Argument_List::class);
+        GPBUtil::checkMessage($var, \Vrp\InvokeScriptResult\Call\Argument\PBList::class);
         $this->writeOneof(10, $var);
 
         return $this;

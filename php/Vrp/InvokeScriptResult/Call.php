@@ -19,6 +19,7 @@ class Call extends \Google\Protobuf\Internal\Message
     protected $function = '';
     /**
      * Generated from protobuf field <code>repeated bytes args_bytes = 2 [deprecated = true];</code>
+     * @deprecated
      */
     private $args_bytes;
     /**
@@ -33,8 +34,8 @@ class Call extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $function
-     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $args_bytes
-     *     @type \Vrp\InvokeScriptResult\Call\Argument[]|\Google\Protobuf\Internal\RepeatedField $args
+     *     @type array<string>|\Google\Protobuf\Internal\RepeatedField $args_bytes
+     *     @type array<\Vrp\InvokeScriptResult\Call\Argument>|\Google\Protobuf\Internal\RepeatedField $args
      * }
      */
     public function __construct($data = NULL) {
@@ -67,19 +68,23 @@ class Call extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>repeated bytes args_bytes = 2 [deprecated = true];</code>
      * @return \Google\Protobuf\Internal\RepeatedField
+     * @deprecated
      */
     public function getArgsBytes()
     {
+        @trigger_error('args_bytes is deprecated.', E_USER_DEPRECATED);
         return $this->args_bytes;
     }
 
     /**
      * Generated from protobuf field <code>repeated bytes args_bytes = 2 [deprecated = true];</code>
-     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<string>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
+     * @deprecated
      */
     public function setArgsBytes($var)
     {
+        @trigger_error('args_bytes is deprecated.', E_USER_DEPRECATED);
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::BYTES);
         $this->args_bytes = $arr;
 
@@ -97,7 +102,7 @@ class Call extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .vrp.InvokeScriptResult.Call.Argument args = 3;</code>
-     * @param \Vrp\InvokeScriptResult\Call\Argument[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Vrp\InvokeScriptResult\Call\Argument>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setArgs($var)

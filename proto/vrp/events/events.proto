@@ -1,7 +1,7 @@
 syntax = "proto3";
-package vrp.events;
-option java_package = "com.vrp.events.protobuf";
-option go_package = "github.com/eVESTXCOIN/govrp/grpc/generated/vrp/events";
+package evestx.events;
+option java_package = "com.eVESTXCOIN.events.protobuf";
+option go_package = "github.com/eVESTXCOIN/govrp/pkg/grpc/generated/vrp/events";
 
 import "vrp/block.proto";
 import "vrp/amount.proto";
@@ -134,7 +134,6 @@ message StateUpdate {
         bytes id = 1;
         int32 decimals = 2;
         string name = 3;
-        string image = 4;
     }
 }
 

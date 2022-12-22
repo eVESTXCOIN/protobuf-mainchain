@@ -1,8 +1,8 @@
 syntax = "proto3";
-package vrp.node.grpc;
-option java_package = "com.vrp.api.grpc";
-option csharp_namespace = "VRP.Node.Grpc";
-option go_package = "github.com/eVESTXCOIN/govrp/grpc/generated/vrp/node/grpc";
+package evestx.node.grpc;
+option java_package = "com.eVESTXCOIN.api.grpc";
+option csharp_namespace = "EVESTX.Node.Grpc";
+option go_package = "github.com/eVESTXCOIN/govrp/pkg/grpc/generated/vrp/node/grpc";
 
 import "vrp/block.proto";
 import "google/protobuf/empty.proto";

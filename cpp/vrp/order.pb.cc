@@ -14,91 +14,97 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-extern PROTOBUF_INTERNAL_EXPORT_vrp_2famount_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Amount_vrp_2famount_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_vrp_2forder_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_AssetPair_vrp_2forder_2eproto;
+
+PROTOBUF_PRAGMA_INIT_SEG
+
+namespace _pb = ::PROTOBUF_NAMESPACE_ID;
+namespace _pbi = _pb::internal;
+
 namespace vrp {
-class AssetPairDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<AssetPair> _instance;
-} _AssetPair_default_instance_;
-class OrderDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Order> _instance;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr sender_public_key_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr eip712_signature_;
-} _Order_default_instance_;
+PROTOBUF_CONSTEXPR AssetPair::AssetPair(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.amount_asset_id_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.price_asset_id_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_._cached_size_)*/{}} {}
+struct AssetPairDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR AssetPairDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~AssetPairDefaultTypeInternal() {}
+  union {
+    AssetPair _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 AssetPairDefaultTypeInternal _AssetPair_default_instance_;
+PROTOBUF_CONSTEXPR Order::Order(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.proofs_)*/{}
+  , /*decltype(_impl_.matcher_public_key_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.asset_pair_)*/nullptr
+  , /*decltype(_impl_.matcher_fee_)*/nullptr
+  , /*decltype(_impl_.chain_id_)*/int64_t{0}
+  , /*decltype(_impl_.amount_)*/int64_t{0}
+  , /*decltype(_impl_.price_)*/int64_t{0}
+  , /*decltype(_impl_.timestamp_)*/int64_t{0}
+  , /*decltype(_impl_.order_side_)*/0
+  , /*decltype(_impl_.version_)*/0
+  , /*decltype(_impl_.expiration_)*/int64_t{0}
+  , /*decltype(_impl_.price_mode_)*/0
+  , /*decltype(_impl_.sender_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_._oneof_case_)*/{}} {}
+struct OrderDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR OrderDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~OrderDefaultTypeInternal() {}
+  union {
+    Order _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 OrderDefaultTypeInternal _Order_default_instance_;
 }  // namespace vrp
-static void InitDefaultsscc_info_AssetPair_vrp_2forder_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
+static ::_pb::Metadata file_level_metadata_vrp_2forder_2eproto[2];
+static const ::_pb::EnumDescriptor* file_level_enum_descriptors_vrp_2forder_2eproto[2];
+static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_vrp_2forder_2eproto = nullptr;
 
-  {
-    void* ptr = &::vrp::_AssetPair_default_instance_;
-    new (ptr) ::vrp::AssetPair();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::vrp::AssetPair::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_AssetPair_vrp_2forder_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_AssetPair_vrp_2forder_2eproto}, {}};
-
-static void InitDefaultsscc_info_Order_vrp_2forder_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::vrp::_Order_default_instance_;
-    new (ptr) ::vrp::Order();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::vrp::Order::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_Order_vrp_2forder_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_Order_vrp_2forder_2eproto}, {
-      &scc_info_AssetPair_vrp_2forder_2eproto.base,
-      &scc_info_Amount_vrp_2famount_2eproto.base,}};
-
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_vrp_2forder_2eproto[2];
-static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_vrp_2forder_2eproto[2];
-static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_vrp_2forder_2eproto = nullptr;
-
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_vrp_2forder_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_vrp_2forder_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::vrp::AssetPair, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::vrp::AssetPair, amount_asset_id_),
-  PROTOBUF_FIELD_OFFSET(::vrp::AssetPair, price_asset_id_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::vrp::AssetPair, _impl_.amount_asset_id_),
+  PROTOBUF_FIELD_OFFSET(::vrp::AssetPair, _impl_.price_asset_id_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::vrp::Order, _internal_metadata_),
   ~0u,  // no _extensions_
-  PROTOBUF_FIELD_OFFSET(::vrp::Order, _oneof_case_[0]),
+  PROTOBUF_FIELD_OFFSET(::vrp::Order, _impl_._oneof_case_[0]),
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::vrp::Order, chain_id_),
-  PROTOBUF_FIELD_OFFSET(::vrp::Order, matcher_public_key_),
-  PROTOBUF_FIELD_OFFSET(::vrp::Order, asset_pair_),
-  PROTOBUF_FIELD_OFFSET(::vrp::Order, order_side_),
-  PROTOBUF_FIELD_OFFSET(::vrp::Order, amount_),
-  PROTOBUF_FIELD_OFFSET(::vrp::Order, price_),
-  PROTOBUF_FIELD_OFFSET(::vrp::Order, timestamp_),
-  PROTOBUF_FIELD_OFFSET(::vrp::Order, expiration_),
-  PROTOBUF_FIELD_OFFSET(::vrp::Order, matcher_fee_),
-  PROTOBUF_FIELD_OFFSET(::vrp::Order, version_),
-  PROTOBUF_FIELD_OFFSET(::vrp::Order, proofs_),
-  PROTOBUF_FIELD_OFFSET(::vrp::Order, price_mode_),
-  offsetof(::vrp::OrderDefaultTypeInternal, sender_public_key_),
-  offsetof(::vrp::OrderDefaultTypeInternal, eip712_signature_),
-  PROTOBUF_FIELD_OFFSET(::vrp::Order, sender_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::vrp::Order, _impl_.chain_id_),
+  PROTOBUF_FIELD_OFFSET(::vrp::Order, _impl_.matcher_public_key_),
+  PROTOBUF_FIELD_OFFSET(::vrp::Order, _impl_.asset_pair_),
+  PROTOBUF_FIELD_OFFSET(::vrp::Order, _impl_.order_side_),
+  PROTOBUF_FIELD_OFFSET(::vrp::Order, _impl_.amount_),
+  PROTOBUF_FIELD_OFFSET(::vrp::Order, _impl_.price_),
+  PROTOBUF_FIELD_OFFSET(::vrp::Order, _impl_.timestamp_),
+  PROTOBUF_FIELD_OFFSET(::vrp::Order, _impl_.expiration_),
+  PROTOBUF_FIELD_OFFSET(::vrp::Order, _impl_.matcher_fee_),
+  PROTOBUF_FIELD_OFFSET(::vrp::Order, _impl_.version_),
+  PROTOBUF_FIELD_OFFSET(::vrp::Order, _impl_.proofs_),
+  PROTOBUF_FIELD_OFFSET(::vrp::Order, _impl_.price_mode_),
+  ::_pbi::kInvalidFieldOffsetTag,
+  ::_pbi::kInvalidFieldOffsetTag,
+  PROTOBUF_FIELD_OFFSET(::vrp::Order, _impl_.sender_),
 };
-static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::vrp::AssetPair)},
-  { 7, -1, sizeof(::vrp::Order)},
+static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, -1, -1, sizeof(::vrp::AssetPair)},
+  { 8, -1, -1, sizeof(::vrp::Order)},
 };
 
-static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::vrp::_AssetPair_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::vrp::_Order_default_instance_),
+static const ::_pb::Message* const file_default_instances[] = {
+  &::vrp::_AssetPair_default_instance_._instance,
+  &::vrp::_Order_default_instance_._instance,
 };
 
 const char descriptor_table_protodef_vrp_2forder_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -120,23 +126,24 @@ const char descriptor_table_protodef_vrp_2forder_2eproto[] PROTOBUF_SECTION_VARI
   "thub.com/eVESTXCOIN/govrp/pkg/grpc/gener"
   "ated/vrp\252\002\003VRPb\006proto3"
   ;
-static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_vrp_2forder_2eproto_deps[1] = {
+static const ::_pbi::DescriptorTable* const descriptor_table_vrp_2forder_2eproto_deps[1] = {
   &::descriptor_table_vrp_2famount_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_vrp_2forder_2eproto_sccs[2] = {
-  &scc_info_AssetPair_vrp_2forder_2eproto.base,
-  &scc_info_Order_vrp_2forder_2eproto.base,
+static ::_pbi::once_flag descriptor_table_vrp_2forder_2eproto_once;
+const ::_pbi::DescriptorTable descriptor_table_vrp_2forder_2eproto = {
+    false, false, 662, descriptor_table_protodef_vrp_2forder_2eproto,
+    "vrp/order.proto",
+    &descriptor_table_vrp_2forder_2eproto_once, descriptor_table_vrp_2forder_2eproto_deps, 1, 2,
+    schemas, file_default_instances, TableStruct_vrp_2forder_2eproto::offsets,
+    file_level_metadata_vrp_2forder_2eproto, file_level_enum_descriptors_vrp_2forder_2eproto,
+    file_level_service_descriptors_vrp_2forder_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_vrp_2forder_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_vrp_2forder_2eproto = {
-  false, false, descriptor_table_protodef_vrp_2forder_2eproto, "vrp/order.proto", 662,
-  &descriptor_table_vrp_2forder_2eproto_once, descriptor_table_vrp_2forder_2eproto_sccs, descriptor_table_vrp_2forder_2eproto_deps, 2, 1,
-  schemas, file_default_instances, TableStruct_vrp_2forder_2eproto::offsets,
-  file_level_metadata_vrp_2forder_2eproto, 2, file_level_enum_descriptors_vrp_2forder_2eproto, file_level_service_descriptors_vrp_2forder_2eproto,
-};
+PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_vrp_2forder_2eproto_getter() {
+  return &descriptor_table_vrp_2forder_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_vrp_2forder_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_vrp_2forder_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_vrp_2forder_2eproto(&descriptor_table_vrp_2forder_2eproto);
 namespace vrp {
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* Order_Side_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_vrp_2forder_2eproto);
@@ -152,13 +159,13 @@ bool Order_Side_IsValid(int value) {
   }
 }
 
-#if (__cplusplus < 201703) && (!defined(_MSC_VER) || _MSC_VER >= 1900)
+#if (__cplusplus < 201703) && (!defined(_MSC_VER) || (_MSC_VER >= 1900 && _MSC_VER < 1912))
 constexpr Order_Side Order::BUY;
 constexpr Order_Side Order::SELL;
 constexpr Order_Side Order::Side_MIN;
 constexpr Order_Side Order::Side_MAX;
 constexpr int Order::Side_ARRAYSIZE;
-#endif  // (__cplusplus < 201703) && (!defined(_MSC_VER) || _MSC_VER >= 1900)
+#endif  // (__cplusplus < 201703) && (!defined(_MSC_VER) || (_MSC_VER >= 1900 && _MSC_VER < 1912))
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* Order_PriceMode_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_vrp_2forder_2eproto);
   return file_level_enum_descriptors_vrp_2forder_2eproto[1];
@@ -174,155 +181,171 @@ bool Order_PriceMode_IsValid(int value) {
   }
 }
 
-#if (__cplusplus < 201703) && (!defined(_MSC_VER) || _MSC_VER >= 1900)
+#if (__cplusplus < 201703) && (!defined(_MSC_VER) || (_MSC_VER >= 1900 && _MSC_VER < 1912))
 constexpr Order_PriceMode Order::DEFAULT;
 constexpr Order_PriceMode Order::FIXED_DECIMALS;
 constexpr Order_PriceMode Order::ASSET_DECIMALS;
 constexpr Order_PriceMode Order::PriceMode_MIN;
 constexpr Order_PriceMode Order::PriceMode_MAX;
 constexpr int Order::PriceMode_ARRAYSIZE;
-#endif  // (__cplusplus < 201703) && (!defined(_MSC_VER) || _MSC_VER >= 1900)
+#endif  // (__cplusplus < 201703) && (!defined(_MSC_VER) || (_MSC_VER >= 1900 && _MSC_VER < 1912))
 
 // ===================================================================
 
-void AssetPair::InitAsDefaultInstance() {
-}
 class AssetPair::_Internal {
  public:
 };
 
-AssetPair::AssetPair(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+AssetPair::AssetPair(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:vrp.AssetPair)
 }
 AssetPair::AssetPair(const AssetPair& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
+  AssetPair* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.amount_asset_id_){}
+    , decltype(_impl_.price_asset_id_){}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  amount_asset_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.amount_asset_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.amount_asset_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_amount_asset_id().empty()) {
-    amount_asset_id_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_amount_asset_id(),
-      GetArena());
+    _this->_impl_.amount_asset_id_.Set(from._internal_amount_asset_id(), 
+      _this->GetArenaForAllocation());
   }
-  price_asset_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.price_asset_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.price_asset_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_price_asset_id().empty()) {
-    price_asset_id_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_price_asset_id(),
-      GetArena());
+    _this->_impl_.price_asset_id_.Set(from._internal_price_asset_id(), 
+      _this->GetArenaForAllocation());
   }
   // @@protoc_insertion_point(copy_constructor:vrp.AssetPair)
 }
 
-void AssetPair::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_AssetPair_vrp_2forder_2eproto.base);
-  amount_asset_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  price_asset_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+inline void AssetPair::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.amount_asset_id_){}
+    , decltype(_impl_.price_asset_id_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
+  _impl_.amount_asset_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.amount_asset_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.price_asset_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.price_asset_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 AssetPair::~AssetPair() {
   // @@protoc_insertion_point(destructor:vrp.AssetPair)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void AssetPair::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-  amount_asset_id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  price_asset_id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+inline void AssetPair::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.amount_asset_id_.Destroy();
+  _impl_.price_asset_id_.Destroy();
 }
 
-void AssetPair::ArenaDtor(void* object) {
-  AssetPair* _this = reinterpret_cast< AssetPair* >(object);
-  (void)_this;
-}
-void AssetPair::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void AssetPair::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
-const AssetPair& AssetPair::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_AssetPair_vrp_2forder_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void AssetPair::Clear() {
 // @@protoc_insertion_point(message_clear_start:vrp.AssetPair)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  amount_asset_id_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  price_asset_id_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  _impl_.amount_asset_id_.ClearToEmpty();
+  _impl_.price_asset_id_.ClearToEmpty();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* AssetPair::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* AssetPair::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // bytes amount_asset_id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           auto str = _internal_mutable_amount_asset_id();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // bytes price_asset_id = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           auto str = _internal_mutable_price_asset_id();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* AssetPair::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* AssetPair::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:vrp.AssetPair)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // bytes amount_asset_id = 1;
-  if (this->amount_asset_id().size() > 0) {
+  if (!this->_internal_amount_asset_id().empty()) {
     target = stream->WriteBytesMaybeAliased(
         1, this->_internal_amount_asset_id(), target);
   }
 
   // bytes price_asset_id = 2;
-  if (this->price_asset_id().size() > 0) {
+  if (!this->_internal_price_asset_id().empty()) {
     target = stream->WriteBytesMaybeAliased(
         2, this->_internal_price_asset_id(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:vrp.AssetPair)
@@ -333,68 +356,49 @@ size_t AssetPair::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:vrp.AssetPair)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // bytes amount_asset_id = 1;
-  if (this->amount_asset_id().size() > 0) {
+  if (!this->_internal_amount_asset_id().empty()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
         this->_internal_amount_asset_id());
   }
 
   // bytes price_asset_id = 2;
-  if (this->price_asset_id().size() > 0) {
+  if (!this->_internal_price_asset_id().empty()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
         this->_internal_price_asset_id());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void AssetPair::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:vrp.AssetPair)
-  GOOGLE_DCHECK_NE(&from, this);
-  const AssetPair* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<AssetPair>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:vrp.AssetPair)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:vrp.AssetPair)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData AssetPair::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    AssetPair::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*AssetPair::GetClassData() const { return &_class_data_; }
 
-void AssetPair::MergeFrom(const AssetPair& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:vrp.AssetPair)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void AssetPair::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<AssetPair*>(&to_msg);
+  auto& from = static_cast<const AssetPair&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:vrp.AssetPair)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.amount_asset_id().size() > 0) {
-    _internal_set_amount_asset_id(from._internal_amount_asset_id());
+  if (!from._internal_amount_asset_id().empty()) {
+    _this->_internal_set_amount_asset_id(from._internal_amount_asset_id());
   }
-  if (from.price_asset_id().size() > 0) {
-    _internal_set_price_asset_id(from._internal_price_asset_id());
+  if (!from._internal_price_asset_id().empty()) {
+    _this->_internal_set_price_asset_id(from._internal_price_asset_id());
   }
-}
-
-void AssetPair::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:vrp.AssetPair)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void AssetPair::CopyFrom(const AssetPair& from) {
@@ -410,28 +414,27 @@ bool AssetPair::IsInitialized() const {
 
 void AssetPair::InternalSwap(AssetPair* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  amount_asset_id_.Swap(&other->amount_asset_id_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  price_asset_id_.Swap(&other->price_asset_id_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &_impl_.amount_asset_id_, lhs_arena,
+      &other->_impl_.amount_asset_id_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &_impl_.price_asset_id_, lhs_arena,
+      &other->_impl_.price_asset_id_, rhs_arena
+  );
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata AssetPair::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_vrp_2forder_2eproto_getter, &descriptor_table_vrp_2forder_2eproto_once,
+      file_level_metadata_vrp_2forder_2eproto[0]);
 }
-
 
 // ===================================================================
 
-void Order::InitAsDefaultInstance() {
-  ::vrp::_Order_default_instance_._instance.get_mutable()->asset_pair_ = const_cast< ::vrp::AssetPair*>(
-      ::vrp::AssetPair::internal_default_instance());
-  ::vrp::_Order_default_instance_._instance.get_mutable()->matcher_fee_ = const_cast< ::vrp::Amount*>(
-      ::vrp::Amount::internal_default_instance());
-  ::vrp::_Order_default_instance_.sender_public_key_.UnsafeSetDefault(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::vrp::_Order_default_instance_.eip712_signature_.UnsafeSetDefault(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
 class Order::_Internal {
  public:
   static const ::vrp::AssetPair& asset_pair(const Order* msg);
@@ -440,55 +443,70 @@ class Order::_Internal {
 
 const ::vrp::AssetPair&
 Order::_Internal::asset_pair(const Order* msg) {
-  return *msg->asset_pair_;
+  return *msg->_impl_.asset_pair_;
 }
 const ::vrp::Amount&
 Order::_Internal::matcher_fee(const Order* msg) {
-  return *msg->matcher_fee_;
+  return *msg->_impl_.matcher_fee_;
 }
 void Order::clear_matcher_fee() {
-  if (GetArena() == nullptr && matcher_fee_ != nullptr) {
-    delete matcher_fee_;
+  if (GetArenaForAllocation() == nullptr && _impl_.matcher_fee_ != nullptr) {
+    delete _impl_.matcher_fee_;
   }
-  matcher_fee_ = nullptr;
+  _impl_.matcher_fee_ = nullptr;
 }
-Order::Order(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  proofs_(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+Order::Order(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:vrp.Order)
 }
 Order::Order(const Order& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      proofs_(from.proofs_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Order* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.proofs_){from._impl_.proofs_}
+    , decltype(_impl_.matcher_public_key_){}
+    , decltype(_impl_.asset_pair_){nullptr}
+    , decltype(_impl_.matcher_fee_){nullptr}
+    , decltype(_impl_.chain_id_){}
+    , decltype(_impl_.amount_){}
+    , decltype(_impl_.price_){}
+    , decltype(_impl_.timestamp_){}
+    , decltype(_impl_.order_side_){}
+    , decltype(_impl_.version_){}
+    , decltype(_impl_.expiration_){}
+    , decltype(_impl_.price_mode_){}
+    , decltype(_impl_.sender_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , /*decltype(_impl_._oneof_case_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  matcher_public_key_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.matcher_public_key_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.matcher_public_key_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_matcher_public_key().empty()) {
-    matcher_public_key_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_matcher_public_key(),
-      GetArena());
+    _this->_impl_.matcher_public_key_.Set(from._internal_matcher_public_key(), 
+      _this->GetArenaForAllocation());
   }
   if (from._internal_has_asset_pair()) {
-    asset_pair_ = new ::vrp::AssetPair(*from.asset_pair_);
-  } else {
-    asset_pair_ = nullptr;
+    _this->_impl_.asset_pair_ = new ::vrp::AssetPair(*from._impl_.asset_pair_);
   }
   if (from._internal_has_matcher_fee()) {
-    matcher_fee_ = new ::vrp::Amount(*from.matcher_fee_);
-  } else {
-    matcher_fee_ = nullptr;
+    _this->_impl_.matcher_fee_ = new ::vrp::Amount(*from._impl_.matcher_fee_);
   }
-  ::memcpy(&chain_id_, &from.chain_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&price_mode_) -
-    reinterpret_cast<char*>(&chain_id_)) + sizeof(price_mode_));
+  ::memcpy(&_impl_.chain_id_, &from._impl_.chain_id_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.price_mode_) -
+    reinterpret_cast<char*>(&_impl_.chain_id_)) + sizeof(_impl_.price_mode_));
   clear_has_sender();
   switch (from.sender_case()) {
     case kSenderPublicKey: {
-      _internal_set_sender_public_key(from._internal_sender_public_key());
+      _this->_internal_set_sender_public_key(from._internal_sender_public_key());
       break;
     }
     case kEip712Signature: {
-      _internal_set_eip712_signature(from._internal_eip712_signature());
+      _this->_internal_set_eip712_signature(from._internal_eip712_signature());
       break;
     }
     case SENDER_NOT_SET: {
@@ -498,237 +516,262 @@ Order::Order(const Order& from)
   // @@protoc_insertion_point(copy_constructor:vrp.Order)
 }
 
-void Order::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Order_vrp_2forder_2eproto.base);
-  matcher_public_key_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::memset(&asset_pair_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&price_mode_) -
-      reinterpret_cast<char*>(&asset_pair_)) + sizeof(price_mode_));
+inline void Order::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.proofs_){arena}
+    , decltype(_impl_.matcher_public_key_){}
+    , decltype(_impl_.asset_pair_){nullptr}
+    , decltype(_impl_.matcher_fee_){nullptr}
+    , decltype(_impl_.chain_id_){int64_t{0}}
+    , decltype(_impl_.amount_){int64_t{0}}
+    , decltype(_impl_.price_){int64_t{0}}
+    , decltype(_impl_.timestamp_){int64_t{0}}
+    , decltype(_impl_.order_side_){0}
+    , decltype(_impl_.version_){0}
+    , decltype(_impl_.expiration_){int64_t{0}}
+    , decltype(_impl_.price_mode_){0}
+    , decltype(_impl_.sender_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , /*decltype(_impl_._oneof_case_)*/{}
+  };
+  _impl_.matcher_public_key_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.matcher_public_key_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   clear_has_sender();
 }
 
 Order::~Order() {
   // @@protoc_insertion_point(destructor:vrp.Order)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void Order::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-  matcher_public_key_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) delete asset_pair_;
-  if (this != internal_default_instance()) delete matcher_fee_;
+inline void Order::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.proofs_.~RepeatedPtrField();
+  _impl_.matcher_public_key_.Destroy();
+  if (this != internal_default_instance()) delete _impl_.asset_pair_;
+  if (this != internal_default_instance()) delete _impl_.matcher_fee_;
   if (has_sender()) {
     clear_sender();
   }
 }
 
-void Order::ArenaDtor(void* object) {
-  Order* _this = reinterpret_cast< Order* >(object);
-  (void)_this;
-}
-void Order::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Order::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
-const Order& Order::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Order_vrp_2forder_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void Order::clear_sender() {
 // @@protoc_insertion_point(one_of_clear_start:vrp.Order)
   switch (sender_case()) {
     case kSenderPublicKey: {
-      sender_.sender_public_key_.Destroy(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+      _impl_.sender_.sender_public_key_.Destroy();
       break;
     }
     case kEip712Signature: {
-      sender_.eip712_signature_.Destroy(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+      _impl_.sender_.eip712_signature_.Destroy();
       break;
     }
     case SENDER_NOT_SET: {
       break;
     }
   }
-  _oneof_case_[0] = SENDER_NOT_SET;
+  _impl_._oneof_case_[0] = SENDER_NOT_SET;
 }
 
 
 void Order::Clear() {
 // @@protoc_insertion_point(message_clear_start:vrp.Order)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  proofs_.Clear();
-  matcher_public_key_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  if (GetArena() == nullptr && asset_pair_ != nullptr) {
-    delete asset_pair_;
+  _impl_.proofs_.Clear();
+  _impl_.matcher_public_key_.ClearToEmpty();
+  if (GetArenaForAllocation() == nullptr && _impl_.asset_pair_ != nullptr) {
+    delete _impl_.asset_pair_;
   }
-  asset_pair_ = nullptr;
-  if (GetArena() == nullptr && matcher_fee_ != nullptr) {
-    delete matcher_fee_;
+  _impl_.asset_pair_ = nullptr;
+  if (GetArenaForAllocation() == nullptr && _impl_.matcher_fee_ != nullptr) {
+    delete _impl_.matcher_fee_;
   }
-  matcher_fee_ = nullptr;
-  ::memset(&chain_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&price_mode_) -
-      reinterpret_cast<char*>(&chain_id_)) + sizeof(price_mode_));
+  _impl_.matcher_fee_ = nullptr;
+  ::memset(&_impl_.chain_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&_impl_.price_mode_) -
+      reinterpret_cast<char*>(&_impl_.chain_id_)) + sizeof(_impl_.price_mode_));
   clear_sender();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Order::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Order::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // int64 chain_id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          chain_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          _impl_.chain_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // bytes sender_public_key = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           auto str = _internal_mutable_sender_public_key();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // bytes matcher_public_key = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           auto str = _internal_mutable_matcher_public_key();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .vrp.AssetPair asset_pair = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_asset_pair(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .vrp.Order.Side order_side = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 40)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
           _internal_set_order_side(static_cast<::vrp::Order_Side>(val));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // int64 amount = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
-          amount_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 48)) {
+          _impl_.amount_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // int64 price = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
-          price_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 56)) {
+          _impl_.price_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // int64 timestamp = 8;
       case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
-          timestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 64)) {
+          _impl_.timestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // int64 expiration = 9;
       case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
-          expiration_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 72)) {
+          _impl_.expiration_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .vrp.Amount matcher_fee = 10;
       case 10:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 82)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 82)) {
           ptr = ctx->ParseMessage(_internal_mutable_matcher_fee(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // int32 version = 11;
       case 11:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 88)) {
-          version_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 88)) {
+          _impl_.version_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated bytes proofs = 12;
       case 12:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 98)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 98)) {
           ptr -= 1;
           do {
             ptr += 1;
             auto str = _internal_add_proofs();
-            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+            ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<98>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // bytes eip712_signature = 13;
       case 13:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 106)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 106)) {
           auto str = _internal_mutable_eip712_signature();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .vrp.Order.PriceMode price_mode = 14;
       case 14:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 112)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 112)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
           _internal_set_price_mode(static_cast<::vrp::Order_PriceMode>(val));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Order::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Order::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:vrp.Order)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int64 chain_id = 1;
-  if (this->chain_id() != 0) {
+  if (this->_internal_chain_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_chain_id(), target);
+    target = ::_pbi::WireFormatLite::WriteInt64ToArray(1, this->_internal_chain_id(), target);
   }
 
   // bytes sender_public_key = 2;
@@ -738,62 +781,60 @@ failure:
   }
 
   // bytes matcher_public_key = 3;
-  if (this->matcher_public_key().size() > 0) {
+  if (!this->_internal_matcher_public_key().empty()) {
     target = stream->WriteBytesMaybeAliased(
         3, this->_internal_matcher_public_key(), target);
   }
 
   // .vrp.AssetPair asset_pair = 4;
-  if (this->has_asset_pair()) {
-    target = stream->EnsureSpace(target);
+  if (this->_internal_has_asset_pair()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        4, _Internal::asset_pair(this), target, stream);
+      InternalWriteMessage(4, _Internal::asset_pair(this),
+        _Internal::asset_pair(this).GetCachedSize(), target, stream);
   }
 
   // .vrp.Order.Side order_side = 5;
-  if (this->order_side() != 0) {
+  if (this->_internal_order_side() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
       5, this->_internal_order_side(), target);
   }
 
   // int64 amount = 6;
-  if (this->amount() != 0) {
+  if (this->_internal_amount() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(6, this->_internal_amount(), target);
+    target = ::_pbi::WireFormatLite::WriteInt64ToArray(6, this->_internal_amount(), target);
   }
 
   // int64 price = 7;
-  if (this->price() != 0) {
+  if (this->_internal_price() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(7, this->_internal_price(), target);
+    target = ::_pbi::WireFormatLite::WriteInt64ToArray(7, this->_internal_price(), target);
   }
 
   // int64 timestamp = 8;
-  if (this->timestamp() != 0) {
+  if (this->_internal_timestamp() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(8, this->_internal_timestamp(), target);
+    target = ::_pbi::WireFormatLite::WriteInt64ToArray(8, this->_internal_timestamp(), target);
   }
 
   // int64 expiration = 9;
-  if (this->expiration() != 0) {
+  if (this->_internal_expiration() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(9, this->_internal_expiration(), target);
+    target = ::_pbi::WireFormatLite::WriteInt64ToArray(9, this->_internal_expiration(), target);
   }
 
   // .vrp.Amount matcher_fee = 10;
-  if (this->has_matcher_fee()) {
-    target = stream->EnsureSpace(target);
+  if (this->_internal_has_matcher_fee()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        10, _Internal::matcher_fee(this), target, stream);
+      InternalWriteMessage(10, _Internal::matcher_fee(this),
+        _Internal::matcher_fee(this).GetCachedSize(), target, stream);
   }
 
   // int32 version = 11;
-  if (this->version() != 0) {
+  if (this->_internal_version() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(11, this->_internal_version(), target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(11, this->_internal_version(), target);
   }
 
   // repeated bytes proofs = 12;
@@ -809,14 +850,14 @@ failure:
   }
 
   // .vrp.Order.PriceMode price_mode = 14;
-  if (this->price_mode() != 0) {
+  if (this->_internal_price_mode() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
       14, this->_internal_price_mode(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:vrp.Order)
@@ -827,91 +868,79 @@ size_t Order::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:vrp.Order)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated bytes proofs = 12;
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(proofs_.size());
-  for (int i = 0, n = proofs_.size(); i < n; i++) {
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(_impl_.proofs_.size());
+  for (int i = 0, n = _impl_.proofs_.size(); i < n; i++) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
-      proofs_.Get(i));
+      _impl_.proofs_.Get(i));
   }
 
   // bytes matcher_public_key = 3;
-  if (this->matcher_public_key().size() > 0) {
+  if (!this->_internal_matcher_public_key().empty()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
         this->_internal_matcher_public_key());
   }
 
   // .vrp.AssetPair asset_pair = 4;
-  if (this->has_asset_pair()) {
+  if (this->_internal_has_asset_pair()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *asset_pair_);
+        *_impl_.asset_pair_);
   }
 
   // .vrp.Amount matcher_fee = 10;
-  if (this->has_matcher_fee()) {
+  if (this->_internal_has_matcher_fee()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *matcher_fee_);
+        *_impl_.matcher_fee_);
   }
 
   // int64 chain_id = 1;
-  if (this->chain_id() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_chain_id());
+  if (this->_internal_chain_id() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int64SizePlusOne(this->_internal_chain_id());
   }
 
   // int64 amount = 6;
-  if (this->amount() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_amount());
+  if (this->_internal_amount() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int64SizePlusOne(this->_internal_amount());
   }
 
   // int64 price = 7;
-  if (this->price() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_price());
+  if (this->_internal_price() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int64SizePlusOne(this->_internal_price());
   }
 
   // int64 timestamp = 8;
-  if (this->timestamp() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_timestamp());
+  if (this->_internal_timestamp() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int64SizePlusOne(this->_internal_timestamp());
   }
 
   // .vrp.Order.Side order_side = 5;
-  if (this->order_side() != 0) {
+  if (this->_internal_order_side() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_order_side());
+      ::_pbi::WireFormatLite::EnumSize(this->_internal_order_side());
   }
 
   // int32 version = 11;
-  if (this->version() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_version());
+  if (this->_internal_version() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_version());
   }
 
   // int64 expiration = 9;
-  if (this->expiration() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_expiration());
+  if (this->_internal_expiration() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int64SizePlusOne(this->_internal_expiration());
   }
 
   // .vrp.Order.PriceMode price_mode = 14;
-  if (this->price_mode() != 0) {
+  if (this->_internal_price_mode() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_price_mode());
+      ::_pbi::WireFormatLite::EnumSize(this->_internal_price_mode());
   }
 
   switch (sender_case()) {
@@ -933,91 +962,74 @@ size_t Order::ByteSizeLong() const {
       break;
     }
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void Order::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:vrp.Order)
-  GOOGLE_DCHECK_NE(&from, this);
-  const Order* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Order>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:vrp.Order)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:vrp.Order)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Order::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    Order::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Order::GetClassData() const { return &_class_data_; }
 
-void Order::MergeFrom(const Order& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:vrp.Order)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void Order::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Order*>(&to_msg);
+  auto& from = static_cast<const Order&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:vrp.Order)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  proofs_.MergeFrom(from.proofs_);
-  if (from.matcher_public_key().size() > 0) {
-    _internal_set_matcher_public_key(from._internal_matcher_public_key());
+  _this->_impl_.proofs_.MergeFrom(from._impl_.proofs_);
+  if (!from._internal_matcher_public_key().empty()) {
+    _this->_internal_set_matcher_public_key(from._internal_matcher_public_key());
   }
-  if (from.has_asset_pair()) {
-    _internal_mutable_asset_pair()->::vrp::AssetPair::MergeFrom(from._internal_asset_pair());
+  if (from._internal_has_asset_pair()) {
+    _this->_internal_mutable_asset_pair()->::vrp::AssetPair::MergeFrom(
+        from._internal_asset_pair());
   }
-  if (from.has_matcher_fee()) {
-    _internal_mutable_matcher_fee()->::vrp::Amount::MergeFrom(from._internal_matcher_fee());
+  if (from._internal_has_matcher_fee()) {
+    _this->_internal_mutable_matcher_fee()->::vrp::Amount::MergeFrom(
+        from._internal_matcher_fee());
   }
-  if (from.chain_id() != 0) {
-    _internal_set_chain_id(from._internal_chain_id());
+  if (from._internal_chain_id() != 0) {
+    _this->_internal_set_chain_id(from._internal_chain_id());
   }
-  if (from.amount() != 0) {
-    _internal_set_amount(from._internal_amount());
+  if (from._internal_amount() != 0) {
+    _this->_internal_set_amount(from._internal_amount());
   }
-  if (from.price() != 0) {
-    _internal_set_price(from._internal_price());
+  if (from._internal_price() != 0) {
+    _this->_internal_set_price(from._internal_price());
   }
-  if (from.timestamp() != 0) {
-    _internal_set_timestamp(from._internal_timestamp());
+  if (from._internal_timestamp() != 0) {
+    _this->_internal_set_timestamp(from._internal_timestamp());
   }
-  if (from.order_side() != 0) {
-    _internal_set_order_side(from._internal_order_side());
+  if (from._internal_order_side() != 0) {
+    _this->_internal_set_order_side(from._internal_order_side());
   }
-  if (from.version() != 0) {
-    _internal_set_version(from._internal_version());
+  if (from._internal_version() != 0) {
+    _this->_internal_set_version(from._internal_version());
   }
-  if (from.expiration() != 0) {
-    _internal_set_expiration(from._internal_expiration());
+  if (from._internal_expiration() != 0) {
+    _this->_internal_set_expiration(from._internal_expiration());
   }
-  if (from.price_mode() != 0) {
-    _internal_set_price_mode(from._internal_price_mode());
+  if (from._internal_price_mode() != 0) {
+    _this->_internal_set_price_mode(from._internal_price_mode());
   }
   switch (from.sender_case()) {
     case kSenderPublicKey: {
-      _internal_set_sender_public_key(from._internal_sender_public_key());
+      _this->_internal_set_sender_public_key(from._internal_sender_public_key());
       break;
     }
     case kEip712Signature: {
-      _internal_set_eip712_signature(from._internal_eip712_signature());
+      _this->_internal_set_eip712_signature(from._internal_eip712_signature());
       break;
     }
     case SENDER_NOT_SET: {
       break;
     }
   }
-}
-
-void Order::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:vrp.Order)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Order::CopyFrom(const Order& from) {
@@ -1033,31 +1045,39 @@ bool Order::IsInitialized() const {
 
 void Order::InternalSwap(Order* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  proofs_.InternalSwap(&other->proofs_);
-  matcher_public_key_.Swap(&other->matcher_public_key_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _impl_.proofs_.InternalSwap(&other->_impl_.proofs_);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &_impl_.matcher_public_key_, lhs_arena,
+      &other->_impl_.matcher_public_key_, rhs_arena
+  );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Order, price_mode_)
-      + sizeof(Order::price_mode_)
-      - PROTOBUF_FIELD_OFFSET(Order, asset_pair_)>(
-          reinterpret_cast<char*>(&asset_pair_),
-          reinterpret_cast<char*>(&other->asset_pair_));
-  swap(sender_, other->sender_);
-  swap(_oneof_case_[0], other->_oneof_case_[0]);
+      PROTOBUF_FIELD_OFFSET(Order, _impl_.price_mode_)
+      + sizeof(Order::_impl_.price_mode_)
+      - PROTOBUF_FIELD_OFFSET(Order, _impl_.asset_pair_)>(
+          reinterpret_cast<char*>(&_impl_.asset_pair_),
+          reinterpret_cast<char*>(&other->_impl_.asset_pair_));
+  swap(_impl_.sender_, other->_impl_.sender_);
+  swap(_impl_._oneof_case_[0], other->_impl_._oneof_case_[0]);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Order::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_vrp_2forder_2eproto_getter, &descriptor_table_vrp_2forder_2eproto_once,
+      file_level_metadata_vrp_2forder_2eproto[1]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace vrp
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::vrp::AssetPair* Arena::CreateMaybeMessage< ::vrp::AssetPair >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::vrp::AssetPair*
+Arena::CreateMaybeMessage< ::vrp::AssetPair >(Arena* arena) {
   return Arena::CreateMessageInternal< ::vrp::AssetPair >(arena);
 }
-template<> PROTOBUF_NOINLINE ::vrp::Order* Arena::CreateMaybeMessage< ::vrp::Order >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::vrp::Order*
+Arena::CreateMaybeMessage< ::vrp::Order >(Arena* arena) {
   return Arena::CreateMessageInternal< ::vrp::Order >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

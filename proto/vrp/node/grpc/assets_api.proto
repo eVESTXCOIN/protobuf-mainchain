@@ -1,8 +1,8 @@
 syntax = "proto3";
-package vrp.node.grpc;
-option java_package = "com.vrp.api.grpc";
-option csharp_namespace = "VRP.Node.Grpc";
-option go_package = "github.com/eVESTXCOIN/govrp/grpc/generated/vrp/node/grpc";
+package evestx.node.grpc;
+option java_package = "com.eVESTXCOIN.api.grpc";
+option csharp_namespace = "EVESTX.Node.Grpc";
+option go_package = "github.com/eVESTXCOIN/govrp/pkg/grpc/generated/vrp/node/grpc";
 
 import "vrp/transaction.proto";
 import "vrp/node/grpc/accounts_api.proto";
@@ -31,12 +31,13 @@ message AssetInfoResponse {
     bytes issuer = 1;
     string name = 2;
     string description = 3;
-    int32 decimals = 4;
-    bool reissuable = 5;
-    int64 total_volume = 6;
-    ScriptData script = 7;
-    int64 sponsorship = 8;
-    SignedTransaction issue_transaction = 11;
-    int64 sponsor_balance = 10;
-    string image = 12;
+    string image = 4;
+    int32 decimals = 5;
+    bool reissuable = 6;
+    int64 total_volume = 7;
+    ScriptData script = 8;
+    int64 sponsorship = 9;
+    SignedTransaction issue_transaction = 12;
+    int64 sponsor_balance = 11;
+    string image = 13;
 }

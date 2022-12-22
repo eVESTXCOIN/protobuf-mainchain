@@ -1,8 +1,8 @@
 syntax = "proto3";
-package vrp;
-option java_package = "com.vrp.protobuf.transaction";
-option csharp_namespace = "VRP";
-option go_package = "github.com/eVESTXCOIN/govrp/grpc/generated/vrp";
+package evestx;
+option java_package = "com.eVESTXCOIN.protobuf.transaction";
+option csharp_namespace = "EVESTX";
+option go_package = "github.com/eVESTXCOIN/govrp/pkg/grpc/generated/vrp";
 
 import "vrp/transaction.proto";
 import "vrp/amount.proto";
@@ -10,11 +10,6 @@ import "vrp/recipient.proto";
 
 message InvokeScriptResult {
     message Payment {
-        bytes address = 1;
-        Amount amount = 2;
-    }
-
-    message PrivatePayment {
         bytes address = 1;
         Amount amount = 2;
     }
@@ -100,5 +95,4 @@ message InvokeScriptResult {
     repeated Lease leases = 8;
     repeated LeaseCancel lease_cancels = 9;
     repeated Invocation invokes = 10;
-    repeated PrivatePayment private_payment = 11;
 }

@@ -42,6 +42,11 @@ class Recipient extends \Google\Protobuf\Internal\Message
         return $this->readOneof(1);
     }
 
+    public function hasPublicKeyHash()
+    {
+        return $this->hasOneof(1);
+    }
+
     /**
      * First 20 bytes of the result of the Keccak256(Blake2b256(publicKey)) hashing function.
      *
@@ -64,6 +69,11 @@ class Recipient extends \Google\Protobuf\Internal\Message
     public function getAlias()
     {
         return $this->readOneof(2);
+    }
+
+    public function hasAlias()
+    {
+        return $this->hasOneof(2);
     }
 
     /**

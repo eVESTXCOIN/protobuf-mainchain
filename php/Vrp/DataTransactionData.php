@@ -24,7 +24,7 @@ class DataTransactionData extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type \Vrp\DataTransactionData\DataEntry[]|\Google\Protobuf\Internal\RepeatedField $data
+     *     @type array<\Vrp\DataTransactionData\DataEntry>|\Google\Protobuf\Internal\RepeatedField $data
      * }
      */
     public function __construct($data = NULL) {
@@ -43,7 +43,7 @@ class DataTransactionData extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .vrp.DataTransactionData.DataEntry data = 1;</code>
-     * @param \Vrp\DataTransactionData\DataEntry[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Vrp\DataTransactionData\DataEntry>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setData($var)

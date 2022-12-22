@@ -68,6 +68,11 @@ class DataEntry extends \Google\Protobuf\Internal\Message
         return $this->readOneof(10);
     }
 
+    public function hasIntValue()
+    {
+        return $this->hasOneof(10);
+    }
+
     /**
      * Generated from protobuf field <code>int64 int_value = 10;</code>
      * @param int|string $var
@@ -88,6 +93,11 @@ class DataEntry extends \Google\Protobuf\Internal\Message
     public function getBoolValue()
     {
         return $this->readOneof(11);
+    }
+
+    public function hasBoolValue()
+    {
+        return $this->hasOneof(11);
     }
 
     /**
@@ -112,6 +122,11 @@ class DataEntry extends \Google\Protobuf\Internal\Message
         return $this->readOneof(12);
     }
 
+    public function hasBinaryValue()
+    {
+        return $this->hasOneof(12);
+    }
+
     /**
      * Generated from protobuf field <code>bytes binary_value = 12;</code>
      * @param string $var
@@ -132,6 +147,11 @@ class DataEntry extends \Google\Protobuf\Internal\Message
     public function getStringValue()
     {
         return $this->readOneof(13);
+    }
+
+    public function hasStringValue()
+    {
+        return $this->hasOneof(13);
     }
 
     /**

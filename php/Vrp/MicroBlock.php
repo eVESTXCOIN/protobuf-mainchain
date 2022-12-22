@@ -44,7 +44,7 @@ class MicroBlock extends \Google\Protobuf\Internal\Message
      *     @type string $reference
      *     @type string $updated_block_signature
      *     @type string $sender_public_key
-     *     @type \Vrp\SignedTransaction[]|\Google\Protobuf\Internal\RepeatedField $transactions
+     *     @type array<\Vrp\SignedTransaction>|\Google\Protobuf\Internal\RepeatedField $transactions
      * }
      */
     public function __construct($data = NULL) {
@@ -151,7 +151,7 @@ class MicroBlock extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .vrp.SignedTransaction transactions = 5;</code>
-     * @param \Vrp\SignedTransaction[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Vrp\SignedTransaction>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setTransactions($var)

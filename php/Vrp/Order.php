@@ -79,7 +79,7 @@ class Order extends \Google\Protobuf\Internal\Message
      *     @type int|string $expiration
      *     @type \Vrp\Amount $matcher_fee
      *     @type int $version
-     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $proofs
+     *     @type array<string>|\Google\Protobuf\Internal\RepeatedField $proofs
      *     @type int $price_mode
      *     @type string $sender_public_key
      *     @type string $eip712_signature
@@ -136,11 +136,21 @@ class Order extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.AssetPair asset_pair = 4;</code>
-     * @return \Vrp\AssetPair
+     * @return \Vrp\AssetPair|null
      */
     public function getAssetPair()
     {
         return $this->asset_pair;
+    }
+
+    public function hasAssetPair()
+    {
+        return isset($this->asset_pair);
+    }
+
+    public function clearAssetPair()
+    {
+        unset($this->asset_pair);
     }
 
     /**
@@ -172,7 +182,7 @@ class Order extends \Google\Protobuf\Internal\Message
      */
     public function setOrderSide($var)
     {
-        GPBUtil::checkEnum($var, \Vrp\Order_Side::class);
+        GPBUtil::checkEnum($var, \Vrp\Order\Side::class);
         $this->order_side = $var;
 
         return $this;
@@ -268,11 +278,21 @@ class Order extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.Amount matcher_fee = 10;</code>
-     * @return \Vrp\Amount
+     * @return \Vrp\Amount|null
      */
     public function getMatcherFee()
     {
         return $this->matcher_fee;
+    }
+
+    public function hasMatcherFee()
+    {
+        return isset($this->matcher_fee);
+    }
+
+    public function clearMatcherFee()
+    {
+        unset($this->matcher_fee);
     }
 
     /**
@@ -321,7 +341,7 @@ class Order extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated bytes proofs = 12;</code>
-     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<string>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setProofs($var)
@@ -348,7 +368,7 @@ class Order extends \Google\Protobuf\Internal\Message
      */
     public function setPriceMode($var)
     {
-        GPBUtil::checkEnum($var, \Vrp\Order_PriceMode::class);
+        GPBUtil::checkEnum($var, \Vrp\Order\PriceMode::class);
         $this->price_mode = $var;
 
         return $this;
@@ -361,6 +381,11 @@ class Order extends \Google\Protobuf\Internal\Message
     public function getSenderPublicKey()
     {
         return $this->readOneof(2);
+    }
+
+    public function hasSenderPublicKey()
+    {
+        return $this->hasOneof(2);
     }
 
     /**
@@ -383,6 +408,11 @@ class Order extends \Google\Protobuf\Internal\Message
     public function getEip712Signature()
     {
         return $this->readOneof(13);
+    }
+
+    public function hasEip712Signature()
+    {
+        return $this->hasOneof(13);
     }
 
     /**

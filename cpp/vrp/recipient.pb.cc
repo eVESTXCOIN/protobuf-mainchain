@@ -14,48 +14,49 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
+
+PROTOBUF_PRAGMA_INIT_SEG
+
+namespace _pb = ::PROTOBUF_NAMESPACE_ID;
+namespace _pbi = _pb::internal;
+
 namespace vrp {
-class RecipientDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Recipient> _instance;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr public_key_hash_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr alias_;
-} _Recipient_default_instance_;
+PROTOBUF_CONSTEXPR Recipient::Recipient(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.recipient_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_._oneof_case_)*/{}} {}
+struct RecipientDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR RecipientDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~RecipientDefaultTypeInternal() {}
+  union {
+    Recipient _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 RecipientDefaultTypeInternal _Recipient_default_instance_;
 }  // namespace vrp
-static void InitDefaultsscc_info_Recipient_vrp_2frecipient_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
+static ::_pb::Metadata file_level_metadata_vrp_2frecipient_2eproto[1];
+static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_vrp_2frecipient_2eproto = nullptr;
+static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_vrp_2frecipient_2eproto = nullptr;
 
-  {
-    void* ptr = &::vrp::_Recipient_default_instance_;
-    new (ptr) ::vrp::Recipient();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::vrp::Recipient::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Recipient_vrp_2frecipient_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_Recipient_vrp_2frecipient_2eproto}, {}};
-
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_vrp_2frecipient_2eproto[1];
-static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_vrp_2frecipient_2eproto = nullptr;
-static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_vrp_2frecipient_2eproto = nullptr;
-
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_vrp_2frecipient_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_vrp_2frecipient_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::vrp::Recipient, _internal_metadata_),
   ~0u,  // no _extensions_
-  PROTOBUF_FIELD_OFFSET(::vrp::Recipient, _oneof_case_[0]),
+  PROTOBUF_FIELD_OFFSET(::vrp::Recipient, _impl_._oneof_case_[0]),
   ~0u,  // no _weak_field_map_
-  offsetof(::vrp::RecipientDefaultTypeInternal, public_key_hash_),
-  offsetof(::vrp::RecipientDefaultTypeInternal, alias_),
-  PROTOBUF_FIELD_OFFSET(::vrp::Recipient, recipient_),
+  ~0u,  // no _inlined_string_donated_
+  ::_pbi::kInvalidFieldOffsetTag,
+  ::_pbi::kInvalidFieldOffsetTag,
+  PROTOBUF_FIELD_OFFSET(::vrp::Recipient, _impl_.recipient_),
 };
-static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::vrp::Recipient)},
+static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, -1, -1, sizeof(::vrp::Recipient)},
 };
 
-static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::vrp::_Recipient_default_instance_),
+static const ::_pb::Message* const file_default_instances[] = {
+  &::vrp::_Recipient_default_instance_._instance,
 };
 
 const char descriptor_table_protodef_vrp_2frecipient_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -65,52 +66,52 @@ const char descriptor_table_protodef_vrp_2frecipient_2eproto[] PROTOBUF_SECTION_
   "nsactionZ2github.com/eVESTXCOIN/govrp/pk"
   "g/grpc/generated/vrp\252\002\003VRPb\006proto3"
   ;
-static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_vrp_2frecipient_2eproto_deps[1] = {
+static ::_pbi::once_flag descriptor_table_vrp_2frecipient_2eproto_once;
+const ::_pbi::DescriptorTable descriptor_table_vrp_2frecipient_2eproto = {
+    false, false, 194, descriptor_table_protodef_vrp_2frecipient_2eproto,
+    "vrp/recipient.proto",
+    &descriptor_table_vrp_2frecipient_2eproto_once, nullptr, 0, 1,
+    schemas, file_default_instances, TableStruct_vrp_2frecipient_2eproto::offsets,
+    file_level_metadata_vrp_2frecipient_2eproto, file_level_enum_descriptors_vrp_2frecipient_2eproto,
+    file_level_service_descriptors_vrp_2frecipient_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_vrp_2frecipient_2eproto_sccs[1] = {
-  &scc_info_Recipient_vrp_2frecipient_2eproto.base,
-};
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_vrp_2frecipient_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_vrp_2frecipient_2eproto = {
-  false, false, descriptor_table_protodef_vrp_2frecipient_2eproto, "vrp/recipient.proto", 194,
-  &descriptor_table_vrp_2frecipient_2eproto_once, descriptor_table_vrp_2frecipient_2eproto_sccs, descriptor_table_vrp_2frecipient_2eproto_deps, 1, 0,
-  schemas, file_default_instances, TableStruct_vrp_2frecipient_2eproto::offsets,
-  file_level_metadata_vrp_2frecipient_2eproto, 1, file_level_enum_descriptors_vrp_2frecipient_2eproto, file_level_service_descriptors_vrp_2frecipient_2eproto,
-};
+PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_vrp_2frecipient_2eproto_getter() {
+  return &descriptor_table_vrp_2frecipient_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_vrp_2frecipient_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_vrp_2frecipient_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_vrp_2frecipient_2eproto(&descriptor_table_vrp_2frecipient_2eproto);
 namespace vrp {
 
 // ===================================================================
 
-void Recipient::InitAsDefaultInstance() {
-  ::vrp::_Recipient_default_instance_.public_key_hash_.UnsafeSetDefault(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::vrp::_Recipient_default_instance_.alias_.UnsafeSetDefault(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
 class Recipient::_Internal {
  public:
 };
 
-Recipient::Recipient(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+Recipient::Recipient(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:vrp.Recipient)
 }
 Recipient::Recipient(const Recipient& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Recipient* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.recipient_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , /*decltype(_impl_._oneof_case_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   clear_has_recipient();
   switch (from.recipient_case()) {
     case kPublicKeyHash: {
-      _internal_set_public_key_hash(from._internal_public_key_hash());
+      _this->_internal_set_public_key_hash(from._internal_public_key_hash());
       break;
     }
     case kAlias: {
-      _internal_set_alias(from._internal_alias());
+      _this->_internal_set_alias(from._internal_alias());
       break;
     }
     case RECIPIENT_NOT_SET: {
@@ -120,61 +121,60 @@ Recipient::Recipient(const Recipient& from)
   // @@protoc_insertion_point(copy_constructor:vrp.Recipient)
 }
 
-void Recipient::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Recipient_vrp_2frecipient_2eproto.base);
+inline void Recipient::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.recipient_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , /*decltype(_impl_._oneof_case_)*/{}
+  };
   clear_has_recipient();
 }
 
 Recipient::~Recipient() {
   // @@protoc_insertion_point(destructor:vrp.Recipient)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void Recipient::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void Recipient::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (has_recipient()) {
     clear_recipient();
   }
 }
 
-void Recipient::ArenaDtor(void* object) {
-  Recipient* _this = reinterpret_cast< Recipient* >(object);
-  (void)_this;
-}
-void Recipient::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Recipient::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
-const Recipient& Recipient::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Recipient_vrp_2frecipient_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void Recipient::clear_recipient() {
 // @@protoc_insertion_point(one_of_clear_start:vrp.Recipient)
   switch (recipient_case()) {
     case kPublicKeyHash: {
-      recipient_.public_key_hash_.Destroy(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+      _impl_.recipient_.public_key_hash_.Destroy();
       break;
     }
     case kAlias: {
-      recipient_.alias_.Destroy(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+      _impl_.recipient_.alias_.Destroy();
       break;
     }
     case RECIPIENT_NOT_SET: {
       break;
     }
   }
-  _oneof_case_[0] = RECIPIENT_NOT_SET;
+  _impl_._oneof_case_[0] = RECIPIENT_NOT_SET;
 }
 
 
 void Recipient::Clear() {
 // @@protoc_insertion_point(message_clear_start:vrp.Recipient)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -182,57 +182,58 @@ void Recipient::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Recipient::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Recipient::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // bytes public_key_hash = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           auto str = _internal_mutable_public_key_hash();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // string alias = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           auto str = _internal_mutable_alias();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "vrp.Recipient.alias"));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          CHK_(::_pbi::VerifyUTF8(str, "vrp.Recipient.alias"));
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Recipient::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Recipient::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:vrp.Recipient)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // bytes public_key_hash = 1;
@@ -252,7 +253,7 @@ failure:
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:vrp.Recipient)
@@ -263,7 +264,7 @@ size_t Recipient::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:vrp.Recipient)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -286,57 +287,38 @@ size_t Recipient::ByteSizeLong() const {
       break;
     }
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void Recipient::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:vrp.Recipient)
-  GOOGLE_DCHECK_NE(&from, this);
-  const Recipient* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Recipient>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:vrp.Recipient)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:vrp.Recipient)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Recipient::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    Recipient::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Recipient::GetClassData() const { return &_class_data_; }
 
-void Recipient::MergeFrom(const Recipient& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:vrp.Recipient)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void Recipient::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Recipient*>(&to_msg);
+  auto& from = static_cast<const Recipient&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:vrp.Recipient)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   switch (from.recipient_case()) {
     case kPublicKeyHash: {
-      _internal_set_public_key_hash(from._internal_public_key_hash());
+      _this->_internal_set_public_key_hash(from._internal_public_key_hash());
       break;
     }
     case kAlias: {
-      _internal_set_alias(from._internal_alias());
+      _this->_internal_set_alias(from._internal_alias());
       break;
     }
     case RECIPIENT_NOT_SET: {
       break;
     }
   }
-}
-
-void Recipient::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:vrp.Recipient)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Recipient::CopyFrom(const Recipient& from) {
@@ -352,20 +334,22 @@ bool Recipient::IsInitialized() const {
 
 void Recipient::InternalSwap(Recipient* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  swap(recipient_, other->recipient_);
-  swap(_oneof_case_[0], other->_oneof_case_[0]);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_impl_.recipient_, other->_impl_.recipient_);
+  swap(_impl_._oneof_case_[0], other->_impl_._oneof_case_[0]);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Recipient::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_vrp_2frecipient_2eproto_getter, &descriptor_table_vrp_2frecipient_2eproto_once,
+      file_level_metadata_vrp_2frecipient_2eproto[0]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace vrp
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::vrp::Recipient* Arena::CreateMaybeMessage< ::vrp::Recipient >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::vrp::Recipient*
+Arena::CreateMaybeMessage< ::vrp::Recipient >(Arena* arena) {
   return Arena::CreateMessageInternal< ::vrp::Recipient >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

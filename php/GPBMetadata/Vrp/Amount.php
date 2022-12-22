@@ -14,9 +14,15 @@ class Amount
         if (static::$is_initialized == true) {
           return;
         }
-        $pool->internalAddGeneratedFile(hex2bin(
-            "0a99010a107672702f616d6f756e742e70726f746f1203767270222a0a06416d6f756e7412100a0861737365745f696418012001280c120e0a06616d6f756e74180220012803424c0a10636f6d2e7672702e70726f746f6275665a326769746875622e636f6d2f655645535458434f494e2f676f7672702f706b672f677270632f67656e6572617465642f767270aa0203565250620670726f746f33"
-        ), true);
+        $pool->internalAddGeneratedFile(
+            '
+™
+vrp/amount.protovrp"*
+Amount
+asset_id (
+amount (BL
+com.vrp.protobufZ2github.com/eVESTXCOIN/govrp/pkg/grpc/generated/vrpªVRPbproto3'
+        , true);
 
         static::$is_initialized = true;
     }

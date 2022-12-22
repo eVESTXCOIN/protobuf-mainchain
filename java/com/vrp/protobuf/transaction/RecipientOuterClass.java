@@ -24,10 +24,24 @@ public final class RecipientOuterClass {
      * </pre>
      *
      * <code>bytes public_key_hash = 1;</code>
+     * @return Whether the publicKeyHash field is set.
+     */
+    boolean hasPublicKeyHash();
+    /**
+     * <pre>
+     * First 20 bytes of the result of the Keccak256(Blake2b256(publicKey)) hashing function.
+     * </pre>
+     *
+     * <code>bytes public_key_hash = 1;</code>
      * @return The publicKeyHash.
      */
     com.google.protobuf.ByteString getPublicKeyHash();
 
+    /**
+     * <code>string alias = 2;</code>
+     * @return Whether the alias field is set.
+     */
+    boolean hasAlias();
     /**
      * <code>string alias = 2;</code>
      * @return The alias.
@@ -68,54 +82,6 @@ public final class RecipientOuterClass {
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
-    }
-    private Recipient(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 10: {
-              recipientCase_ = 1;
-              recipient_ = input.readBytes();
-              break;
-            }
-            case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
-              recipientCase_ = 2;
-              recipient_ = s;
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
@@ -178,6 +144,18 @@ public final class RecipientOuterClass {
      * </pre>
      *
      * <code>bytes public_key_hash = 1;</code>
+     * @return Whether the publicKeyHash field is set.
+     */
+    @java.lang.Override
+    public boolean hasPublicKeyHash() {
+      return recipientCase_ == 1;
+    }
+    /**
+     * <pre>
+     * First 20 bytes of the result of the Keccak256(Blake2b256(publicKey)) hashing function.
+     * </pre>
+     *
+     * <code>bytes public_key_hash = 1;</code>
      * @return The publicKeyHash.
      */
     @java.lang.Override
@@ -189,6 +167,13 @@ public final class RecipientOuterClass {
     }
 
     public static final int ALIAS_FIELD_NUMBER = 2;
+    /**
+     * <code>string alias = 2;</code>
+     * @return Whether the alias field is set.
+     */
+    public boolean hasAlias() {
+      return recipientCase_ == 2;
+    }
     /**
      * <code>string alias = 2;</code>
      * @return The alias.
@@ -254,7 +239,7 @@ public final class RecipientOuterClass {
       if (recipientCase_ == 2) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, recipient_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -271,7 +256,7 @@ public final class RecipientOuterClass {
       if (recipientCase_ == 2) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, recipient_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -299,7 +284,7 @@ public final class RecipientOuterClass {
         case 0:
         default:
       }
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -322,7 +307,7 @@ public final class RecipientOuterClass {
         case 0:
         default:
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -439,18 +424,13 @@ public final class RecipientOuterClass {
 
       // Construct using com.vrp.protobuf.transaction.RecipientOuterClass.Recipient.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
@@ -553,7 +533,7 @@ public final class RecipientOuterClass {
             break;
           }
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -568,17 +548,41 @@ public final class RecipientOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.vrp.protobuf.transaction.RecipientOuterClass.Recipient parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 10: {
+                recipient_ = input.readBytes();
+                recipientCase_ = 1;
+                break;
+              } // case 10
+              case 18: {
+                java.lang.String s = input.readStringRequireUtf8();
+                recipientCase_ = 2;
+                recipient_ = s;
+                break;
+              } // case 18
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.vrp.protobuf.transaction.RecipientOuterClass.Recipient) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int recipientCase_ = 0;
@@ -597,6 +601,17 @@ public final class RecipientOuterClass {
       }
 
 
+      /**
+       * <pre>
+       * First 20 bytes of the result of the Keccak256(Blake2b256(publicKey)) hashing function.
+       * </pre>
+       *
+       * <code>bytes public_key_hash = 1;</code>
+       * @return Whether the publicKeyHash field is set.
+       */
+      public boolean hasPublicKeyHash() {
+        return recipientCase_ == 1;
+      }
       /**
        * <pre>
        * First 20 bytes of the result of the Keccak256(Blake2b256(publicKey)) hashing function.
@@ -646,6 +661,14 @@ public final class RecipientOuterClass {
         return this;
       }
 
+      /**
+       * <code>string alias = 2;</code>
+       * @return Whether the alias field is set.
+       */
+      @java.lang.Override
+      public boolean hasAlias() {
+        return recipientCase_ == 2;
+      }
       /**
        * <code>string alias = 2;</code>
        * @return The alias.
@@ -767,7 +790,18 @@ public final class RecipientOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new Recipient(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 

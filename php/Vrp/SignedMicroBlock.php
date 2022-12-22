@@ -44,11 +44,21 @@ class SignedMicroBlock extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.MicroBlock micro_block = 1;</code>
-     * @return \Vrp\MicroBlock
+     * @return \Vrp\MicroBlock|null
      */
     public function getMicroBlock()
     {
         return $this->micro_block;
+    }
+
+    public function hasMicroBlock()
+    {
+        return isset($this->micro_block);
+    }
+
+    public function clearMicroBlock()
+    {
+        unset($this->micro_block);
     }
 
     /**

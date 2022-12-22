@@ -4,6 +4,7 @@
 require 'google/protobuf'
 
 require 'vrp/transaction_pb'
+
 Google::Protobuf::DescriptorPool.generated_pool.build do
   add_file("vrp/block.proto", :syntax => :proto3) do
     add_message "vrp.Block" do

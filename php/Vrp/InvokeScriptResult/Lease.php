@@ -49,11 +49,21 @@ class Lease extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.Recipient recipient = 1;</code>
-     * @return \Vrp\Recipient
+     * @return \Vrp\Recipient|null
      */
     public function getRecipient()
     {
         return $this->recipient;
+    }
+
+    public function hasRecipient()
+    {
+        return isset($this->recipient);
+    }
+
+    public function clearRecipient()
+    {
+        unset($this->recipient);
     }
 
     /**

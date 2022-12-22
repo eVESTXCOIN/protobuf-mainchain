@@ -6,6 +6,7 @@ require 'google/protobuf'
 require 'vrp/amount_pb'
 require 'vrp/recipient_pb'
 require 'vrp/order_pb'
+
 Google::Protobuf::DescriptorPool.generated_pool.build do
   add_file("vrp/transaction.proto", :syntax => :proto3) do
     add_message "vrp.SignedTransaction" do

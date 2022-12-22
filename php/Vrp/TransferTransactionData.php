@@ -44,11 +44,21 @@ class TransferTransactionData extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.Recipient recipient = 1;</code>
-     * @return \Vrp\Recipient
+     * @return \Vrp\Recipient|null
      */
     public function getRecipient()
     {
         return $this->recipient;
+    }
+
+    public function hasRecipient()
+    {
+        return isset($this->recipient);
+    }
+
+    public function clearRecipient()
+    {
+        unset($this->recipient);
     }
 
     /**
@@ -66,11 +76,21 @@ class TransferTransactionData extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.Amount amount = 2;</code>
-     * @return \Vrp\Amount
+     * @return \Vrp\Amount|null
      */
     public function getAmount()
     {
         return $this->amount;
+    }
+
+    public function hasAmount()
+    {
+        return isset($this->amount);
+    }
+
+    public function clearAmount()
+    {
+        unset($this->amount);
     }
 
     /**

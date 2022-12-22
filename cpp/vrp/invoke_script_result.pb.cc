@@ -14,442 +14,403 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-extern PROTOBUF_INTERNAL_EXPORT_vrp_2famount_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Amount_vrp_2famount_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_vrp_2ftransaction_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_DataTransactionData_DataEntry_vrp_2ftransaction_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_vrp_2finvoke_5fscript_5fresult_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<12> scc_info_InvokeScriptResult_vrp_2finvoke_5fscript_5fresult_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_vrp_2finvoke_5fscript_5fresult_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_InvokeScriptResult_Burn_vrp_2finvoke_5fscript_5fresult_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_vrp_2finvoke_5fscript_5fresult_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_InvokeScriptResult_Call_vrp_2finvoke_5fscript_5fresult_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_vrp_2finvoke_5fscript_5fresult_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_InvokeScriptResult_Call_Argument_vrp_2finvoke_5fscript_5fresult_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_vrp_2finvoke_5fscript_5fresult_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_InvokeScriptResult_ErrorMessage_vrp_2finvoke_5fscript_5fresult_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_vrp_2finvoke_5fscript_5fresult_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_InvokeScriptResult_Issue_vrp_2finvoke_5fscript_5fresult_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_vrp_2finvoke_5fscript_5fresult_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_InvokeScriptResult_Lease_vrp_2finvoke_5fscript_5fresult_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_vrp_2finvoke_5fscript_5fresult_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_InvokeScriptResult_LeaseCancel_vrp_2finvoke_5fscript_5fresult_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_vrp_2finvoke_5fscript_5fresult_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_InvokeScriptResult_Payment_vrp_2finvoke_5fscript_5fresult_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_vrp_2finvoke_5fscript_5fresult_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_InvokeScriptResult_PrivatePayment_vrp_2finvoke_5fscript_5fresult_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_vrp_2finvoke_5fscript_5fresult_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_InvokeScriptResult_Reissue_vrp_2finvoke_5fscript_5fresult_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_vrp_2finvoke_5fscript_5fresult_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_InvokeScriptResult_SponsorFee_vrp_2finvoke_5fscript_5fresult_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_vrp_2frecipient_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Recipient_vrp_2frecipient_2eproto;
+
+PROTOBUF_PRAGMA_INIT_SEG
+
+namespace _pb = ::PROTOBUF_NAMESPACE_ID;
+namespace _pbi = _pb::internal;
+
 namespace vrp {
-class InvokeScriptResult_PaymentDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<InvokeScriptResult_Payment> _instance;
-} _InvokeScriptResult_Payment_default_instance_;
-class InvokeScriptResult_PrivatePaymentDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<InvokeScriptResult_PrivatePayment> _instance;
-} _InvokeScriptResult_PrivatePayment_default_instance_;
-class InvokeScriptResult_IssueDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<InvokeScriptResult_Issue> _instance;
-} _InvokeScriptResult_Issue_default_instance_;
-class InvokeScriptResult_ReissueDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<InvokeScriptResult_Reissue> _instance;
-} _InvokeScriptResult_Reissue_default_instance_;
-class InvokeScriptResult_BurnDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<InvokeScriptResult_Burn> _instance;
-} _InvokeScriptResult_Burn_default_instance_;
-class InvokeScriptResult_SponsorFeeDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<InvokeScriptResult_SponsorFee> _instance;
-} _InvokeScriptResult_SponsorFee_default_instance_;
-class InvokeScriptResult_LeaseDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<InvokeScriptResult_Lease> _instance;
-} _InvokeScriptResult_Lease_default_instance_;
-class InvokeScriptResult_LeaseCancelDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<InvokeScriptResult_LeaseCancel> _instance;
-} _InvokeScriptResult_LeaseCancel_default_instance_;
-class InvokeScriptResult_ErrorMessageDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<InvokeScriptResult_ErrorMessage> _instance;
-} _InvokeScriptResult_ErrorMessage_default_instance_;
-class InvokeScriptResult_Call_Argument_ListDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<InvokeScriptResult_Call_Argument_List> _instance;
-} _InvokeScriptResult_Call_Argument_List_default_instance_;
-class InvokeScriptResult_Call_ArgumentDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<InvokeScriptResult_Call_Argument> _instance;
-  ::PROTOBUF_NAMESPACE_ID::int64 integer_value_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr binary_value_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr string_value_;
-  bool boolean_value_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr case_obj_;
-  const ::vrp::InvokeScriptResult_Call_Argument_List* list_;
-} _InvokeScriptResult_Call_Argument_default_instance_;
-class InvokeScriptResult_CallDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<InvokeScriptResult_Call> _instance;
-} _InvokeScriptResult_Call_default_instance_;
-class InvokeScriptResult_InvocationDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<InvokeScriptResult_Invocation> _instance;
-} _InvokeScriptResult_Invocation_default_instance_;
-class InvokeScriptResultDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<InvokeScriptResult> _instance;
-} _InvokeScriptResult_default_instance_;
+PROTOBUF_CONSTEXPR InvokeScriptResult_Payment::InvokeScriptResult_Payment(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.address_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.amount_)*/nullptr
+  , /*decltype(_impl_._cached_size_)*/{}} {}
+struct InvokeScriptResult_PaymentDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR InvokeScriptResult_PaymentDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~InvokeScriptResult_PaymentDefaultTypeInternal() {}
+  union {
+    InvokeScriptResult_Payment _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 InvokeScriptResult_PaymentDefaultTypeInternal _InvokeScriptResult_Payment_default_instance_;
+PROTOBUF_CONSTEXPR InvokeScriptResult_PrivatePayment::InvokeScriptResult_PrivatePayment(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.address_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.amount_)*/nullptr
+  , /*decltype(_impl_._cached_size_)*/{}} {}
+struct InvokeScriptResult_PrivatePaymentDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR InvokeScriptResult_PrivatePaymentDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~InvokeScriptResult_PrivatePaymentDefaultTypeInternal() {}
+  union {
+    InvokeScriptResult_PrivatePayment _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 InvokeScriptResult_PrivatePaymentDefaultTypeInternal _InvokeScriptResult_PrivatePayment_default_instance_;
+PROTOBUF_CONSTEXPR InvokeScriptResult_Issue::InvokeScriptResult_Issue(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.asset_id_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.name_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.description_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.image_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.script_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.amount_)*/int64_t{0}
+  , /*decltype(_impl_.decimals_)*/0
+  , /*decltype(_impl_.reissuable_)*/false
+  , /*decltype(_impl_.nonce_)*/int64_t{0}
+  , /*decltype(_impl_._cached_size_)*/{}} {}
+struct InvokeScriptResult_IssueDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR InvokeScriptResult_IssueDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~InvokeScriptResult_IssueDefaultTypeInternal() {}
+  union {
+    InvokeScriptResult_Issue _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 InvokeScriptResult_IssueDefaultTypeInternal _InvokeScriptResult_Issue_default_instance_;
+PROTOBUF_CONSTEXPR InvokeScriptResult_Reissue::InvokeScriptResult_Reissue(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.asset_id_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.amount_)*/int64_t{0}
+  , /*decltype(_impl_.is_reissuable_)*/false
+  , /*decltype(_impl_._cached_size_)*/{}} {}
+struct InvokeScriptResult_ReissueDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR InvokeScriptResult_ReissueDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~InvokeScriptResult_ReissueDefaultTypeInternal() {}
+  union {
+    InvokeScriptResult_Reissue _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 InvokeScriptResult_ReissueDefaultTypeInternal _InvokeScriptResult_Reissue_default_instance_;
+PROTOBUF_CONSTEXPR InvokeScriptResult_Burn::InvokeScriptResult_Burn(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.asset_id_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.amount_)*/int64_t{0}
+  , /*decltype(_impl_._cached_size_)*/{}} {}
+struct InvokeScriptResult_BurnDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR InvokeScriptResult_BurnDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~InvokeScriptResult_BurnDefaultTypeInternal() {}
+  union {
+    InvokeScriptResult_Burn _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 InvokeScriptResult_BurnDefaultTypeInternal _InvokeScriptResult_Burn_default_instance_;
+PROTOBUF_CONSTEXPR InvokeScriptResult_SponsorFee::InvokeScriptResult_SponsorFee(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.min_fee_)*/nullptr
+  , /*decltype(_impl_._cached_size_)*/{}} {}
+struct InvokeScriptResult_SponsorFeeDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR InvokeScriptResult_SponsorFeeDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~InvokeScriptResult_SponsorFeeDefaultTypeInternal() {}
+  union {
+    InvokeScriptResult_SponsorFee _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 InvokeScriptResult_SponsorFeeDefaultTypeInternal _InvokeScriptResult_SponsorFee_default_instance_;
+PROTOBUF_CONSTEXPR InvokeScriptResult_Lease::InvokeScriptResult_Lease(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.lease_id_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.recipient_)*/nullptr
+  , /*decltype(_impl_.amount_)*/int64_t{0}
+  , /*decltype(_impl_.nonce_)*/int64_t{0}
+  , /*decltype(_impl_._cached_size_)*/{}} {}
+struct InvokeScriptResult_LeaseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR InvokeScriptResult_LeaseDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~InvokeScriptResult_LeaseDefaultTypeInternal() {}
+  union {
+    InvokeScriptResult_Lease _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 InvokeScriptResult_LeaseDefaultTypeInternal _InvokeScriptResult_Lease_default_instance_;
+PROTOBUF_CONSTEXPR InvokeScriptResult_LeaseCancel::InvokeScriptResult_LeaseCancel(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.lease_id_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_._cached_size_)*/{}} {}
+struct InvokeScriptResult_LeaseCancelDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR InvokeScriptResult_LeaseCancelDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~InvokeScriptResult_LeaseCancelDefaultTypeInternal() {}
+  union {
+    InvokeScriptResult_LeaseCancel _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 InvokeScriptResult_LeaseCancelDefaultTypeInternal _InvokeScriptResult_LeaseCancel_default_instance_;
+PROTOBUF_CONSTEXPR InvokeScriptResult_ErrorMessage::InvokeScriptResult_ErrorMessage(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.text_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.code_)*/0
+  , /*decltype(_impl_._cached_size_)*/{}} {}
+struct InvokeScriptResult_ErrorMessageDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR InvokeScriptResult_ErrorMessageDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~InvokeScriptResult_ErrorMessageDefaultTypeInternal() {}
+  union {
+    InvokeScriptResult_ErrorMessage _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 InvokeScriptResult_ErrorMessageDefaultTypeInternal _InvokeScriptResult_ErrorMessage_default_instance_;
+PROTOBUF_CONSTEXPR InvokeScriptResult_Call_Argument_List::InvokeScriptResult_Call_Argument_List(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.items_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}} {}
+struct InvokeScriptResult_Call_Argument_ListDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR InvokeScriptResult_Call_Argument_ListDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~InvokeScriptResult_Call_Argument_ListDefaultTypeInternal() {}
+  union {
+    InvokeScriptResult_Call_Argument_List _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 InvokeScriptResult_Call_Argument_ListDefaultTypeInternal _InvokeScriptResult_Call_Argument_List_default_instance_;
+PROTOBUF_CONSTEXPR InvokeScriptResult_Call_Argument::InvokeScriptResult_Call_Argument(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.value_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_._oneof_case_)*/{}} {}
+struct InvokeScriptResult_Call_ArgumentDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR InvokeScriptResult_Call_ArgumentDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~InvokeScriptResult_Call_ArgumentDefaultTypeInternal() {}
+  union {
+    InvokeScriptResult_Call_Argument _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 InvokeScriptResult_Call_ArgumentDefaultTypeInternal _InvokeScriptResult_Call_Argument_default_instance_;
+PROTOBUF_CONSTEXPR InvokeScriptResult_Call::InvokeScriptResult_Call(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.args_bytes_)*/{}
+  , /*decltype(_impl_.args_)*/{}
+  , /*decltype(_impl_.function_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_._cached_size_)*/{}} {}
+struct InvokeScriptResult_CallDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR InvokeScriptResult_CallDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~InvokeScriptResult_CallDefaultTypeInternal() {}
+  union {
+    InvokeScriptResult_Call _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 InvokeScriptResult_CallDefaultTypeInternal _InvokeScriptResult_Call_default_instance_;
+PROTOBUF_CONSTEXPR InvokeScriptResult_Invocation::InvokeScriptResult_Invocation(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.payments_)*/{}
+  , /*decltype(_impl_.dapp_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.call_)*/nullptr
+  , /*decltype(_impl_.statechanges_)*/nullptr
+  , /*decltype(_impl_._cached_size_)*/{}} {}
+struct InvokeScriptResult_InvocationDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR InvokeScriptResult_InvocationDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~InvokeScriptResult_InvocationDefaultTypeInternal() {}
+  union {
+    InvokeScriptResult_Invocation _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 InvokeScriptResult_InvocationDefaultTypeInternal _InvokeScriptResult_Invocation_default_instance_;
+PROTOBUF_CONSTEXPR InvokeScriptResult::InvokeScriptResult(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.data_)*/{}
+  , /*decltype(_impl_.transfers_)*/{}
+  , /*decltype(_impl_.issues_)*/{}
+  , /*decltype(_impl_.reissues_)*/{}
+  , /*decltype(_impl_.burns_)*/{}
+  , /*decltype(_impl_.sponsor_fees_)*/{}
+  , /*decltype(_impl_.leases_)*/{}
+  , /*decltype(_impl_.lease_cancels_)*/{}
+  , /*decltype(_impl_.invokes_)*/{}
+  , /*decltype(_impl_.private_payment_)*/{}
+  , /*decltype(_impl_.error_message_)*/nullptr
+  , /*decltype(_impl_._cached_size_)*/{}} {}
+struct InvokeScriptResultDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR InvokeScriptResultDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~InvokeScriptResultDefaultTypeInternal() {}
+  union {
+    InvokeScriptResult _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 InvokeScriptResultDefaultTypeInternal _InvokeScriptResult_default_instance_;
 }  // namespace vrp
-static void InitDefaultsscc_info_InvokeScriptResult_vrp_2finvoke_5fscript_5fresult_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
+static ::_pb::Metadata file_level_metadata_vrp_2finvoke_5fscript_5fresult_2eproto[14];
+static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_vrp_2finvoke_5fscript_5fresult_2eproto = nullptr;
+static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_vrp_2finvoke_5fscript_5fresult_2eproto = nullptr;
 
-  {
-    void* ptr = &::vrp::_InvokeScriptResult_Invocation_default_instance_;
-    new (ptr) ::vrp::InvokeScriptResult_Invocation();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  {
-    void* ptr = &::vrp::_InvokeScriptResult_default_instance_;
-    new (ptr) ::vrp::InvokeScriptResult();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::vrp::InvokeScriptResult_Invocation::InitAsDefaultInstance();
-  ::vrp::InvokeScriptResult::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<12> scc_info_InvokeScriptResult_vrp_2finvoke_5fscript_5fresult_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 12, 0, InitDefaultsscc_info_InvokeScriptResult_vrp_2finvoke_5fscript_5fresult_2eproto}, {
-      &scc_info_DataTransactionData_DataEntry_vrp_2ftransaction_2eproto.base,
-      &scc_info_InvokeScriptResult_Payment_vrp_2finvoke_5fscript_5fresult_2eproto.base,
-      &scc_info_InvokeScriptResult_Issue_vrp_2finvoke_5fscript_5fresult_2eproto.base,
-      &scc_info_InvokeScriptResult_Reissue_vrp_2finvoke_5fscript_5fresult_2eproto.base,
-      &scc_info_InvokeScriptResult_Burn_vrp_2finvoke_5fscript_5fresult_2eproto.base,
-      &scc_info_InvokeScriptResult_ErrorMessage_vrp_2finvoke_5fscript_5fresult_2eproto.base,
-      &scc_info_InvokeScriptResult_SponsorFee_vrp_2finvoke_5fscript_5fresult_2eproto.base,
-      &scc_info_InvokeScriptResult_Lease_vrp_2finvoke_5fscript_5fresult_2eproto.base,
-      &scc_info_InvokeScriptResult_LeaseCancel_vrp_2finvoke_5fscript_5fresult_2eproto.base,
-      &scc_info_InvokeScriptResult_PrivatePayment_vrp_2finvoke_5fscript_5fresult_2eproto.base,
-      &scc_info_InvokeScriptResult_Call_vrp_2finvoke_5fscript_5fresult_2eproto.base,
-      &scc_info_Amount_vrp_2famount_2eproto.base,}};
-
-static void InitDefaultsscc_info_InvokeScriptResult_Burn_vrp_2finvoke_5fscript_5fresult_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::vrp::_InvokeScriptResult_Burn_default_instance_;
-    new (ptr) ::vrp::InvokeScriptResult_Burn();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::vrp::InvokeScriptResult_Burn::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_InvokeScriptResult_Burn_vrp_2finvoke_5fscript_5fresult_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_InvokeScriptResult_Burn_vrp_2finvoke_5fscript_5fresult_2eproto}, {}};
-
-static void InitDefaultsscc_info_InvokeScriptResult_Call_vrp_2finvoke_5fscript_5fresult_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::vrp::_InvokeScriptResult_Call_default_instance_;
-    new (ptr) ::vrp::InvokeScriptResult_Call();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::vrp::InvokeScriptResult_Call::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_InvokeScriptResult_Call_vrp_2finvoke_5fscript_5fresult_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_InvokeScriptResult_Call_vrp_2finvoke_5fscript_5fresult_2eproto}, {
-      &scc_info_InvokeScriptResult_Call_Argument_vrp_2finvoke_5fscript_5fresult_2eproto.base,}};
-
-static void InitDefaultsscc_info_InvokeScriptResult_Call_Argument_vrp_2finvoke_5fscript_5fresult_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::vrp::_InvokeScriptResult_Call_Argument_List_default_instance_;
-    new (ptr) ::vrp::InvokeScriptResult_Call_Argument_List();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  {
-    void* ptr = &::vrp::_InvokeScriptResult_Call_Argument_default_instance_;
-    new (ptr) ::vrp::InvokeScriptResult_Call_Argument();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::vrp::InvokeScriptResult_Call_Argument_List::InitAsDefaultInstance();
-  ::vrp::InvokeScriptResult_Call_Argument::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_InvokeScriptResult_Call_Argument_vrp_2finvoke_5fscript_5fresult_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_InvokeScriptResult_Call_Argument_vrp_2finvoke_5fscript_5fresult_2eproto}, {}};
-
-static void InitDefaultsscc_info_InvokeScriptResult_ErrorMessage_vrp_2finvoke_5fscript_5fresult_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::vrp::_InvokeScriptResult_ErrorMessage_default_instance_;
-    new (ptr) ::vrp::InvokeScriptResult_ErrorMessage();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::vrp::InvokeScriptResult_ErrorMessage::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_InvokeScriptResult_ErrorMessage_vrp_2finvoke_5fscript_5fresult_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_InvokeScriptResult_ErrorMessage_vrp_2finvoke_5fscript_5fresult_2eproto}, {}};
-
-static void InitDefaultsscc_info_InvokeScriptResult_Issue_vrp_2finvoke_5fscript_5fresult_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::vrp::_InvokeScriptResult_Issue_default_instance_;
-    new (ptr) ::vrp::InvokeScriptResult_Issue();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::vrp::InvokeScriptResult_Issue::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_InvokeScriptResult_Issue_vrp_2finvoke_5fscript_5fresult_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_InvokeScriptResult_Issue_vrp_2finvoke_5fscript_5fresult_2eproto}, {}};
-
-static void InitDefaultsscc_info_InvokeScriptResult_Lease_vrp_2finvoke_5fscript_5fresult_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::vrp::_InvokeScriptResult_Lease_default_instance_;
-    new (ptr) ::vrp::InvokeScriptResult_Lease();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::vrp::InvokeScriptResult_Lease::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_InvokeScriptResult_Lease_vrp_2finvoke_5fscript_5fresult_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_InvokeScriptResult_Lease_vrp_2finvoke_5fscript_5fresult_2eproto}, {
-      &scc_info_Recipient_vrp_2frecipient_2eproto.base,}};
-
-static void InitDefaultsscc_info_InvokeScriptResult_LeaseCancel_vrp_2finvoke_5fscript_5fresult_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::vrp::_InvokeScriptResult_LeaseCancel_default_instance_;
-    new (ptr) ::vrp::InvokeScriptResult_LeaseCancel();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::vrp::InvokeScriptResult_LeaseCancel::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_InvokeScriptResult_LeaseCancel_vrp_2finvoke_5fscript_5fresult_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_InvokeScriptResult_LeaseCancel_vrp_2finvoke_5fscript_5fresult_2eproto}, {}};
-
-static void InitDefaultsscc_info_InvokeScriptResult_Payment_vrp_2finvoke_5fscript_5fresult_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::vrp::_InvokeScriptResult_Payment_default_instance_;
-    new (ptr) ::vrp::InvokeScriptResult_Payment();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::vrp::InvokeScriptResult_Payment::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_InvokeScriptResult_Payment_vrp_2finvoke_5fscript_5fresult_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_InvokeScriptResult_Payment_vrp_2finvoke_5fscript_5fresult_2eproto}, {
-      &scc_info_Amount_vrp_2famount_2eproto.base,}};
-
-static void InitDefaultsscc_info_InvokeScriptResult_PrivatePayment_vrp_2finvoke_5fscript_5fresult_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::vrp::_InvokeScriptResult_PrivatePayment_default_instance_;
-    new (ptr) ::vrp::InvokeScriptResult_PrivatePayment();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::vrp::InvokeScriptResult_PrivatePayment::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_InvokeScriptResult_PrivatePayment_vrp_2finvoke_5fscript_5fresult_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_InvokeScriptResult_PrivatePayment_vrp_2finvoke_5fscript_5fresult_2eproto}, {
-      &scc_info_Amount_vrp_2famount_2eproto.base,}};
-
-static void InitDefaultsscc_info_InvokeScriptResult_Reissue_vrp_2finvoke_5fscript_5fresult_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::vrp::_InvokeScriptResult_Reissue_default_instance_;
-    new (ptr) ::vrp::InvokeScriptResult_Reissue();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::vrp::InvokeScriptResult_Reissue::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_InvokeScriptResult_Reissue_vrp_2finvoke_5fscript_5fresult_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_InvokeScriptResult_Reissue_vrp_2finvoke_5fscript_5fresult_2eproto}, {}};
-
-static void InitDefaultsscc_info_InvokeScriptResult_SponsorFee_vrp_2finvoke_5fscript_5fresult_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::vrp::_InvokeScriptResult_SponsorFee_default_instance_;
-    new (ptr) ::vrp::InvokeScriptResult_SponsorFee();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::vrp::InvokeScriptResult_SponsorFee::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_InvokeScriptResult_SponsorFee_vrp_2finvoke_5fscript_5fresult_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_InvokeScriptResult_SponsorFee_vrp_2finvoke_5fscript_5fresult_2eproto}, {
-      &scc_info_Amount_vrp_2famount_2eproto.base,}};
-
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_vrp_2finvoke_5fscript_5fresult_2eproto[14];
-static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_vrp_2finvoke_5fscript_5fresult_2eproto = nullptr;
-static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_vrp_2finvoke_5fscript_5fresult_2eproto = nullptr;
-
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_vrp_2finvoke_5fscript_5fresult_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_vrp_2finvoke_5fscript_5fresult_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Payment, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Payment, address_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Payment, amount_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Payment, _impl_.address_),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Payment, _impl_.amount_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_PrivatePayment, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_PrivatePayment, address_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_PrivatePayment, amount_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_PrivatePayment, _impl_.address_),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_PrivatePayment, _impl_.amount_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Issue, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Issue, asset_id_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Issue, name_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Issue, description_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Issue, image_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Issue, amount_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Issue, decimals_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Issue, reissuable_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Issue, script_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Issue, nonce_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Issue, _impl_.asset_id_),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Issue, _impl_.name_),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Issue, _impl_.description_),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Issue, _impl_.image_),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Issue, _impl_.amount_),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Issue, _impl_.decimals_),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Issue, _impl_.reissuable_),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Issue, _impl_.script_),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Issue, _impl_.nonce_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Reissue, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Reissue, asset_id_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Reissue, amount_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Reissue, is_reissuable_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Reissue, _impl_.asset_id_),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Reissue, _impl_.amount_),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Reissue, _impl_.is_reissuable_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Burn, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Burn, asset_id_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Burn, amount_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Burn, _impl_.asset_id_),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Burn, _impl_.amount_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_SponsorFee, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_SponsorFee, min_fee_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_SponsorFee, _impl_.min_fee_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Lease, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Lease, recipient_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Lease, amount_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Lease, nonce_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Lease, lease_id_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Lease, _impl_.recipient_),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Lease, _impl_.amount_),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Lease, _impl_.nonce_),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Lease, _impl_.lease_id_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_LeaseCancel, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_LeaseCancel, lease_id_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_LeaseCancel, _impl_.lease_id_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_ErrorMessage, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_ErrorMessage, code_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_ErrorMessage, text_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_ErrorMessage, _impl_.code_),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_ErrorMessage, _impl_.text_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Call_Argument_List, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Call_Argument_List, items_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Call_Argument_List, _impl_.items_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Call_Argument, _internal_metadata_),
   ~0u,  // no _extensions_
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Call_Argument, _oneof_case_[0]),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Call_Argument, _impl_._oneof_case_[0]),
   ~0u,  // no _weak_field_map_
-  offsetof(::vrp::InvokeScriptResult_Call_ArgumentDefaultTypeInternal, integer_value_),
-  offsetof(::vrp::InvokeScriptResult_Call_ArgumentDefaultTypeInternal, binary_value_),
-  offsetof(::vrp::InvokeScriptResult_Call_ArgumentDefaultTypeInternal, string_value_),
-  offsetof(::vrp::InvokeScriptResult_Call_ArgumentDefaultTypeInternal, boolean_value_),
-  offsetof(::vrp::InvokeScriptResult_Call_ArgumentDefaultTypeInternal, case_obj_),
-  offsetof(::vrp::InvokeScriptResult_Call_ArgumentDefaultTypeInternal, list_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Call_Argument, value_),
+  ~0u,  // no _inlined_string_donated_
+  ::_pbi::kInvalidFieldOffsetTag,
+  ::_pbi::kInvalidFieldOffsetTag,
+  ::_pbi::kInvalidFieldOffsetTag,
+  ::_pbi::kInvalidFieldOffsetTag,
+  ::_pbi::kInvalidFieldOffsetTag,
+  ::_pbi::kInvalidFieldOffsetTag,
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Call_Argument, _impl_.value_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Call, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Call, function_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Call, args_bytes_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Call, args_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Call, _impl_.function_),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Call, _impl_.args_bytes_),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Call, _impl_.args_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Invocation, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Invocation, dapp_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Invocation, call_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Invocation, payments_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Invocation, statechanges_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Invocation, _impl_.dapp_),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Invocation, _impl_.call_),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Invocation, _impl_.payments_),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult_Invocation, _impl_.statechanges_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult, data_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult, transfers_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult, issues_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult, reissues_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult, burns_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult, error_message_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult, sponsor_fees_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult, leases_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult, lease_cancels_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult, invokes_),
-  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult, private_payment_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult, _impl_.data_),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult, _impl_.transfers_),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult, _impl_.issues_),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult, _impl_.reissues_),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult, _impl_.burns_),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult, _impl_.error_message_),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult, _impl_.sponsor_fees_),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult, _impl_.leases_),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult, _impl_.lease_cancels_),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult, _impl_.invokes_),
+  PROTOBUF_FIELD_OFFSET(::vrp::InvokeScriptResult, _impl_.private_payment_),
 };
-static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::vrp::InvokeScriptResult_Payment)},
-  { 7, -1, sizeof(::vrp::InvokeScriptResult_PrivatePayment)},
-  { 14, -1, sizeof(::vrp::InvokeScriptResult_Issue)},
-  { 28, -1, sizeof(::vrp::InvokeScriptResult_Reissue)},
-  { 36, -1, sizeof(::vrp::InvokeScriptResult_Burn)},
-  { 43, -1, sizeof(::vrp::InvokeScriptResult_SponsorFee)},
-  { 49, -1, sizeof(::vrp::InvokeScriptResult_Lease)},
-  { 58, -1, sizeof(::vrp::InvokeScriptResult_LeaseCancel)},
-  { 64, -1, sizeof(::vrp::InvokeScriptResult_ErrorMessage)},
-  { 71, -1, sizeof(::vrp::InvokeScriptResult_Call_Argument_List)},
-  { 77, -1, sizeof(::vrp::InvokeScriptResult_Call_Argument)},
-  { 89, -1, sizeof(::vrp::InvokeScriptResult_Call)},
-  { 97, -1, sizeof(::vrp::InvokeScriptResult_Invocation)},
-  { 106, -1, sizeof(::vrp::InvokeScriptResult)},
+static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, -1, -1, sizeof(::vrp::InvokeScriptResult_Payment)},
+  { 8, -1, -1, sizeof(::vrp::InvokeScriptResult_PrivatePayment)},
+  { 16, -1, -1, sizeof(::vrp::InvokeScriptResult_Issue)},
+  { 31, -1, -1, sizeof(::vrp::InvokeScriptResult_Reissue)},
+  { 40, -1, -1, sizeof(::vrp::InvokeScriptResult_Burn)},
+  { 48, -1, -1, sizeof(::vrp::InvokeScriptResult_SponsorFee)},
+  { 55, -1, -1, sizeof(::vrp::InvokeScriptResult_Lease)},
+  { 65, -1, -1, sizeof(::vrp::InvokeScriptResult_LeaseCancel)},
+  { 72, -1, -1, sizeof(::vrp::InvokeScriptResult_ErrorMessage)},
+  { 80, -1, -1, sizeof(::vrp::InvokeScriptResult_Call_Argument_List)},
+  { 87, -1, -1, sizeof(::vrp::InvokeScriptResult_Call_Argument)},
+  { 100, -1, -1, sizeof(::vrp::InvokeScriptResult_Call)},
+  { 109, -1, -1, sizeof(::vrp::InvokeScriptResult_Invocation)},
+  { 119, -1, -1, sizeof(::vrp::InvokeScriptResult)},
 };
 
-static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::vrp::_InvokeScriptResult_Payment_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::vrp::_InvokeScriptResult_PrivatePayment_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::vrp::_InvokeScriptResult_Issue_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::vrp::_InvokeScriptResult_Reissue_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::vrp::_InvokeScriptResult_Burn_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::vrp::_InvokeScriptResult_SponsorFee_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::vrp::_InvokeScriptResult_Lease_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::vrp::_InvokeScriptResult_LeaseCancel_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::vrp::_InvokeScriptResult_ErrorMessage_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::vrp::_InvokeScriptResult_Call_Argument_List_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::vrp::_InvokeScriptResult_Call_Argument_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::vrp::_InvokeScriptResult_Call_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::vrp::_InvokeScriptResult_Invocation_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::vrp::_InvokeScriptResult_default_instance_),
+static const ::_pb::Message* const file_default_instances[] = {
+  &::vrp::_InvokeScriptResult_Payment_default_instance_._instance,
+  &::vrp::_InvokeScriptResult_PrivatePayment_default_instance_._instance,
+  &::vrp::_InvokeScriptResult_Issue_default_instance_._instance,
+  &::vrp::_InvokeScriptResult_Reissue_default_instance_._instance,
+  &::vrp::_InvokeScriptResult_Burn_default_instance_._instance,
+  &::vrp::_InvokeScriptResult_SponsorFee_default_instance_._instance,
+  &::vrp::_InvokeScriptResult_Lease_default_instance_._instance,
+  &::vrp::_InvokeScriptResult_LeaseCancel_default_instance_._instance,
+  &::vrp::_InvokeScriptResult_ErrorMessage_default_instance_._instance,
+  &::vrp::_InvokeScriptResult_Call_Argument_List_default_instance_._instance,
+  &::vrp::_InvokeScriptResult_Call_Argument_default_instance_._instance,
+  &::vrp::_InvokeScriptResult_Call_default_instance_._instance,
+  &::vrp::_InvokeScriptResult_Invocation_default_instance_._instance,
+  &::vrp::_InvokeScriptResult_default_instance_._instance,
 };
 
 const char descriptor_table_protodef_vrp_2finvoke_5fscript_5fresult_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -503,43 +464,30 @@ const char descriptor_table_protodef_vrp_2finvoke_5fscript_5fresult_2eproto[] PR
   "/eVESTXCOIN/govrp/pkg/grpc/generated/vrp"
   "\252\002\003VRPb\006proto3"
   ;
-static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_deps[3] = {
+static const ::_pbi::DescriptorTable* const descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_deps[3] = {
   &::descriptor_table_vrp_2famount_2eproto,
   &::descriptor_table_vrp_2frecipient_2eproto,
   &::descriptor_table_vrp_2ftransaction_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_sccs[12] = {
-  &scc_info_InvokeScriptResult_vrp_2finvoke_5fscript_5fresult_2eproto.base,
-  &scc_info_InvokeScriptResult_Burn_vrp_2finvoke_5fscript_5fresult_2eproto.base,
-  &scc_info_InvokeScriptResult_Call_vrp_2finvoke_5fscript_5fresult_2eproto.base,
-  &scc_info_InvokeScriptResult_Call_Argument_vrp_2finvoke_5fscript_5fresult_2eproto.base,
-  &scc_info_InvokeScriptResult_ErrorMessage_vrp_2finvoke_5fscript_5fresult_2eproto.base,
-  &scc_info_InvokeScriptResult_Issue_vrp_2finvoke_5fscript_5fresult_2eproto.base,
-  &scc_info_InvokeScriptResult_Lease_vrp_2finvoke_5fscript_5fresult_2eproto.base,
-  &scc_info_InvokeScriptResult_LeaseCancel_vrp_2finvoke_5fscript_5fresult_2eproto.base,
-  &scc_info_InvokeScriptResult_Payment_vrp_2finvoke_5fscript_5fresult_2eproto.base,
-  &scc_info_InvokeScriptResult_PrivatePayment_vrp_2finvoke_5fscript_5fresult_2eproto.base,
-  &scc_info_InvokeScriptResult_Reissue_vrp_2finvoke_5fscript_5fresult_2eproto.base,
-  &scc_info_InvokeScriptResult_SponsorFee_vrp_2finvoke_5fscript_5fresult_2eproto.base,
+static ::_pbi::once_flag descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_once;
+const ::_pbi::DescriptorTable descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto = {
+    false, false, 1934, descriptor_table_protodef_vrp_2finvoke_5fscript_5fresult_2eproto,
+    "vrp/invoke_script_result.proto",
+    &descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_once, descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_deps, 3, 14,
+    schemas, file_default_instances, TableStruct_vrp_2finvoke_5fscript_5fresult_2eproto::offsets,
+    file_level_metadata_vrp_2finvoke_5fscript_5fresult_2eproto, file_level_enum_descriptors_vrp_2finvoke_5fscript_5fresult_2eproto,
+    file_level_service_descriptors_vrp_2finvoke_5fscript_5fresult_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto = {
-  false, false, descriptor_table_protodef_vrp_2finvoke_5fscript_5fresult_2eproto, "vrp/invoke_script_result.proto", 1934,
-  &descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_once, descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_sccs, descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_deps, 12, 3,
-  schemas, file_default_instances, TableStruct_vrp_2finvoke_5fscript_5fresult_2eproto::offsets,
-  file_level_metadata_vrp_2finvoke_5fscript_5fresult_2eproto, 14, file_level_enum_descriptors_vrp_2finvoke_5fscript_5fresult_2eproto, file_level_service_descriptors_vrp_2finvoke_5fscript_5fresult_2eproto,
-};
+PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_getter() {
+  return &descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_vrp_2finvoke_5fscript_5fresult_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_vrp_2finvoke_5fscript_5fresult_2eproto(&descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto);
 namespace vrp {
 
 // ===================================================================
 
-void InvokeScriptResult_Payment::InitAsDefaultInstance() {
-  ::vrp::_InvokeScriptResult_Payment_default_instance_._instance.get_mutable()->amount_ = const_cast< ::vrp::Amount*>(
-      ::vrp::Amount::internal_default_instance());
-}
 class InvokeScriptResult_Payment::_Internal {
  public:
   static const ::vrp::Amount& amount(const InvokeScriptResult_Payment* msg);
@@ -547,150 +495,158 @@ class InvokeScriptResult_Payment::_Internal {
 
 const ::vrp::Amount&
 InvokeScriptResult_Payment::_Internal::amount(const InvokeScriptResult_Payment* msg) {
-  return *msg->amount_;
+  return *msg->_impl_.amount_;
 }
 void InvokeScriptResult_Payment::clear_amount() {
-  if (GetArena() == nullptr && amount_ != nullptr) {
-    delete amount_;
+  if (GetArenaForAllocation() == nullptr && _impl_.amount_ != nullptr) {
+    delete _impl_.amount_;
   }
-  amount_ = nullptr;
+  _impl_.amount_ = nullptr;
 }
-InvokeScriptResult_Payment::InvokeScriptResult_Payment(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+InvokeScriptResult_Payment::InvokeScriptResult_Payment(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:vrp.InvokeScriptResult.Payment)
 }
 InvokeScriptResult_Payment::InvokeScriptResult_Payment(const InvokeScriptResult_Payment& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
+  InvokeScriptResult_Payment* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.address_){}
+    , decltype(_impl_.amount_){nullptr}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  address_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.address_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.address_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_address().empty()) {
-    address_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_address(),
-      GetArena());
+    _this->_impl_.address_.Set(from._internal_address(), 
+      _this->GetArenaForAllocation());
   }
   if (from._internal_has_amount()) {
-    amount_ = new ::vrp::Amount(*from.amount_);
-  } else {
-    amount_ = nullptr;
+    _this->_impl_.amount_ = new ::vrp::Amount(*from._impl_.amount_);
   }
   // @@protoc_insertion_point(copy_constructor:vrp.InvokeScriptResult.Payment)
 }
 
-void InvokeScriptResult_Payment::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_InvokeScriptResult_Payment_vrp_2finvoke_5fscript_5fresult_2eproto.base);
-  address_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  amount_ = nullptr;
+inline void InvokeScriptResult_Payment::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.address_){}
+    , decltype(_impl_.amount_){nullptr}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
+  _impl_.address_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.address_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 InvokeScriptResult_Payment::~InvokeScriptResult_Payment() {
   // @@protoc_insertion_point(destructor:vrp.InvokeScriptResult.Payment)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void InvokeScriptResult_Payment::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-  address_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) delete amount_;
+inline void InvokeScriptResult_Payment::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.address_.Destroy();
+  if (this != internal_default_instance()) delete _impl_.amount_;
 }
 
-void InvokeScriptResult_Payment::ArenaDtor(void* object) {
-  InvokeScriptResult_Payment* _this = reinterpret_cast< InvokeScriptResult_Payment* >(object);
-  (void)_this;
-}
-void InvokeScriptResult_Payment::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void InvokeScriptResult_Payment::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
-const InvokeScriptResult_Payment& InvokeScriptResult_Payment::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_InvokeScriptResult_Payment_vrp_2finvoke_5fscript_5fresult_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void InvokeScriptResult_Payment::Clear() {
 // @@protoc_insertion_point(message_clear_start:vrp.InvokeScriptResult.Payment)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  address_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  if (GetArena() == nullptr && amount_ != nullptr) {
-    delete amount_;
+  _impl_.address_.ClearToEmpty();
+  if (GetArenaForAllocation() == nullptr && _impl_.amount_ != nullptr) {
+    delete _impl_.amount_;
   }
-  amount_ = nullptr;
+  _impl_.amount_ = nullptr;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* InvokeScriptResult_Payment::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* InvokeScriptResult_Payment::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // bytes address = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           auto str = _internal_mutable_address();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .vrp.Amount amount = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_amount(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* InvokeScriptResult_Payment::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* InvokeScriptResult_Payment::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:vrp.InvokeScriptResult.Payment)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // bytes address = 1;
-  if (this->address().size() > 0) {
+  if (!this->_internal_address().empty()) {
     target = stream->WriteBytesMaybeAliased(
         1, this->_internal_address(), target);
   }
 
   // .vrp.Amount amount = 2;
-  if (this->has_amount()) {
-    target = stream->EnsureSpace(target);
+  if (this->_internal_has_amount()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::amount(this), target, stream);
+      InternalWriteMessage(2, _Internal::amount(this),
+        _Internal::amount(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:vrp.InvokeScriptResult.Payment)
@@ -701,68 +657,50 @@ size_t InvokeScriptResult_Payment::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:vrp.InvokeScriptResult.Payment)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // bytes address = 1;
-  if (this->address().size() > 0) {
+  if (!this->_internal_address().empty()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
         this->_internal_address());
   }
 
   // .vrp.Amount amount = 2;
-  if (this->has_amount()) {
+  if (this->_internal_has_amount()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *amount_);
+        *_impl_.amount_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void InvokeScriptResult_Payment::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:vrp.InvokeScriptResult.Payment)
-  GOOGLE_DCHECK_NE(&from, this);
-  const InvokeScriptResult_Payment* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<InvokeScriptResult_Payment>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:vrp.InvokeScriptResult.Payment)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:vrp.InvokeScriptResult.Payment)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData InvokeScriptResult_Payment::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    InvokeScriptResult_Payment::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*InvokeScriptResult_Payment::GetClassData() const { return &_class_data_; }
 
-void InvokeScriptResult_Payment::MergeFrom(const InvokeScriptResult_Payment& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:vrp.InvokeScriptResult.Payment)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void InvokeScriptResult_Payment::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<InvokeScriptResult_Payment*>(&to_msg);
+  auto& from = static_cast<const InvokeScriptResult_Payment&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:vrp.InvokeScriptResult.Payment)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.address().size() > 0) {
-    _internal_set_address(from._internal_address());
+  if (!from._internal_address().empty()) {
+    _this->_internal_set_address(from._internal_address());
   }
-  if (from.has_amount()) {
-    _internal_mutable_amount()->::vrp::Amount::MergeFrom(from._internal_amount());
+  if (from._internal_has_amount()) {
+    _this->_internal_mutable_amount()->::vrp::Amount::MergeFrom(
+        from._internal_amount());
   }
-}
-
-void InvokeScriptResult_Payment::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:vrp.InvokeScriptResult.Payment)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void InvokeScriptResult_Payment::CopyFrom(const InvokeScriptResult_Payment& from) {
@@ -778,22 +716,24 @@ bool InvokeScriptResult_Payment::IsInitialized() const {
 
 void InvokeScriptResult_Payment::InternalSwap(InvokeScriptResult_Payment* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  address_.Swap(&other->address_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  swap(amount_, other->amount_);
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &_impl_.address_, lhs_arena,
+      &other->_impl_.address_, rhs_arena
+  );
+  swap(_impl_.amount_, other->_impl_.amount_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata InvokeScriptResult_Payment::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_getter, &descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_once,
+      file_level_metadata_vrp_2finvoke_5fscript_5fresult_2eproto[0]);
 }
-
 
 // ===================================================================
 
-void InvokeScriptResult_PrivatePayment::InitAsDefaultInstance() {
-  ::vrp::_InvokeScriptResult_PrivatePayment_default_instance_._instance.get_mutable()->amount_ = const_cast< ::vrp::Amount*>(
-      ::vrp::Amount::internal_default_instance());
-}
 class InvokeScriptResult_PrivatePayment::_Internal {
  public:
   static const ::vrp::Amount& amount(const InvokeScriptResult_PrivatePayment* msg);
@@ -801,150 +741,158 @@ class InvokeScriptResult_PrivatePayment::_Internal {
 
 const ::vrp::Amount&
 InvokeScriptResult_PrivatePayment::_Internal::amount(const InvokeScriptResult_PrivatePayment* msg) {
-  return *msg->amount_;
+  return *msg->_impl_.amount_;
 }
 void InvokeScriptResult_PrivatePayment::clear_amount() {
-  if (GetArena() == nullptr && amount_ != nullptr) {
-    delete amount_;
+  if (GetArenaForAllocation() == nullptr && _impl_.amount_ != nullptr) {
+    delete _impl_.amount_;
   }
-  amount_ = nullptr;
+  _impl_.amount_ = nullptr;
 }
-InvokeScriptResult_PrivatePayment::InvokeScriptResult_PrivatePayment(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+InvokeScriptResult_PrivatePayment::InvokeScriptResult_PrivatePayment(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:vrp.InvokeScriptResult.PrivatePayment)
 }
 InvokeScriptResult_PrivatePayment::InvokeScriptResult_PrivatePayment(const InvokeScriptResult_PrivatePayment& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
+  InvokeScriptResult_PrivatePayment* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.address_){}
+    , decltype(_impl_.amount_){nullptr}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  address_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.address_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.address_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_address().empty()) {
-    address_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_address(),
-      GetArena());
+    _this->_impl_.address_.Set(from._internal_address(), 
+      _this->GetArenaForAllocation());
   }
   if (from._internal_has_amount()) {
-    amount_ = new ::vrp::Amount(*from.amount_);
-  } else {
-    amount_ = nullptr;
+    _this->_impl_.amount_ = new ::vrp::Amount(*from._impl_.amount_);
   }
   // @@protoc_insertion_point(copy_constructor:vrp.InvokeScriptResult.PrivatePayment)
 }
 
-void InvokeScriptResult_PrivatePayment::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_InvokeScriptResult_PrivatePayment_vrp_2finvoke_5fscript_5fresult_2eproto.base);
-  address_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  amount_ = nullptr;
+inline void InvokeScriptResult_PrivatePayment::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.address_){}
+    , decltype(_impl_.amount_){nullptr}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
+  _impl_.address_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.address_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 InvokeScriptResult_PrivatePayment::~InvokeScriptResult_PrivatePayment() {
   // @@protoc_insertion_point(destructor:vrp.InvokeScriptResult.PrivatePayment)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void InvokeScriptResult_PrivatePayment::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-  address_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) delete amount_;
+inline void InvokeScriptResult_PrivatePayment::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.address_.Destroy();
+  if (this != internal_default_instance()) delete _impl_.amount_;
 }
 
-void InvokeScriptResult_PrivatePayment::ArenaDtor(void* object) {
-  InvokeScriptResult_PrivatePayment* _this = reinterpret_cast< InvokeScriptResult_PrivatePayment* >(object);
-  (void)_this;
-}
-void InvokeScriptResult_PrivatePayment::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void InvokeScriptResult_PrivatePayment::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
-const InvokeScriptResult_PrivatePayment& InvokeScriptResult_PrivatePayment::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_InvokeScriptResult_PrivatePayment_vrp_2finvoke_5fscript_5fresult_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void InvokeScriptResult_PrivatePayment::Clear() {
 // @@protoc_insertion_point(message_clear_start:vrp.InvokeScriptResult.PrivatePayment)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  address_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  if (GetArena() == nullptr && amount_ != nullptr) {
-    delete amount_;
+  _impl_.address_.ClearToEmpty();
+  if (GetArenaForAllocation() == nullptr && _impl_.amount_ != nullptr) {
+    delete _impl_.amount_;
   }
-  amount_ = nullptr;
+  _impl_.amount_ = nullptr;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* InvokeScriptResult_PrivatePayment::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* InvokeScriptResult_PrivatePayment::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // bytes address = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           auto str = _internal_mutable_address();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .vrp.Amount amount = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_amount(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* InvokeScriptResult_PrivatePayment::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* InvokeScriptResult_PrivatePayment::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:vrp.InvokeScriptResult.PrivatePayment)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // bytes address = 1;
-  if (this->address().size() > 0) {
+  if (!this->_internal_address().empty()) {
     target = stream->WriteBytesMaybeAliased(
         1, this->_internal_address(), target);
   }
 
   // .vrp.Amount amount = 2;
-  if (this->has_amount()) {
-    target = stream->EnsureSpace(target);
+  if (this->_internal_has_amount()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::amount(this), target, stream);
+      InternalWriteMessage(2, _Internal::amount(this),
+        _Internal::amount(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:vrp.InvokeScriptResult.PrivatePayment)
@@ -955,68 +903,50 @@ size_t InvokeScriptResult_PrivatePayment::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:vrp.InvokeScriptResult.PrivatePayment)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // bytes address = 1;
-  if (this->address().size() > 0) {
+  if (!this->_internal_address().empty()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
         this->_internal_address());
   }
 
   // .vrp.Amount amount = 2;
-  if (this->has_amount()) {
+  if (this->_internal_has_amount()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *amount_);
+        *_impl_.amount_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void InvokeScriptResult_PrivatePayment::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:vrp.InvokeScriptResult.PrivatePayment)
-  GOOGLE_DCHECK_NE(&from, this);
-  const InvokeScriptResult_PrivatePayment* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<InvokeScriptResult_PrivatePayment>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:vrp.InvokeScriptResult.PrivatePayment)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:vrp.InvokeScriptResult.PrivatePayment)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData InvokeScriptResult_PrivatePayment::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    InvokeScriptResult_PrivatePayment::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*InvokeScriptResult_PrivatePayment::GetClassData() const { return &_class_data_; }
 
-void InvokeScriptResult_PrivatePayment::MergeFrom(const InvokeScriptResult_PrivatePayment& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:vrp.InvokeScriptResult.PrivatePayment)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void InvokeScriptResult_PrivatePayment::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<InvokeScriptResult_PrivatePayment*>(&to_msg);
+  auto& from = static_cast<const InvokeScriptResult_PrivatePayment&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:vrp.InvokeScriptResult.PrivatePayment)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.address().size() > 0) {
-    _internal_set_address(from._internal_address());
+  if (!from._internal_address().empty()) {
+    _this->_internal_set_address(from._internal_address());
   }
-  if (from.has_amount()) {
-    _internal_mutable_amount()->::vrp::Amount::MergeFrom(from._internal_amount());
+  if (from._internal_has_amount()) {
+    _this->_internal_mutable_amount()->::vrp::Amount::MergeFrom(
+        from._internal_amount());
   }
-}
-
-void InvokeScriptResult_PrivatePayment::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:vrp.InvokeScriptResult.PrivatePayment)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void InvokeScriptResult_PrivatePayment::CopyFrom(const InvokeScriptResult_PrivatePayment& from) {
@@ -1032,238 +962,296 @@ bool InvokeScriptResult_PrivatePayment::IsInitialized() const {
 
 void InvokeScriptResult_PrivatePayment::InternalSwap(InvokeScriptResult_PrivatePayment* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  address_.Swap(&other->address_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  swap(amount_, other->amount_);
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &_impl_.address_, lhs_arena,
+      &other->_impl_.address_, rhs_arena
+  );
+  swap(_impl_.amount_, other->_impl_.amount_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata InvokeScriptResult_PrivatePayment::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_getter, &descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_once,
+      file_level_metadata_vrp_2finvoke_5fscript_5fresult_2eproto[1]);
 }
-
 
 // ===================================================================
 
-void InvokeScriptResult_Issue::InitAsDefaultInstance() {
-}
 class InvokeScriptResult_Issue::_Internal {
  public:
 };
 
-InvokeScriptResult_Issue::InvokeScriptResult_Issue(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+InvokeScriptResult_Issue::InvokeScriptResult_Issue(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:vrp.InvokeScriptResult.Issue)
 }
 InvokeScriptResult_Issue::InvokeScriptResult_Issue(const InvokeScriptResult_Issue& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
+  InvokeScriptResult_Issue* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.asset_id_){}
+    , decltype(_impl_.name_){}
+    , decltype(_impl_.description_){}
+    , decltype(_impl_.image_){}
+    , decltype(_impl_.script_){}
+    , decltype(_impl_.amount_){}
+    , decltype(_impl_.decimals_){}
+    , decltype(_impl_.reissuable_){}
+    , decltype(_impl_.nonce_){}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  asset_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.asset_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.asset_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_asset_id().empty()) {
-    asset_id_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_asset_id(),
-      GetArena());
+    _this->_impl_.asset_id_.Set(from._internal_asset_id(), 
+      _this->GetArenaForAllocation());
   }
-  name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.name_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.name_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_name().empty()) {
-    name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_name(),
-      GetArena());
+    _this->_impl_.name_.Set(from._internal_name(), 
+      _this->GetArenaForAllocation());
   }
-  description_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.description_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.description_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_description().empty()) {
-    description_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_description(),
-      GetArena());
+    _this->_impl_.description_.Set(from._internal_description(), 
+      _this->GetArenaForAllocation());
   }
-  image_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.image_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.image_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_image().empty()) {
-    image_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_image(),
-      GetArena());
+    _this->_impl_.image_.Set(from._internal_image(), 
+      _this->GetArenaForAllocation());
   }
-  script_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.script_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.script_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_script().empty()) {
-    script_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_script(),
-      GetArena());
+    _this->_impl_.script_.Set(from._internal_script(), 
+      _this->GetArenaForAllocation());
   }
-  ::memcpy(&amount_, &from.amount_,
-    static_cast<size_t>(reinterpret_cast<char*>(&nonce_) -
-    reinterpret_cast<char*>(&amount_)) + sizeof(nonce_));
+  ::memcpy(&_impl_.amount_, &from._impl_.amount_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.nonce_) -
+    reinterpret_cast<char*>(&_impl_.amount_)) + sizeof(_impl_.nonce_));
   // @@protoc_insertion_point(copy_constructor:vrp.InvokeScriptResult.Issue)
 }
 
-void InvokeScriptResult_Issue::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_InvokeScriptResult_Issue_vrp_2finvoke_5fscript_5fresult_2eproto.base);
-  asset_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  description_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  image_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  script_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::memset(&amount_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&nonce_) -
-      reinterpret_cast<char*>(&amount_)) + sizeof(nonce_));
+inline void InvokeScriptResult_Issue::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.asset_id_){}
+    , decltype(_impl_.name_){}
+    , decltype(_impl_.description_){}
+    , decltype(_impl_.image_){}
+    , decltype(_impl_.script_){}
+    , decltype(_impl_.amount_){int64_t{0}}
+    , decltype(_impl_.decimals_){0}
+    , decltype(_impl_.reissuable_){false}
+    , decltype(_impl_.nonce_){int64_t{0}}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
+  _impl_.asset_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.asset_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.name_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.name_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.description_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.description_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.image_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.image_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.script_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.script_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 InvokeScriptResult_Issue::~InvokeScriptResult_Issue() {
   // @@protoc_insertion_point(destructor:vrp.InvokeScriptResult.Issue)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void InvokeScriptResult_Issue::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-  asset_id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  description_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  image_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  script_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+inline void InvokeScriptResult_Issue::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.asset_id_.Destroy();
+  _impl_.name_.Destroy();
+  _impl_.description_.Destroy();
+  _impl_.image_.Destroy();
+  _impl_.script_.Destroy();
 }
 
-void InvokeScriptResult_Issue::ArenaDtor(void* object) {
-  InvokeScriptResult_Issue* _this = reinterpret_cast< InvokeScriptResult_Issue* >(object);
-  (void)_this;
-}
-void InvokeScriptResult_Issue::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void InvokeScriptResult_Issue::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
-const InvokeScriptResult_Issue& InvokeScriptResult_Issue::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_InvokeScriptResult_Issue_vrp_2finvoke_5fscript_5fresult_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void InvokeScriptResult_Issue::Clear() {
 // @@protoc_insertion_point(message_clear_start:vrp.InvokeScriptResult.Issue)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  asset_id_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  description_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  image_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  script_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  ::memset(&amount_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&nonce_) -
-      reinterpret_cast<char*>(&amount_)) + sizeof(nonce_));
+  _impl_.asset_id_.ClearToEmpty();
+  _impl_.name_.ClearToEmpty();
+  _impl_.description_.ClearToEmpty();
+  _impl_.image_.ClearToEmpty();
+  _impl_.script_.ClearToEmpty();
+  ::memset(&_impl_.amount_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&_impl_.nonce_) -
+      reinterpret_cast<char*>(&_impl_.amount_)) + sizeof(_impl_.nonce_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* InvokeScriptResult_Issue::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* InvokeScriptResult_Issue::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // bytes asset_id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           auto str = _internal_mutable_asset_id();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // string name = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           auto str = _internal_mutable_name();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "vrp.InvokeScriptResult.Issue.name"));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          CHK_(::_pbi::VerifyUTF8(str, "vrp.InvokeScriptResult.Issue.name"));
+        } else
+          goto handle_unusual;
         continue;
       // string description = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           auto str = _internal_mutable_description();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "vrp.InvokeScriptResult.Issue.description"));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          CHK_(::_pbi::VerifyUTF8(str, "vrp.InvokeScriptResult.Issue.description"));
+        } else
+          goto handle_unusual;
         continue;
       // string image = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           auto str = _internal_mutable_image();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "vrp.InvokeScriptResult.Issue.image"));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          CHK_(::_pbi::VerifyUTF8(str, "vrp.InvokeScriptResult.Issue.image"));
+        } else
+          goto handle_unusual;
         continue;
       // int64 amount = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
-          amount_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 40)) {
+          _impl_.amount_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // int32 decimals = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
-          decimals_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 48)) {
+          _impl_.decimals_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // bool reissuable = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
-          reissuable_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 56)) {
+          _impl_.reissuable_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // bytes script = 8;
       case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 66)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 66)) {
           auto str = _internal_mutable_script();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // int64 nonce = 9;
       case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
-          nonce_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 72)) {
+          _impl_.nonce_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* InvokeScriptResult_Issue::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* InvokeScriptResult_Issue::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:vrp.InvokeScriptResult.Issue)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // bytes asset_id = 1;
-  if (this->asset_id().size() > 0) {
+  if (!this->_internal_asset_id().empty()) {
     target = stream->WriteBytesMaybeAliased(
         1, this->_internal_asset_id(), target);
   }
 
   // string name = 2;
-  if (this->name().size() > 0) {
+  if (!this->_internal_name().empty()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_name().data(), static_cast<int>(this->_internal_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
@@ -1273,7 +1261,7 @@ failure:
   }
 
   // string description = 3;
-  if (this->description().size() > 0) {
+  if (!this->_internal_description().empty()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_description().data(), static_cast<int>(this->_internal_description().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
@@ -1283,7 +1271,7 @@ failure:
   }
 
   // string image = 4;
-  if (this->image().size() > 0) {
+  if (!this->_internal_image().empty()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_image().data(), static_cast<int>(this->_internal_image().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
@@ -1293,37 +1281,37 @@ failure:
   }
 
   // int64 amount = 5;
-  if (this->amount() != 0) {
+  if (this->_internal_amount() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_amount(), target);
+    target = ::_pbi::WireFormatLite::WriteInt64ToArray(5, this->_internal_amount(), target);
   }
 
   // int32 decimals = 6;
-  if (this->decimals() != 0) {
+  if (this->_internal_decimals() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_decimals(), target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(6, this->_internal_decimals(), target);
   }
 
   // bool reissuable = 7;
-  if (this->reissuable() != 0) {
+  if (this->_internal_reissuable() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(7, this->_internal_reissuable(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(7, this->_internal_reissuable(), target);
   }
 
   // bytes script = 8;
-  if (this->script().size() > 0) {
+  if (!this->_internal_script().empty()) {
     target = stream->WriteBytesMaybeAliased(
         8, this->_internal_script(), target);
   }
 
   // int64 nonce = 9;
-  if (this->nonce() != 0) {
+  if (this->_internal_nonce() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(9, this->_internal_nonce(), target);
+    target = ::_pbi::WireFormatLite::WriteInt64ToArray(9, this->_internal_nonce(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:vrp.InvokeScriptResult.Issue)
@@ -1334,136 +1322,111 @@ size_t InvokeScriptResult_Issue::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:vrp.InvokeScriptResult.Issue)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // bytes asset_id = 1;
-  if (this->asset_id().size() > 0) {
+  if (!this->_internal_asset_id().empty()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
         this->_internal_asset_id());
   }
 
   // string name = 2;
-  if (this->name().size() > 0) {
+  if (!this->_internal_name().empty()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_name());
   }
 
   // string description = 3;
-  if (this->description().size() > 0) {
+  if (!this->_internal_description().empty()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_description());
   }
 
   // string image = 4;
-  if (this->image().size() > 0) {
+  if (!this->_internal_image().empty()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_image());
   }
 
   // bytes script = 8;
-  if (this->script().size() > 0) {
+  if (!this->_internal_script().empty()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
         this->_internal_script());
   }
 
   // int64 amount = 5;
-  if (this->amount() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_amount());
+  if (this->_internal_amount() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int64SizePlusOne(this->_internal_amount());
   }
 
   // int32 decimals = 6;
-  if (this->decimals() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_decimals());
+  if (this->_internal_decimals() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_decimals());
   }
 
   // bool reissuable = 7;
-  if (this->reissuable() != 0) {
+  if (this->_internal_reissuable() != 0) {
     total_size += 1 + 1;
   }
 
   // int64 nonce = 9;
-  if (this->nonce() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_nonce());
+  if (this->_internal_nonce() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int64SizePlusOne(this->_internal_nonce());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void InvokeScriptResult_Issue::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:vrp.InvokeScriptResult.Issue)
-  GOOGLE_DCHECK_NE(&from, this);
-  const InvokeScriptResult_Issue* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<InvokeScriptResult_Issue>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:vrp.InvokeScriptResult.Issue)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:vrp.InvokeScriptResult.Issue)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData InvokeScriptResult_Issue::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    InvokeScriptResult_Issue::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*InvokeScriptResult_Issue::GetClassData() const { return &_class_data_; }
 
-void InvokeScriptResult_Issue::MergeFrom(const InvokeScriptResult_Issue& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:vrp.InvokeScriptResult.Issue)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void InvokeScriptResult_Issue::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<InvokeScriptResult_Issue*>(&to_msg);
+  auto& from = static_cast<const InvokeScriptResult_Issue&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:vrp.InvokeScriptResult.Issue)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.asset_id().size() > 0) {
-    _internal_set_asset_id(from._internal_asset_id());
+  if (!from._internal_asset_id().empty()) {
+    _this->_internal_set_asset_id(from._internal_asset_id());
   }
-  if (from.name().size() > 0) {
-    _internal_set_name(from._internal_name());
+  if (!from._internal_name().empty()) {
+    _this->_internal_set_name(from._internal_name());
   }
-  if (from.description().size() > 0) {
-    _internal_set_description(from._internal_description());
+  if (!from._internal_description().empty()) {
+    _this->_internal_set_description(from._internal_description());
   }
-  if (from.image().size() > 0) {
-    _internal_set_image(from._internal_image());
+  if (!from._internal_image().empty()) {
+    _this->_internal_set_image(from._internal_image());
   }
-  if (from.script().size() > 0) {
-    _internal_set_script(from._internal_script());
+  if (!from._internal_script().empty()) {
+    _this->_internal_set_script(from._internal_script());
   }
-  if (from.amount() != 0) {
-    _internal_set_amount(from._internal_amount());
+  if (from._internal_amount() != 0) {
+    _this->_internal_set_amount(from._internal_amount());
   }
-  if (from.decimals() != 0) {
-    _internal_set_decimals(from._internal_decimals());
+  if (from._internal_decimals() != 0) {
+    _this->_internal_set_decimals(from._internal_decimals());
   }
-  if (from.reissuable() != 0) {
-    _internal_set_reissuable(from._internal_reissuable());
+  if (from._internal_reissuable() != 0) {
+    _this->_internal_set_reissuable(from._internal_reissuable());
   }
-  if (from.nonce() != 0) {
-    _internal_set_nonce(from._internal_nonce());
+  if (from._internal_nonce() != 0) {
+    _this->_internal_set_nonce(from._internal_nonce());
   }
-}
-
-void InvokeScriptResult_Issue::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:vrp.InvokeScriptResult.Issue)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void InvokeScriptResult_Issue::CopyFrom(const InvokeScriptResult_Issue& from) {
@@ -1479,178 +1442,206 @@ bool InvokeScriptResult_Issue::IsInitialized() const {
 
 void InvokeScriptResult_Issue::InternalSwap(InvokeScriptResult_Issue* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  asset_id_.Swap(&other->asset_id_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  name_.Swap(&other->name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  description_.Swap(&other->description_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  image_.Swap(&other->image_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  script_.Swap(&other->script_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &_impl_.asset_id_, lhs_arena,
+      &other->_impl_.asset_id_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &_impl_.name_, lhs_arena,
+      &other->_impl_.name_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &_impl_.description_, lhs_arena,
+      &other->_impl_.description_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &_impl_.image_, lhs_arena,
+      &other->_impl_.image_, rhs_arena
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &_impl_.script_, lhs_arena,
+      &other->_impl_.script_, rhs_arena
+  );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(InvokeScriptResult_Issue, nonce_)
-      + sizeof(InvokeScriptResult_Issue::nonce_)
-      - PROTOBUF_FIELD_OFFSET(InvokeScriptResult_Issue, amount_)>(
-          reinterpret_cast<char*>(&amount_),
-          reinterpret_cast<char*>(&other->amount_));
+      PROTOBUF_FIELD_OFFSET(InvokeScriptResult_Issue, _impl_.nonce_)
+      + sizeof(InvokeScriptResult_Issue::_impl_.nonce_)
+      - PROTOBUF_FIELD_OFFSET(InvokeScriptResult_Issue, _impl_.amount_)>(
+          reinterpret_cast<char*>(&_impl_.amount_),
+          reinterpret_cast<char*>(&other->_impl_.amount_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata InvokeScriptResult_Issue::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_getter, &descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_once,
+      file_level_metadata_vrp_2finvoke_5fscript_5fresult_2eproto[2]);
 }
-
 
 // ===================================================================
 
-void InvokeScriptResult_Reissue::InitAsDefaultInstance() {
-}
 class InvokeScriptResult_Reissue::_Internal {
  public:
 };
 
-InvokeScriptResult_Reissue::InvokeScriptResult_Reissue(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+InvokeScriptResult_Reissue::InvokeScriptResult_Reissue(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:vrp.InvokeScriptResult.Reissue)
 }
 InvokeScriptResult_Reissue::InvokeScriptResult_Reissue(const InvokeScriptResult_Reissue& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
+  InvokeScriptResult_Reissue* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.asset_id_){}
+    , decltype(_impl_.amount_){}
+    , decltype(_impl_.is_reissuable_){}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  asset_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.asset_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.asset_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_asset_id().empty()) {
-    asset_id_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_asset_id(),
-      GetArena());
+    _this->_impl_.asset_id_.Set(from._internal_asset_id(), 
+      _this->GetArenaForAllocation());
   }
-  ::memcpy(&amount_, &from.amount_,
-    static_cast<size_t>(reinterpret_cast<char*>(&is_reissuable_) -
-    reinterpret_cast<char*>(&amount_)) + sizeof(is_reissuable_));
+  ::memcpy(&_impl_.amount_, &from._impl_.amount_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.is_reissuable_) -
+    reinterpret_cast<char*>(&_impl_.amount_)) + sizeof(_impl_.is_reissuable_));
   // @@protoc_insertion_point(copy_constructor:vrp.InvokeScriptResult.Reissue)
 }
 
-void InvokeScriptResult_Reissue::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_InvokeScriptResult_Reissue_vrp_2finvoke_5fscript_5fresult_2eproto.base);
-  asset_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::memset(&amount_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&is_reissuable_) -
-      reinterpret_cast<char*>(&amount_)) + sizeof(is_reissuable_));
+inline void InvokeScriptResult_Reissue::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.asset_id_){}
+    , decltype(_impl_.amount_){int64_t{0}}
+    , decltype(_impl_.is_reissuable_){false}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
+  _impl_.asset_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.asset_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 InvokeScriptResult_Reissue::~InvokeScriptResult_Reissue() {
   // @@protoc_insertion_point(destructor:vrp.InvokeScriptResult.Reissue)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void InvokeScriptResult_Reissue::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-  asset_id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+inline void InvokeScriptResult_Reissue::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.asset_id_.Destroy();
 }
 
-void InvokeScriptResult_Reissue::ArenaDtor(void* object) {
-  InvokeScriptResult_Reissue* _this = reinterpret_cast< InvokeScriptResult_Reissue* >(object);
-  (void)_this;
-}
-void InvokeScriptResult_Reissue::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void InvokeScriptResult_Reissue::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
-const InvokeScriptResult_Reissue& InvokeScriptResult_Reissue::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_InvokeScriptResult_Reissue_vrp_2finvoke_5fscript_5fresult_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void InvokeScriptResult_Reissue::Clear() {
 // @@protoc_insertion_point(message_clear_start:vrp.InvokeScriptResult.Reissue)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  asset_id_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  ::memset(&amount_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&is_reissuable_) -
-      reinterpret_cast<char*>(&amount_)) + sizeof(is_reissuable_));
+  _impl_.asset_id_.ClearToEmpty();
+  ::memset(&_impl_.amount_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&_impl_.is_reissuable_) -
+      reinterpret_cast<char*>(&_impl_.amount_)) + sizeof(_impl_.is_reissuable_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* InvokeScriptResult_Reissue::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* InvokeScriptResult_Reissue::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // bytes asset_id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           auto str = _internal_mutable_asset_id();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // int64 amount = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          amount_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          _impl_.amount_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // bool is_reissuable = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          is_reissuable_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
+          _impl_.is_reissuable_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* InvokeScriptResult_Reissue::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* InvokeScriptResult_Reissue::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:vrp.InvokeScriptResult.Reissue)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // bytes asset_id = 1;
-  if (this->asset_id().size() > 0) {
+  if (!this->_internal_asset_id().empty()) {
     target = stream->WriteBytesMaybeAliased(
         1, this->_internal_asset_id(), target);
   }
 
   // int64 amount = 2;
-  if (this->amount() != 0) {
+  if (this->_internal_amount() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_amount(), target);
+    target = ::_pbi::WireFormatLite::WriteInt64ToArray(2, this->_internal_amount(), target);
   }
 
   // bool is_reissuable = 3;
-  if (this->is_reissuable() != 0) {
+  if (this->_internal_is_reissuable() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_is_reissuable(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(3, this->_internal_is_reissuable(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:vrp.InvokeScriptResult.Reissue)
@@ -1661,76 +1652,55 @@ size_t InvokeScriptResult_Reissue::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:vrp.InvokeScriptResult.Reissue)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // bytes asset_id = 1;
-  if (this->asset_id().size() > 0) {
+  if (!this->_internal_asset_id().empty()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
         this->_internal_asset_id());
   }
 
   // int64 amount = 2;
-  if (this->amount() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_amount());
+  if (this->_internal_amount() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int64SizePlusOne(this->_internal_amount());
   }
 
   // bool is_reissuable = 3;
-  if (this->is_reissuable() != 0) {
+  if (this->_internal_is_reissuable() != 0) {
     total_size += 1 + 1;
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void InvokeScriptResult_Reissue::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:vrp.InvokeScriptResult.Reissue)
-  GOOGLE_DCHECK_NE(&from, this);
-  const InvokeScriptResult_Reissue* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<InvokeScriptResult_Reissue>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:vrp.InvokeScriptResult.Reissue)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:vrp.InvokeScriptResult.Reissue)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData InvokeScriptResult_Reissue::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    InvokeScriptResult_Reissue::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*InvokeScriptResult_Reissue::GetClassData() const { return &_class_data_; }
 
-void InvokeScriptResult_Reissue::MergeFrom(const InvokeScriptResult_Reissue& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:vrp.InvokeScriptResult.Reissue)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void InvokeScriptResult_Reissue::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<InvokeScriptResult_Reissue*>(&to_msg);
+  auto& from = static_cast<const InvokeScriptResult_Reissue&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:vrp.InvokeScriptResult.Reissue)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.asset_id().size() > 0) {
-    _internal_set_asset_id(from._internal_asset_id());
+  if (!from._internal_asset_id().empty()) {
+    _this->_internal_set_asset_id(from._internal_asset_id());
   }
-  if (from.amount() != 0) {
-    _internal_set_amount(from._internal_amount());
+  if (from._internal_amount() != 0) {
+    _this->_internal_set_amount(from._internal_amount());
   }
-  if (from.is_reissuable() != 0) {
-    _internal_set_is_reissuable(from._internal_is_reissuable());
+  if (from._internal_is_reissuable() != 0) {
+    _this->_internal_set_is_reissuable(from._internal_is_reissuable());
   }
-}
-
-void InvokeScriptResult_Reissue::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:vrp.InvokeScriptResult.Reissue)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void InvokeScriptResult_Reissue::CopyFrom(const InvokeScriptResult_Reissue& from) {
@@ -1746,155 +1716,170 @@ bool InvokeScriptResult_Reissue::IsInitialized() const {
 
 void InvokeScriptResult_Reissue::InternalSwap(InvokeScriptResult_Reissue* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  asset_id_.Swap(&other->asset_id_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &_impl_.asset_id_, lhs_arena,
+      &other->_impl_.asset_id_, rhs_arena
+  );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(InvokeScriptResult_Reissue, is_reissuable_)
-      + sizeof(InvokeScriptResult_Reissue::is_reissuable_)
-      - PROTOBUF_FIELD_OFFSET(InvokeScriptResult_Reissue, amount_)>(
-          reinterpret_cast<char*>(&amount_),
-          reinterpret_cast<char*>(&other->amount_));
+      PROTOBUF_FIELD_OFFSET(InvokeScriptResult_Reissue, _impl_.is_reissuable_)
+      + sizeof(InvokeScriptResult_Reissue::_impl_.is_reissuable_)
+      - PROTOBUF_FIELD_OFFSET(InvokeScriptResult_Reissue, _impl_.amount_)>(
+          reinterpret_cast<char*>(&_impl_.amount_),
+          reinterpret_cast<char*>(&other->_impl_.amount_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata InvokeScriptResult_Reissue::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_getter, &descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_once,
+      file_level_metadata_vrp_2finvoke_5fscript_5fresult_2eproto[3]);
 }
-
 
 // ===================================================================
 
-void InvokeScriptResult_Burn::InitAsDefaultInstance() {
-}
 class InvokeScriptResult_Burn::_Internal {
  public:
 };
 
-InvokeScriptResult_Burn::InvokeScriptResult_Burn(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+InvokeScriptResult_Burn::InvokeScriptResult_Burn(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:vrp.InvokeScriptResult.Burn)
 }
 InvokeScriptResult_Burn::InvokeScriptResult_Burn(const InvokeScriptResult_Burn& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
+  InvokeScriptResult_Burn* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.asset_id_){}
+    , decltype(_impl_.amount_){}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  asset_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.asset_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.asset_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_asset_id().empty()) {
-    asset_id_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_asset_id(),
-      GetArena());
+    _this->_impl_.asset_id_.Set(from._internal_asset_id(), 
+      _this->GetArenaForAllocation());
   }
-  amount_ = from.amount_;
+  _this->_impl_.amount_ = from._impl_.amount_;
   // @@protoc_insertion_point(copy_constructor:vrp.InvokeScriptResult.Burn)
 }
 
-void InvokeScriptResult_Burn::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_InvokeScriptResult_Burn_vrp_2finvoke_5fscript_5fresult_2eproto.base);
-  asset_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  amount_ = PROTOBUF_LONGLONG(0);
+inline void InvokeScriptResult_Burn::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.asset_id_){}
+    , decltype(_impl_.amount_){int64_t{0}}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
+  _impl_.asset_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.asset_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 InvokeScriptResult_Burn::~InvokeScriptResult_Burn() {
   // @@protoc_insertion_point(destructor:vrp.InvokeScriptResult.Burn)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void InvokeScriptResult_Burn::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-  asset_id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+inline void InvokeScriptResult_Burn::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.asset_id_.Destroy();
 }
 
-void InvokeScriptResult_Burn::ArenaDtor(void* object) {
-  InvokeScriptResult_Burn* _this = reinterpret_cast< InvokeScriptResult_Burn* >(object);
-  (void)_this;
-}
-void InvokeScriptResult_Burn::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void InvokeScriptResult_Burn::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
-const InvokeScriptResult_Burn& InvokeScriptResult_Burn::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_InvokeScriptResult_Burn_vrp_2finvoke_5fscript_5fresult_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void InvokeScriptResult_Burn::Clear() {
 // @@protoc_insertion_point(message_clear_start:vrp.InvokeScriptResult.Burn)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  asset_id_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  amount_ = PROTOBUF_LONGLONG(0);
+  _impl_.asset_id_.ClearToEmpty();
+  _impl_.amount_ = int64_t{0};
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* InvokeScriptResult_Burn::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* InvokeScriptResult_Burn::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // bytes asset_id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           auto str = _internal_mutable_asset_id();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // int64 amount = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          amount_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          _impl_.amount_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* InvokeScriptResult_Burn::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* InvokeScriptResult_Burn::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:vrp.InvokeScriptResult.Burn)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // bytes asset_id = 1;
-  if (this->asset_id().size() > 0) {
+  if (!this->_internal_asset_id().empty()) {
     target = stream->WriteBytesMaybeAliased(
         1, this->_internal_asset_id(), target);
   }
 
   // int64 amount = 2;
-  if (this->amount() != 0) {
+  if (this->_internal_amount() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_amount(), target);
+    target = ::_pbi::WireFormatLite::WriteInt64ToArray(2, this->_internal_amount(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:vrp.InvokeScriptResult.Burn)
@@ -1905,68 +1890,47 @@ size_t InvokeScriptResult_Burn::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:vrp.InvokeScriptResult.Burn)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // bytes asset_id = 1;
-  if (this->asset_id().size() > 0) {
+  if (!this->_internal_asset_id().empty()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
         this->_internal_asset_id());
   }
 
   // int64 amount = 2;
-  if (this->amount() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_amount());
+  if (this->_internal_amount() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int64SizePlusOne(this->_internal_amount());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void InvokeScriptResult_Burn::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:vrp.InvokeScriptResult.Burn)
-  GOOGLE_DCHECK_NE(&from, this);
-  const InvokeScriptResult_Burn* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<InvokeScriptResult_Burn>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:vrp.InvokeScriptResult.Burn)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:vrp.InvokeScriptResult.Burn)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData InvokeScriptResult_Burn::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    InvokeScriptResult_Burn::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*InvokeScriptResult_Burn::GetClassData() const { return &_class_data_; }
 
-void InvokeScriptResult_Burn::MergeFrom(const InvokeScriptResult_Burn& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:vrp.InvokeScriptResult.Burn)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void InvokeScriptResult_Burn::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<InvokeScriptResult_Burn*>(&to_msg);
+  auto& from = static_cast<const InvokeScriptResult_Burn&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:vrp.InvokeScriptResult.Burn)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.asset_id().size() > 0) {
-    _internal_set_asset_id(from._internal_asset_id());
+  if (!from._internal_asset_id().empty()) {
+    _this->_internal_set_asset_id(from._internal_asset_id());
   }
-  if (from.amount() != 0) {
-    _internal_set_amount(from._internal_amount());
+  if (from._internal_amount() != 0) {
+    _this->_internal_set_amount(from._internal_amount());
   }
-}
-
-void InvokeScriptResult_Burn::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:vrp.InvokeScriptResult.Burn)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void InvokeScriptResult_Burn::CopyFrom(const InvokeScriptResult_Burn& from) {
@@ -1982,22 +1946,24 @@ bool InvokeScriptResult_Burn::IsInitialized() const {
 
 void InvokeScriptResult_Burn::InternalSwap(InvokeScriptResult_Burn* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  asset_id_.Swap(&other->asset_id_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  swap(amount_, other->amount_);
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &_impl_.asset_id_, lhs_arena,
+      &other->_impl_.asset_id_, rhs_arena
+  );
+  swap(_impl_.amount_, other->_impl_.amount_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata InvokeScriptResult_Burn::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_getter, &descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_once,
+      file_level_metadata_vrp_2finvoke_5fscript_5fresult_2eproto[4]);
 }
-
 
 // ===================================================================
 
-void InvokeScriptResult_SponsorFee::InitAsDefaultInstance() {
-  ::vrp::_InvokeScriptResult_SponsorFee_default_instance_._instance.get_mutable()->min_fee_ = const_cast< ::vrp::Amount*>(
-      ::vrp::Amount::internal_default_instance());
-}
 class InvokeScriptResult_SponsorFee::_Internal {
  public:
   static const ::vrp::Amount& min_fee(const InvokeScriptResult_SponsorFee* msg);
@@ -2005,128 +1971,127 @@ class InvokeScriptResult_SponsorFee::_Internal {
 
 const ::vrp::Amount&
 InvokeScriptResult_SponsorFee::_Internal::min_fee(const InvokeScriptResult_SponsorFee* msg) {
-  return *msg->min_fee_;
+  return *msg->_impl_.min_fee_;
 }
 void InvokeScriptResult_SponsorFee::clear_min_fee() {
-  if (GetArena() == nullptr && min_fee_ != nullptr) {
-    delete min_fee_;
+  if (GetArenaForAllocation() == nullptr && _impl_.min_fee_ != nullptr) {
+    delete _impl_.min_fee_;
   }
-  min_fee_ = nullptr;
+  _impl_.min_fee_ = nullptr;
 }
-InvokeScriptResult_SponsorFee::InvokeScriptResult_SponsorFee(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+InvokeScriptResult_SponsorFee::InvokeScriptResult_SponsorFee(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:vrp.InvokeScriptResult.SponsorFee)
 }
 InvokeScriptResult_SponsorFee::InvokeScriptResult_SponsorFee(const InvokeScriptResult_SponsorFee& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
+  InvokeScriptResult_SponsorFee* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.min_fee_){nullptr}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_min_fee()) {
-    min_fee_ = new ::vrp::Amount(*from.min_fee_);
-  } else {
-    min_fee_ = nullptr;
+    _this->_impl_.min_fee_ = new ::vrp::Amount(*from._impl_.min_fee_);
   }
   // @@protoc_insertion_point(copy_constructor:vrp.InvokeScriptResult.SponsorFee)
 }
 
-void InvokeScriptResult_SponsorFee::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_InvokeScriptResult_SponsorFee_vrp_2finvoke_5fscript_5fresult_2eproto.base);
-  min_fee_ = nullptr;
+inline void InvokeScriptResult_SponsorFee::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.min_fee_){nullptr}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
 }
 
 InvokeScriptResult_SponsorFee::~InvokeScriptResult_SponsorFee() {
   // @@protoc_insertion_point(destructor:vrp.InvokeScriptResult.SponsorFee)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void InvokeScriptResult_SponsorFee::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-  if (this != internal_default_instance()) delete min_fee_;
+inline void InvokeScriptResult_SponsorFee::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  if (this != internal_default_instance()) delete _impl_.min_fee_;
 }
 
-void InvokeScriptResult_SponsorFee::ArenaDtor(void* object) {
-  InvokeScriptResult_SponsorFee* _this = reinterpret_cast< InvokeScriptResult_SponsorFee* >(object);
-  (void)_this;
-}
-void InvokeScriptResult_SponsorFee::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void InvokeScriptResult_SponsorFee::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
-const InvokeScriptResult_SponsorFee& InvokeScriptResult_SponsorFee::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_InvokeScriptResult_SponsorFee_vrp_2finvoke_5fscript_5fresult_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void InvokeScriptResult_SponsorFee::Clear() {
 // @@protoc_insertion_point(message_clear_start:vrp.InvokeScriptResult.SponsorFee)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArena() == nullptr && min_fee_ != nullptr) {
-    delete min_fee_;
+  if (GetArenaForAllocation() == nullptr && _impl_.min_fee_ != nullptr) {
+    delete _impl_.min_fee_;
   }
-  min_fee_ = nullptr;
+  _impl_.min_fee_ = nullptr;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* InvokeScriptResult_SponsorFee::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* InvokeScriptResult_SponsorFee::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // .vrp.Amount min_fee = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_min_fee(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* InvokeScriptResult_SponsorFee::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* InvokeScriptResult_SponsorFee::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:vrp.InvokeScriptResult.SponsorFee)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .vrp.Amount min_fee = 1;
-  if (this->has_min_fee()) {
-    target = stream->EnsureSpace(target);
+  if (this->_internal_has_min_fee()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::min_fee(this), target, stream);
+      InternalWriteMessage(1, _Internal::min_fee(this),
+        _Internal::min_fee(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:vrp.InvokeScriptResult.SponsorFee)
@@ -2137,58 +2102,40 @@ size_t InvokeScriptResult_SponsorFee::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:vrp.InvokeScriptResult.SponsorFee)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .vrp.Amount min_fee = 1;
-  if (this->has_min_fee()) {
+  if (this->_internal_has_min_fee()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *min_fee_);
+        *_impl_.min_fee_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void InvokeScriptResult_SponsorFee::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:vrp.InvokeScriptResult.SponsorFee)
-  GOOGLE_DCHECK_NE(&from, this);
-  const InvokeScriptResult_SponsorFee* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<InvokeScriptResult_SponsorFee>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:vrp.InvokeScriptResult.SponsorFee)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:vrp.InvokeScriptResult.SponsorFee)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData InvokeScriptResult_SponsorFee::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    InvokeScriptResult_SponsorFee::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*InvokeScriptResult_SponsorFee::GetClassData() const { return &_class_data_; }
 
-void InvokeScriptResult_SponsorFee::MergeFrom(const InvokeScriptResult_SponsorFee& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:vrp.InvokeScriptResult.SponsorFee)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void InvokeScriptResult_SponsorFee::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<InvokeScriptResult_SponsorFee*>(&to_msg);
+  auto& from = static_cast<const InvokeScriptResult_SponsorFee&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:vrp.InvokeScriptResult.SponsorFee)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_min_fee()) {
-    _internal_mutable_min_fee()->::vrp::Amount::MergeFrom(from._internal_min_fee());
+  if (from._internal_has_min_fee()) {
+    _this->_internal_mutable_min_fee()->::vrp::Amount::MergeFrom(
+        from._internal_min_fee());
   }
-}
-
-void InvokeScriptResult_SponsorFee::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:vrp.InvokeScriptResult.SponsorFee)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void InvokeScriptResult_SponsorFee::CopyFrom(const InvokeScriptResult_SponsorFee& from) {
@@ -2204,21 +2151,18 @@ bool InvokeScriptResult_SponsorFee::IsInitialized() const {
 
 void InvokeScriptResult_SponsorFee::InternalSwap(InvokeScriptResult_SponsorFee* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  swap(min_fee_, other->min_fee_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_impl_.min_fee_, other->_impl_.min_fee_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata InvokeScriptResult_SponsorFee::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_getter, &descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_once,
+      file_level_metadata_vrp_2finvoke_5fscript_5fresult_2eproto[5]);
 }
-
 
 // ===================================================================
 
-void InvokeScriptResult_Lease::InitAsDefaultInstance() {
-  ::vrp::_InvokeScriptResult_Lease_default_instance_._instance.get_mutable()->recipient_ = const_cast< ::vrp::Recipient*>(
-      ::vrp::Recipient::internal_default_instance());
-}
 class InvokeScriptResult_Lease::_Internal {
  public:
   static const ::vrp::Recipient& recipient(const InvokeScriptResult_Lease* msg);
@@ -2226,184 +2170,196 @@ class InvokeScriptResult_Lease::_Internal {
 
 const ::vrp::Recipient&
 InvokeScriptResult_Lease::_Internal::recipient(const InvokeScriptResult_Lease* msg) {
-  return *msg->recipient_;
+  return *msg->_impl_.recipient_;
 }
 void InvokeScriptResult_Lease::clear_recipient() {
-  if (GetArena() == nullptr && recipient_ != nullptr) {
-    delete recipient_;
+  if (GetArenaForAllocation() == nullptr && _impl_.recipient_ != nullptr) {
+    delete _impl_.recipient_;
   }
-  recipient_ = nullptr;
+  _impl_.recipient_ = nullptr;
 }
-InvokeScriptResult_Lease::InvokeScriptResult_Lease(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+InvokeScriptResult_Lease::InvokeScriptResult_Lease(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:vrp.InvokeScriptResult.Lease)
 }
 InvokeScriptResult_Lease::InvokeScriptResult_Lease(const InvokeScriptResult_Lease& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
+  InvokeScriptResult_Lease* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.lease_id_){}
+    , decltype(_impl_.recipient_){nullptr}
+    , decltype(_impl_.amount_){}
+    , decltype(_impl_.nonce_){}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  lease_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.lease_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.lease_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_lease_id().empty()) {
-    lease_id_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_lease_id(),
-      GetArena());
+    _this->_impl_.lease_id_.Set(from._internal_lease_id(), 
+      _this->GetArenaForAllocation());
   }
   if (from._internal_has_recipient()) {
-    recipient_ = new ::vrp::Recipient(*from.recipient_);
-  } else {
-    recipient_ = nullptr;
+    _this->_impl_.recipient_ = new ::vrp::Recipient(*from._impl_.recipient_);
   }
-  ::memcpy(&amount_, &from.amount_,
-    static_cast<size_t>(reinterpret_cast<char*>(&nonce_) -
-    reinterpret_cast<char*>(&amount_)) + sizeof(nonce_));
+  ::memcpy(&_impl_.amount_, &from._impl_.amount_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.nonce_) -
+    reinterpret_cast<char*>(&_impl_.amount_)) + sizeof(_impl_.nonce_));
   // @@protoc_insertion_point(copy_constructor:vrp.InvokeScriptResult.Lease)
 }
 
-void InvokeScriptResult_Lease::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_InvokeScriptResult_Lease_vrp_2finvoke_5fscript_5fresult_2eproto.base);
-  lease_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::memset(&recipient_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&nonce_) -
-      reinterpret_cast<char*>(&recipient_)) + sizeof(nonce_));
+inline void InvokeScriptResult_Lease::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.lease_id_){}
+    , decltype(_impl_.recipient_){nullptr}
+    , decltype(_impl_.amount_){int64_t{0}}
+    , decltype(_impl_.nonce_){int64_t{0}}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
+  _impl_.lease_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.lease_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 InvokeScriptResult_Lease::~InvokeScriptResult_Lease() {
   // @@protoc_insertion_point(destructor:vrp.InvokeScriptResult.Lease)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void InvokeScriptResult_Lease::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-  lease_id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) delete recipient_;
+inline void InvokeScriptResult_Lease::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.lease_id_.Destroy();
+  if (this != internal_default_instance()) delete _impl_.recipient_;
 }
 
-void InvokeScriptResult_Lease::ArenaDtor(void* object) {
-  InvokeScriptResult_Lease* _this = reinterpret_cast< InvokeScriptResult_Lease* >(object);
-  (void)_this;
-}
-void InvokeScriptResult_Lease::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void InvokeScriptResult_Lease::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
-const InvokeScriptResult_Lease& InvokeScriptResult_Lease::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_InvokeScriptResult_Lease_vrp_2finvoke_5fscript_5fresult_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void InvokeScriptResult_Lease::Clear() {
 // @@protoc_insertion_point(message_clear_start:vrp.InvokeScriptResult.Lease)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  lease_id_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  if (GetArena() == nullptr && recipient_ != nullptr) {
-    delete recipient_;
+  _impl_.lease_id_.ClearToEmpty();
+  if (GetArenaForAllocation() == nullptr && _impl_.recipient_ != nullptr) {
+    delete _impl_.recipient_;
   }
-  recipient_ = nullptr;
-  ::memset(&amount_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&nonce_) -
-      reinterpret_cast<char*>(&amount_)) + sizeof(nonce_));
+  _impl_.recipient_ = nullptr;
+  ::memset(&_impl_.amount_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&_impl_.nonce_) -
+      reinterpret_cast<char*>(&_impl_.amount_)) + sizeof(_impl_.nonce_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* InvokeScriptResult_Lease::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* InvokeScriptResult_Lease::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // .vrp.Recipient recipient = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_recipient(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // int64 amount = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          amount_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          _impl_.amount_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // int64 nonce = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          nonce_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
+          _impl_.nonce_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // bytes lease_id = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           auto str = _internal_mutable_lease_id();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* InvokeScriptResult_Lease::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* InvokeScriptResult_Lease::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:vrp.InvokeScriptResult.Lease)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .vrp.Recipient recipient = 1;
-  if (this->has_recipient()) {
-    target = stream->EnsureSpace(target);
+  if (this->_internal_has_recipient()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::recipient(this), target, stream);
+      InternalWriteMessage(1, _Internal::recipient(this),
+        _Internal::recipient(this).GetCachedSize(), target, stream);
   }
 
   // int64 amount = 2;
-  if (this->amount() != 0) {
+  if (this->_internal_amount() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_amount(), target);
+    target = ::_pbi::WireFormatLite::WriteInt64ToArray(2, this->_internal_amount(), target);
   }
 
   // int64 nonce = 3;
-  if (this->nonce() != 0) {
+  if (this->_internal_nonce() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_nonce(), target);
+    target = ::_pbi::WireFormatLite::WriteInt64ToArray(3, this->_internal_nonce(), target);
   }
 
   // bytes lease_id = 4;
-  if (this->lease_id().size() > 0) {
+  if (!this->_internal_lease_id().empty()) {
     target = stream->WriteBytesMaybeAliased(
         4, this->_internal_lease_id(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:vrp.InvokeScriptResult.Lease)
@@ -2414,88 +2370,66 @@ size_t InvokeScriptResult_Lease::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:vrp.InvokeScriptResult.Lease)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // bytes lease_id = 4;
-  if (this->lease_id().size() > 0) {
+  if (!this->_internal_lease_id().empty()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
         this->_internal_lease_id());
   }
 
   // .vrp.Recipient recipient = 1;
-  if (this->has_recipient()) {
+  if (this->_internal_has_recipient()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *recipient_);
+        *_impl_.recipient_);
   }
 
   // int64 amount = 2;
-  if (this->amount() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_amount());
+  if (this->_internal_amount() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int64SizePlusOne(this->_internal_amount());
   }
 
   // int64 nonce = 3;
-  if (this->nonce() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_nonce());
+  if (this->_internal_nonce() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int64SizePlusOne(this->_internal_nonce());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void InvokeScriptResult_Lease::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:vrp.InvokeScriptResult.Lease)
-  GOOGLE_DCHECK_NE(&from, this);
-  const InvokeScriptResult_Lease* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<InvokeScriptResult_Lease>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:vrp.InvokeScriptResult.Lease)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:vrp.InvokeScriptResult.Lease)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData InvokeScriptResult_Lease::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    InvokeScriptResult_Lease::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*InvokeScriptResult_Lease::GetClassData() const { return &_class_data_; }
 
-void InvokeScriptResult_Lease::MergeFrom(const InvokeScriptResult_Lease& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:vrp.InvokeScriptResult.Lease)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void InvokeScriptResult_Lease::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<InvokeScriptResult_Lease*>(&to_msg);
+  auto& from = static_cast<const InvokeScriptResult_Lease&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:vrp.InvokeScriptResult.Lease)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.lease_id().size() > 0) {
-    _internal_set_lease_id(from._internal_lease_id());
+  if (!from._internal_lease_id().empty()) {
+    _this->_internal_set_lease_id(from._internal_lease_id());
   }
-  if (from.has_recipient()) {
-    _internal_mutable_recipient()->::vrp::Recipient::MergeFrom(from._internal_recipient());
+  if (from._internal_has_recipient()) {
+    _this->_internal_mutable_recipient()->::vrp::Recipient::MergeFrom(
+        from._internal_recipient());
   }
-  if (from.amount() != 0) {
-    _internal_set_amount(from._internal_amount());
+  if (from._internal_amount() != 0) {
+    _this->_internal_set_amount(from._internal_amount());
   }
-  if (from.nonce() != 0) {
-    _internal_set_nonce(from._internal_nonce());
+  if (from._internal_nonce() != 0) {
+    _this->_internal_set_nonce(from._internal_nonce());
   }
-}
-
-void InvokeScriptResult_Lease::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:vrp.InvokeScriptResult.Lease)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void InvokeScriptResult_Lease::CopyFrom(const InvokeScriptResult_Lease& from) {
@@ -2511,139 +2445,152 @@ bool InvokeScriptResult_Lease::IsInitialized() const {
 
 void InvokeScriptResult_Lease::InternalSwap(InvokeScriptResult_Lease* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  lease_id_.Swap(&other->lease_id_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &_impl_.lease_id_, lhs_arena,
+      &other->_impl_.lease_id_, rhs_arena
+  );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(InvokeScriptResult_Lease, nonce_)
-      + sizeof(InvokeScriptResult_Lease::nonce_)
-      - PROTOBUF_FIELD_OFFSET(InvokeScriptResult_Lease, recipient_)>(
-          reinterpret_cast<char*>(&recipient_),
-          reinterpret_cast<char*>(&other->recipient_));
+      PROTOBUF_FIELD_OFFSET(InvokeScriptResult_Lease, _impl_.nonce_)
+      + sizeof(InvokeScriptResult_Lease::_impl_.nonce_)
+      - PROTOBUF_FIELD_OFFSET(InvokeScriptResult_Lease, _impl_.recipient_)>(
+          reinterpret_cast<char*>(&_impl_.recipient_),
+          reinterpret_cast<char*>(&other->_impl_.recipient_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata InvokeScriptResult_Lease::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_getter, &descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_once,
+      file_level_metadata_vrp_2finvoke_5fscript_5fresult_2eproto[6]);
 }
-
 
 // ===================================================================
 
-void InvokeScriptResult_LeaseCancel::InitAsDefaultInstance() {
-}
 class InvokeScriptResult_LeaseCancel::_Internal {
  public:
 };
 
-InvokeScriptResult_LeaseCancel::InvokeScriptResult_LeaseCancel(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+InvokeScriptResult_LeaseCancel::InvokeScriptResult_LeaseCancel(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:vrp.InvokeScriptResult.LeaseCancel)
 }
 InvokeScriptResult_LeaseCancel::InvokeScriptResult_LeaseCancel(const InvokeScriptResult_LeaseCancel& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
+  InvokeScriptResult_LeaseCancel* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.lease_id_){}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  lease_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.lease_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.lease_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_lease_id().empty()) {
-    lease_id_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_lease_id(),
-      GetArena());
+    _this->_impl_.lease_id_.Set(from._internal_lease_id(), 
+      _this->GetArenaForAllocation());
   }
   // @@protoc_insertion_point(copy_constructor:vrp.InvokeScriptResult.LeaseCancel)
 }
 
-void InvokeScriptResult_LeaseCancel::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_InvokeScriptResult_LeaseCancel_vrp_2finvoke_5fscript_5fresult_2eproto.base);
-  lease_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+inline void InvokeScriptResult_LeaseCancel::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.lease_id_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
+  _impl_.lease_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.lease_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 InvokeScriptResult_LeaseCancel::~InvokeScriptResult_LeaseCancel() {
   // @@protoc_insertion_point(destructor:vrp.InvokeScriptResult.LeaseCancel)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void InvokeScriptResult_LeaseCancel::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-  lease_id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+inline void InvokeScriptResult_LeaseCancel::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.lease_id_.Destroy();
 }
 
-void InvokeScriptResult_LeaseCancel::ArenaDtor(void* object) {
-  InvokeScriptResult_LeaseCancel* _this = reinterpret_cast< InvokeScriptResult_LeaseCancel* >(object);
-  (void)_this;
-}
-void InvokeScriptResult_LeaseCancel::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void InvokeScriptResult_LeaseCancel::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
-const InvokeScriptResult_LeaseCancel& InvokeScriptResult_LeaseCancel::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_InvokeScriptResult_LeaseCancel_vrp_2finvoke_5fscript_5fresult_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void InvokeScriptResult_LeaseCancel::Clear() {
 // @@protoc_insertion_point(message_clear_start:vrp.InvokeScriptResult.LeaseCancel)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  lease_id_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  _impl_.lease_id_.ClearToEmpty();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* InvokeScriptResult_LeaseCancel::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* InvokeScriptResult_LeaseCancel::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // bytes lease_id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           auto str = _internal_mutable_lease_id();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* InvokeScriptResult_LeaseCancel::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* InvokeScriptResult_LeaseCancel::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:vrp.InvokeScriptResult.LeaseCancel)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // bytes lease_id = 1;
-  if (this->lease_id().size() > 0) {
+  if (!this->_internal_lease_id().empty()) {
     target = stream->WriteBytesMaybeAliased(
         1, this->_internal_lease_id(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:vrp.InvokeScriptResult.LeaseCancel)
@@ -2654,58 +2601,39 @@ size_t InvokeScriptResult_LeaseCancel::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:vrp.InvokeScriptResult.LeaseCancel)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // bytes lease_id = 1;
-  if (this->lease_id().size() > 0) {
+  if (!this->_internal_lease_id().empty()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
         this->_internal_lease_id());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void InvokeScriptResult_LeaseCancel::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:vrp.InvokeScriptResult.LeaseCancel)
-  GOOGLE_DCHECK_NE(&from, this);
-  const InvokeScriptResult_LeaseCancel* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<InvokeScriptResult_LeaseCancel>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:vrp.InvokeScriptResult.LeaseCancel)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:vrp.InvokeScriptResult.LeaseCancel)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData InvokeScriptResult_LeaseCancel::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    InvokeScriptResult_LeaseCancel::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*InvokeScriptResult_LeaseCancel::GetClassData() const { return &_class_data_; }
 
-void InvokeScriptResult_LeaseCancel::MergeFrom(const InvokeScriptResult_LeaseCancel& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:vrp.InvokeScriptResult.LeaseCancel)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void InvokeScriptResult_LeaseCancel::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<InvokeScriptResult_LeaseCancel*>(&to_msg);
+  auto& from = static_cast<const InvokeScriptResult_LeaseCancel&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:vrp.InvokeScriptResult.LeaseCancel)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.lease_id().size() > 0) {
-    _internal_set_lease_id(from._internal_lease_id());
+  if (!from._internal_lease_id().empty()) {
+    _this->_internal_set_lease_id(from._internal_lease_id());
   }
-}
-
-void InvokeScriptResult_LeaseCancel::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:vrp.InvokeScriptResult.LeaseCancel)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void InvokeScriptResult_LeaseCancel::CopyFrom(const InvokeScriptResult_LeaseCancel& from) {
@@ -2721,144 +2649,159 @@ bool InvokeScriptResult_LeaseCancel::IsInitialized() const {
 
 void InvokeScriptResult_LeaseCancel::InternalSwap(InvokeScriptResult_LeaseCancel* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  lease_id_.Swap(&other->lease_id_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &_impl_.lease_id_, lhs_arena,
+      &other->_impl_.lease_id_, rhs_arena
+  );
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata InvokeScriptResult_LeaseCancel::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_getter, &descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_once,
+      file_level_metadata_vrp_2finvoke_5fscript_5fresult_2eproto[7]);
 }
-
 
 // ===================================================================
 
-void InvokeScriptResult_ErrorMessage::InitAsDefaultInstance() {
-}
 class InvokeScriptResult_ErrorMessage::_Internal {
  public:
 };
 
-InvokeScriptResult_ErrorMessage::InvokeScriptResult_ErrorMessage(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+InvokeScriptResult_ErrorMessage::InvokeScriptResult_ErrorMessage(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:vrp.InvokeScriptResult.ErrorMessage)
 }
 InvokeScriptResult_ErrorMessage::InvokeScriptResult_ErrorMessage(const InvokeScriptResult_ErrorMessage& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
+  InvokeScriptResult_ErrorMessage* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.text_){}
+    , decltype(_impl_.code_){}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  text_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.text_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.text_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_text().empty()) {
-    text_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_text(),
-      GetArena());
+    _this->_impl_.text_.Set(from._internal_text(), 
+      _this->GetArenaForAllocation());
   }
-  code_ = from.code_;
+  _this->_impl_.code_ = from._impl_.code_;
   // @@protoc_insertion_point(copy_constructor:vrp.InvokeScriptResult.ErrorMessage)
 }
 
-void InvokeScriptResult_ErrorMessage::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_InvokeScriptResult_ErrorMessage_vrp_2finvoke_5fscript_5fresult_2eproto.base);
-  text_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  code_ = 0;
+inline void InvokeScriptResult_ErrorMessage::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.text_){}
+    , decltype(_impl_.code_){0}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
+  _impl_.text_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.text_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 InvokeScriptResult_ErrorMessage::~InvokeScriptResult_ErrorMessage() {
   // @@protoc_insertion_point(destructor:vrp.InvokeScriptResult.ErrorMessage)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void InvokeScriptResult_ErrorMessage::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-  text_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+inline void InvokeScriptResult_ErrorMessage::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.text_.Destroy();
 }
 
-void InvokeScriptResult_ErrorMessage::ArenaDtor(void* object) {
-  InvokeScriptResult_ErrorMessage* _this = reinterpret_cast< InvokeScriptResult_ErrorMessage* >(object);
-  (void)_this;
-}
-void InvokeScriptResult_ErrorMessage::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void InvokeScriptResult_ErrorMessage::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
-const InvokeScriptResult_ErrorMessage& InvokeScriptResult_ErrorMessage::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_InvokeScriptResult_ErrorMessage_vrp_2finvoke_5fscript_5fresult_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void InvokeScriptResult_ErrorMessage::Clear() {
 // @@protoc_insertion_point(message_clear_start:vrp.InvokeScriptResult.ErrorMessage)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  text_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  code_ = 0;
+  _impl_.text_.ClearToEmpty();
+  _impl_.code_ = 0;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* InvokeScriptResult_ErrorMessage::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* InvokeScriptResult_ErrorMessage::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // int32 code = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          code_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          _impl_.code_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // string text = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           auto str = _internal_mutable_text();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "vrp.InvokeScriptResult.ErrorMessage.text"));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          CHK_(::_pbi::VerifyUTF8(str, "vrp.InvokeScriptResult.ErrorMessage.text"));
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* InvokeScriptResult_ErrorMessage::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* InvokeScriptResult_ErrorMessage::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:vrp.InvokeScriptResult.ErrorMessage)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 code = 1;
-  if (this->code() != 0) {
+  if (this->_internal_code() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_code(), target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(1, this->_internal_code(), target);
   }
 
   // string text = 2;
-  if (this->text().size() > 0) {
+  if (!this->_internal_text().empty()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_text().data(), static_cast<int>(this->_internal_text().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
@@ -2868,7 +2811,7 @@ failure:
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:vrp.InvokeScriptResult.ErrorMessage)
@@ -2879,68 +2822,47 @@ size_t InvokeScriptResult_ErrorMessage::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:vrp.InvokeScriptResult.ErrorMessage)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // string text = 2;
-  if (this->text().size() > 0) {
+  if (!this->_internal_text().empty()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_text());
   }
 
   // int32 code = 1;
-  if (this->code() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_code());
+  if (this->_internal_code() != 0) {
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_code());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void InvokeScriptResult_ErrorMessage::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:vrp.InvokeScriptResult.ErrorMessage)
-  GOOGLE_DCHECK_NE(&from, this);
-  const InvokeScriptResult_ErrorMessage* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<InvokeScriptResult_ErrorMessage>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:vrp.InvokeScriptResult.ErrorMessage)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:vrp.InvokeScriptResult.ErrorMessage)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData InvokeScriptResult_ErrorMessage::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    InvokeScriptResult_ErrorMessage::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*InvokeScriptResult_ErrorMessage::GetClassData() const { return &_class_data_; }
 
-void InvokeScriptResult_ErrorMessage::MergeFrom(const InvokeScriptResult_ErrorMessage& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:vrp.InvokeScriptResult.ErrorMessage)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void InvokeScriptResult_ErrorMessage::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<InvokeScriptResult_ErrorMessage*>(&to_msg);
+  auto& from = static_cast<const InvokeScriptResult_ErrorMessage&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:vrp.InvokeScriptResult.ErrorMessage)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.text().size() > 0) {
-    _internal_set_text(from._internal_text());
+  if (!from._internal_text().empty()) {
+    _this->_internal_set_text(from._internal_text());
   }
-  if (from.code() != 0) {
-    _internal_set_code(from._internal_code());
+  if (from._internal_code() != 0) {
+    _this->_internal_set_code(from._internal_code());
   }
-}
-
-void InvokeScriptResult_ErrorMessage::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:vrp.InvokeScriptResult.ErrorMessage)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void InvokeScriptResult_ErrorMessage::CopyFrom(const InvokeScriptResult_ErrorMessage& from) {
@@ -2956,88 +2878,92 @@ bool InvokeScriptResult_ErrorMessage::IsInitialized() const {
 
 void InvokeScriptResult_ErrorMessage::InternalSwap(InvokeScriptResult_ErrorMessage* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  text_.Swap(&other->text_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  swap(code_, other->code_);
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &_impl_.text_, lhs_arena,
+      &other->_impl_.text_, rhs_arena
+  );
+  swap(_impl_.code_, other->_impl_.code_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata InvokeScriptResult_ErrorMessage::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_getter, &descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_once,
+      file_level_metadata_vrp_2finvoke_5fscript_5fresult_2eproto[8]);
 }
-
 
 // ===================================================================
 
-void InvokeScriptResult_Call_Argument_List::InitAsDefaultInstance() {
-}
 class InvokeScriptResult_Call_Argument_List::_Internal {
  public:
 };
 
-InvokeScriptResult_Call_Argument_List::InvokeScriptResult_Call_Argument_List(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  items_(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+InvokeScriptResult_Call_Argument_List::InvokeScriptResult_Call_Argument_List(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:vrp.InvokeScriptResult.Call.Argument.List)
 }
 InvokeScriptResult_Call_Argument_List::InvokeScriptResult_Call_Argument_List(const InvokeScriptResult_Call_Argument_List& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      items_(from.items_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  InvokeScriptResult_Call_Argument_List* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.items_){from._impl_.items_}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:vrp.InvokeScriptResult.Call.Argument.List)
 }
 
-void InvokeScriptResult_Call_Argument_List::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_InvokeScriptResult_Call_Argument_vrp_2finvoke_5fscript_5fresult_2eproto.base);
+inline void InvokeScriptResult_Call_Argument_List::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.items_){arena}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
 }
 
 InvokeScriptResult_Call_Argument_List::~InvokeScriptResult_Call_Argument_List() {
   // @@protoc_insertion_point(destructor:vrp.InvokeScriptResult.Call.Argument.List)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void InvokeScriptResult_Call_Argument_List::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void InvokeScriptResult_Call_Argument_List::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.items_.~RepeatedPtrField();
 }
 
-void InvokeScriptResult_Call_Argument_List::ArenaDtor(void* object) {
-  InvokeScriptResult_Call_Argument_List* _this = reinterpret_cast< InvokeScriptResult_Call_Argument_List* >(object);
-  (void)_this;
-}
-void InvokeScriptResult_Call_Argument_List::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void InvokeScriptResult_Call_Argument_List::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
-const InvokeScriptResult_Call_Argument_List& InvokeScriptResult_Call_Argument_List::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_InvokeScriptResult_Call_Argument_vrp_2finvoke_5fscript_5fresult_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void InvokeScriptResult_Call_Argument_List::Clear() {
 // @@protoc_insertion_point(message_clear_start:vrp.InvokeScriptResult.Call.Argument.List)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  items_.Clear();
+  _impl_.items_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* InvokeScriptResult_Call_Argument_List::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* InvokeScriptResult_Call_Argument_List::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // repeated .vrp.InvokeScriptResult.Call.Argument items = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -3045,46 +2971,48 @@ const char* InvokeScriptResult_Call_Argument_List::_InternalParse(const char* pt
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* InvokeScriptResult_Call_Argument_List::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* InvokeScriptResult_Call_Argument_List::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:vrp.InvokeScriptResult.Call.Argument.List)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated .vrp.InvokeScriptResult.Call.Argument items = 1;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_items_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_items_size()); i < n; i++) {
+    const auto& repfield = this->_internal_items(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, this->_internal_items(i), target, stream);
+        InternalWriteMessage(1, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:vrp.InvokeScriptResult.Call.Argument.List)
@@ -3095,56 +3023,37 @@ size_t InvokeScriptResult_Call_Argument_List::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:vrp.InvokeScriptResult.Call.Argument.List)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .vrp.InvokeScriptResult.Call.Argument items = 1;
   total_size += 1UL * this->_internal_items_size();
-  for (const auto& msg : this->items_) {
+  for (const auto& msg : this->_impl_.items_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void InvokeScriptResult_Call_Argument_List::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:vrp.InvokeScriptResult.Call.Argument.List)
-  GOOGLE_DCHECK_NE(&from, this);
-  const InvokeScriptResult_Call_Argument_List* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<InvokeScriptResult_Call_Argument_List>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:vrp.InvokeScriptResult.Call.Argument.List)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:vrp.InvokeScriptResult.Call.Argument.List)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData InvokeScriptResult_Call_Argument_List::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    InvokeScriptResult_Call_Argument_List::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*InvokeScriptResult_Call_Argument_List::GetClassData() const { return &_class_data_; }
 
-void InvokeScriptResult_Call_Argument_List::MergeFrom(const InvokeScriptResult_Call_Argument_List& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:vrp.InvokeScriptResult.Call.Argument.List)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void InvokeScriptResult_Call_Argument_List::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<InvokeScriptResult_Call_Argument_List*>(&to_msg);
+  auto& from = static_cast<const InvokeScriptResult_Call_Argument_List&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:vrp.InvokeScriptResult.Call.Argument.List)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  items_.MergeFrom(from.items_);
-}
-
-void InvokeScriptResult_Call_Argument_List::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:vrp.InvokeScriptResult.Call.Argument.List)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_impl_.items_.MergeFrom(from._impl_.items_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void InvokeScriptResult_Call_Argument_List::CopyFrom(const InvokeScriptResult_Call_Argument_List& from) {
@@ -3160,29 +3069,18 @@ bool InvokeScriptResult_Call_Argument_List::IsInitialized() const {
 
 void InvokeScriptResult_Call_Argument_List::InternalSwap(InvokeScriptResult_Call_Argument_List* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  items_.InternalSwap(&other->items_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _impl_.items_.InternalSwap(&other->_impl_.items_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata InvokeScriptResult_Call_Argument_List::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_getter, &descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_once,
+      file_level_metadata_vrp_2finvoke_5fscript_5fresult_2eproto[9]);
 }
-
 
 // ===================================================================
 
-void InvokeScriptResult_Call_Argument::InitAsDefaultInstance() {
-  ::vrp::_InvokeScriptResult_Call_Argument_default_instance_.integer_value_ = PROTOBUF_LONGLONG(0);
-  ::vrp::_InvokeScriptResult_Call_Argument_default_instance_.binary_value_.UnsafeSetDefault(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::vrp::_InvokeScriptResult_Call_Argument_default_instance_.string_value_.UnsafeSetDefault(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::vrp::_InvokeScriptResult_Call_Argument_default_instance_.boolean_value_ = false;
-  ::vrp::_InvokeScriptResult_Call_Argument_default_instance_.case_obj_.UnsafeSetDefault(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::vrp::_InvokeScriptResult_Call_Argument_default_instance_.list_ = const_cast< ::vrp::InvokeScriptResult_Call_Argument_List*>(
-      ::vrp::InvokeScriptResult_Call_Argument_List::internal_default_instance());
-}
 class InvokeScriptResult_Call_Argument::_Internal {
  public:
   static const ::vrp::InvokeScriptResult_Call_Argument_List& list(const InvokeScriptResult_Call_Argument* msg);
@@ -3190,56 +3088,63 @@ class InvokeScriptResult_Call_Argument::_Internal {
 
 const ::vrp::InvokeScriptResult_Call_Argument_List&
 InvokeScriptResult_Call_Argument::_Internal::list(const InvokeScriptResult_Call_Argument* msg) {
-  return *msg->value_.list_;
+  return *msg->_impl_.value_.list_;
 }
 void InvokeScriptResult_Call_Argument::set_allocated_list(::vrp::InvokeScriptResult_Call_Argument_List* list) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   clear_value();
   if (list) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(list);
+      ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(list);
     if (message_arena != submessage_arena) {
       list = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, list, submessage_arena);
     }
     set_has_list();
-    value_.list_ = list;
+    _impl_.value_.list_ = list;
   }
   // @@protoc_insertion_point(field_set_allocated:vrp.InvokeScriptResult.Call.Argument.list)
 }
-InvokeScriptResult_Call_Argument::InvokeScriptResult_Call_Argument(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+InvokeScriptResult_Call_Argument::InvokeScriptResult_Call_Argument(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:vrp.InvokeScriptResult.Call.Argument)
 }
 InvokeScriptResult_Call_Argument::InvokeScriptResult_Call_Argument(const InvokeScriptResult_Call_Argument& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
+  InvokeScriptResult_Call_Argument* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.value_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , /*decltype(_impl_._oneof_case_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   clear_has_value();
   switch (from.value_case()) {
     case kIntegerValue: {
-      _internal_set_integer_value(from._internal_integer_value());
+      _this->_internal_set_integer_value(from._internal_integer_value());
       break;
     }
     case kBinaryValue: {
-      _internal_set_binary_value(from._internal_binary_value());
+      _this->_internal_set_binary_value(from._internal_binary_value());
       break;
     }
     case kStringValue: {
-      _internal_set_string_value(from._internal_string_value());
+      _this->_internal_set_string_value(from._internal_string_value());
       break;
     }
     case kBooleanValue: {
-      _internal_set_boolean_value(from._internal_boolean_value());
+      _this->_internal_set_boolean_value(from._internal_boolean_value());
       break;
     }
     case kCaseObj: {
-      _internal_set_case_obj(from._internal_case_obj());
+      _this->_internal_set_case_obj(from._internal_case_obj());
       break;
     }
     case kList: {
-      _internal_mutable_list()->::vrp::InvokeScriptResult_Call_Argument_List::MergeFrom(from._internal_list());
+      _this->_internal_mutable_list()->::vrp::InvokeScriptResult_Call_Argument_List::MergeFrom(
+          from._internal_list());
       break;
     }
     case VALUE_NOT_SET: {
@@ -3249,38 +3154,37 @@ InvokeScriptResult_Call_Argument::InvokeScriptResult_Call_Argument(const InvokeS
   // @@protoc_insertion_point(copy_constructor:vrp.InvokeScriptResult.Call.Argument)
 }
 
-void InvokeScriptResult_Call_Argument::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_InvokeScriptResult_Call_Argument_vrp_2finvoke_5fscript_5fresult_2eproto.base);
+inline void InvokeScriptResult_Call_Argument::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.value_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , /*decltype(_impl_._oneof_case_)*/{}
+  };
   clear_has_value();
 }
 
 InvokeScriptResult_Call_Argument::~InvokeScriptResult_Call_Argument() {
   // @@protoc_insertion_point(destructor:vrp.InvokeScriptResult.Call.Argument)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void InvokeScriptResult_Call_Argument::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void InvokeScriptResult_Call_Argument::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (has_value()) {
     clear_value();
   }
 }
 
-void InvokeScriptResult_Call_Argument::ArenaDtor(void* object) {
-  InvokeScriptResult_Call_Argument* _this = reinterpret_cast< InvokeScriptResult_Call_Argument* >(object);
-  (void)_this;
-}
-void InvokeScriptResult_Call_Argument::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void InvokeScriptResult_Call_Argument::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
-const InvokeScriptResult_Call_Argument& InvokeScriptResult_Call_Argument::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_InvokeScriptResult_Call_Argument_vrp_2finvoke_5fscript_5fresult_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void InvokeScriptResult_Call_Argument::clear_value() {
 // @@protoc_insertion_point(one_of_clear_start:vrp.InvokeScriptResult.Call.Argument)
@@ -3290,11 +3194,11 @@ void InvokeScriptResult_Call_Argument::clear_value() {
       break;
     }
     case kBinaryValue: {
-      value_.binary_value_.Destroy(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+      _impl_.value_.binary_value_.Destroy();
       break;
     }
     case kStringValue: {
-      value_.string_value_.Destroy(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+      _impl_.value_.string_value_.Destroy();
       break;
     }
     case kBooleanValue: {
@@ -3302,12 +3206,12 @@ void InvokeScriptResult_Call_Argument::clear_value() {
       break;
     }
     case kCaseObj: {
-      value_.case_obj_.Destroy(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+      _impl_.value_.case_obj_.Destroy();
       break;
     }
     case kList: {
-      if (GetArena() == nullptr) {
-        delete value_.list_;
+      if (GetArenaForAllocation() == nullptr) {
+        delete _impl_.value_.list_;
       }
       break;
     }
@@ -3315,13 +3219,13 @@ void InvokeScriptResult_Call_Argument::clear_value() {
       break;
     }
   }
-  _oneof_case_[0] = VALUE_NOT_SET;
+  _impl_._oneof_case_[0] = VALUE_NOT_SET;
 }
 
 
 void InvokeScriptResult_Call_Argument::Clear() {
 // @@protoc_insertion_point(message_clear_start:vrp.InvokeScriptResult.Call.Argument)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -3329,92 +3233,97 @@ void InvokeScriptResult_Call_Argument::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* InvokeScriptResult_Call_Argument::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* InvokeScriptResult_Call_Argument::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // int64 integer_value = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _internal_set_integer_value(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // bytes binary_value = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           auto str = _internal_mutable_binary_value();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // string string_value = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           auto str = _internal_mutable_string_value();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "vrp.InvokeScriptResult.Call.Argument.string_value"));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          CHK_(::_pbi::VerifyUTF8(str, "vrp.InvokeScriptResult.Call.Argument.string_value"));
+        } else
+          goto handle_unusual;
         continue;
       // bool boolean_value = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
           _internal_set_boolean_value(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // bytes case_obj = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           auto str = _internal_mutable_case_obj();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .vrp.InvokeScriptResult.Call.Argument.List list = 10;
       case 10:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 82)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 82)) {
           ptr = ctx->ParseMessage(_internal_mutable_list(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* InvokeScriptResult_Call_Argument::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* InvokeScriptResult_Call_Argument::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:vrp.InvokeScriptResult.Call.Argument)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int64 integer_value = 1;
   if (_internal_has_integer_value()) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_integer_value(), target);
+    target = ::_pbi::WireFormatLite::WriteInt64ToArray(1, this->_internal_integer_value(), target);
   }
 
   // bytes binary_value = 2;
@@ -3436,7 +3345,7 @@ failure:
   // bool boolean_value = 4;
   if (_internal_has_boolean_value()) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(4, this->_internal_boolean_value(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(4, this->_internal_boolean_value(), target);
   }
 
   // bytes case_obj = 5;
@@ -3447,14 +3356,13 @@ failure:
 
   // .vrp.InvokeScriptResult.Call.Argument.List list = 10;
   if (_internal_has_list()) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        10, _Internal::list(this), target, stream);
+      InternalWriteMessage(10, _Internal::list(this),
+        _Internal::list(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:vrp.InvokeScriptResult.Call.Argument)
@@ -3465,16 +3373,14 @@ size_t InvokeScriptResult_Call_Argument::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:vrp.InvokeScriptResult.Call.Argument)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   switch (value_case()) {
     // int64 integer_value = 1;
     case kIntegerValue: {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->_internal_integer_value());
+      total_size += ::_pbi::WireFormatLite::Int64SizePlusOne(this->_internal_integer_value());
       break;
     }
     // bytes binary_value = 2;
@@ -3507,80 +3413,62 @@ size_t InvokeScriptResult_Call_Argument::ByteSizeLong() const {
     case kList: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *value_.list_);
+          *_impl_.value_.list_);
       break;
     }
     case VALUE_NOT_SET: {
       break;
     }
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void InvokeScriptResult_Call_Argument::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:vrp.InvokeScriptResult.Call.Argument)
-  GOOGLE_DCHECK_NE(&from, this);
-  const InvokeScriptResult_Call_Argument* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<InvokeScriptResult_Call_Argument>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:vrp.InvokeScriptResult.Call.Argument)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:vrp.InvokeScriptResult.Call.Argument)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData InvokeScriptResult_Call_Argument::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    InvokeScriptResult_Call_Argument::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*InvokeScriptResult_Call_Argument::GetClassData() const { return &_class_data_; }
 
-void InvokeScriptResult_Call_Argument::MergeFrom(const InvokeScriptResult_Call_Argument& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:vrp.InvokeScriptResult.Call.Argument)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void InvokeScriptResult_Call_Argument::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<InvokeScriptResult_Call_Argument*>(&to_msg);
+  auto& from = static_cast<const InvokeScriptResult_Call_Argument&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:vrp.InvokeScriptResult.Call.Argument)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   switch (from.value_case()) {
     case kIntegerValue: {
-      _internal_set_integer_value(from._internal_integer_value());
+      _this->_internal_set_integer_value(from._internal_integer_value());
       break;
     }
     case kBinaryValue: {
-      _internal_set_binary_value(from._internal_binary_value());
+      _this->_internal_set_binary_value(from._internal_binary_value());
       break;
     }
     case kStringValue: {
-      _internal_set_string_value(from._internal_string_value());
+      _this->_internal_set_string_value(from._internal_string_value());
       break;
     }
     case kBooleanValue: {
-      _internal_set_boolean_value(from._internal_boolean_value());
+      _this->_internal_set_boolean_value(from._internal_boolean_value());
       break;
     }
     case kCaseObj: {
-      _internal_set_case_obj(from._internal_case_obj());
+      _this->_internal_set_case_obj(from._internal_case_obj());
       break;
     }
     case kList: {
-      _internal_mutable_list()->::vrp::InvokeScriptResult_Call_Argument_List::MergeFrom(from._internal_list());
+      _this->_internal_mutable_list()->::vrp::InvokeScriptResult_Call_Argument_List::MergeFrom(
+          from._internal_list());
       break;
     }
     case VALUE_NOT_SET: {
       break;
     }
   }
-}
-
-void InvokeScriptResult_Call_Argument::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:vrp.InvokeScriptResult.Call.Argument)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void InvokeScriptResult_Call_Argument::CopyFrom(const InvokeScriptResult_Call_Argument& from) {
@@ -3596,121 +3484,131 @@ bool InvokeScriptResult_Call_Argument::IsInitialized() const {
 
 void InvokeScriptResult_Call_Argument::InternalSwap(InvokeScriptResult_Call_Argument* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  swap(value_, other->value_);
-  swap(_oneof_case_[0], other->_oneof_case_[0]);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_impl_.value_, other->_impl_.value_);
+  swap(_impl_._oneof_case_[0], other->_impl_._oneof_case_[0]);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata InvokeScriptResult_Call_Argument::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_getter, &descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_once,
+      file_level_metadata_vrp_2finvoke_5fscript_5fresult_2eproto[10]);
 }
-
 
 // ===================================================================
 
-void InvokeScriptResult_Call::InitAsDefaultInstance() {
-}
 class InvokeScriptResult_Call::_Internal {
  public:
 };
 
-InvokeScriptResult_Call::InvokeScriptResult_Call(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  args_bytes_(arena),
-  args_(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+InvokeScriptResult_Call::InvokeScriptResult_Call(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:vrp.InvokeScriptResult.Call)
 }
 InvokeScriptResult_Call::InvokeScriptResult_Call(const InvokeScriptResult_Call& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      args_bytes_(from.args_bytes_),
-      args_(from.args_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  InvokeScriptResult_Call* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.args_bytes_){from._impl_.args_bytes_}
+    , decltype(_impl_.args_){from._impl_.args_}
+    , decltype(_impl_.function_){}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  function_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.function_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.function_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_function().empty()) {
-    function_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_function(),
-      GetArena());
+    _this->_impl_.function_.Set(from._internal_function(), 
+      _this->GetArenaForAllocation());
   }
   // @@protoc_insertion_point(copy_constructor:vrp.InvokeScriptResult.Call)
 }
 
-void InvokeScriptResult_Call::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_InvokeScriptResult_Call_vrp_2finvoke_5fscript_5fresult_2eproto.base);
-  function_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+inline void InvokeScriptResult_Call::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.args_bytes_){arena}
+    , decltype(_impl_.args_){arena}
+    , decltype(_impl_.function_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
+  _impl_.function_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.function_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 InvokeScriptResult_Call::~InvokeScriptResult_Call() {
   // @@protoc_insertion_point(destructor:vrp.InvokeScriptResult.Call)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void InvokeScriptResult_Call::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-  function_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+inline void InvokeScriptResult_Call::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.args_bytes_.~RepeatedPtrField();
+  _impl_.args_.~RepeatedPtrField();
+  _impl_.function_.Destroy();
 }
 
-void InvokeScriptResult_Call::ArenaDtor(void* object) {
-  InvokeScriptResult_Call* _this = reinterpret_cast< InvokeScriptResult_Call* >(object);
-  (void)_this;
-}
-void InvokeScriptResult_Call::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void InvokeScriptResult_Call::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
-const InvokeScriptResult_Call& InvokeScriptResult_Call::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_InvokeScriptResult_Call_vrp_2finvoke_5fscript_5fresult_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void InvokeScriptResult_Call::Clear() {
 // @@protoc_insertion_point(message_clear_start:vrp.InvokeScriptResult.Call)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  args_bytes_.Clear();
-  args_.Clear();
-  function_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  _impl_.args_bytes_.Clear();
+  _impl_.args_.Clear();
+  _impl_.function_.ClearToEmpty();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* InvokeScriptResult_Call::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* InvokeScriptResult_Call::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // string function = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           auto str = _internal_mutable_function();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "vrp.InvokeScriptResult.Call.function"));
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          CHK_(::_pbi::VerifyUTF8(str, "vrp.InvokeScriptResult.Call.function"));
+        } else
+          goto handle_unusual;
         continue;
       // repeated bytes args_bytes = 2 [deprecated = true];
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr -= 1;
           do {
             ptr += 1;
             auto str = _internal_add_args_bytes();
-            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+            ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .vrp.InvokeScriptResult.Call.Argument args = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -3718,38 +3616,40 @@ const char* InvokeScriptResult_Call::_InternalParse(const char* ptr, ::PROTOBUF_
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<26>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* InvokeScriptResult_Call::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* InvokeScriptResult_Call::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:vrp.InvokeScriptResult.Call)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // string function = 1;
-  if (this->function().size() > 0) {
+  if (!this->_internal_function().empty()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_function().data(), static_cast<int>(this->_internal_function().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
@@ -3765,15 +3665,15 @@ failure:
   }
 
   // repeated .vrp.InvokeScriptResult.Call.Argument args = 3;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_args_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_args_size()); i < n; i++) {
+    const auto& repfield = this->_internal_args(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(3, this->_internal_args(i), target, stream);
+        InternalWriteMessage(3, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:vrp.InvokeScriptResult.Call)
@@ -3784,75 +3684,56 @@ size_t InvokeScriptResult_Call::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:vrp.InvokeScriptResult.Call)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated bytes args_bytes = 2 [deprecated = true];
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(args_bytes_.size());
-  for (int i = 0, n = args_bytes_.size(); i < n; i++) {
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(_impl_.args_bytes_.size());
+  for (int i = 0, n = _impl_.args_bytes_.size(); i < n; i++) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
-      args_bytes_.Get(i));
+      _impl_.args_bytes_.Get(i));
   }
 
   // repeated .vrp.InvokeScriptResult.Call.Argument args = 3;
   total_size += 1UL * this->_internal_args_size();
-  for (const auto& msg : this->args_) {
+  for (const auto& msg : this->_impl_.args_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // string function = 1;
-  if (this->function().size() > 0) {
+  if (!this->_internal_function().empty()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_function());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void InvokeScriptResult_Call::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:vrp.InvokeScriptResult.Call)
-  GOOGLE_DCHECK_NE(&from, this);
-  const InvokeScriptResult_Call* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<InvokeScriptResult_Call>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:vrp.InvokeScriptResult.Call)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:vrp.InvokeScriptResult.Call)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData InvokeScriptResult_Call::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    InvokeScriptResult_Call::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*InvokeScriptResult_Call::GetClassData() const { return &_class_data_; }
 
-void InvokeScriptResult_Call::MergeFrom(const InvokeScriptResult_Call& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:vrp.InvokeScriptResult.Call)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void InvokeScriptResult_Call::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<InvokeScriptResult_Call*>(&to_msg);
+  auto& from = static_cast<const InvokeScriptResult_Call&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:vrp.InvokeScriptResult.Call)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  args_bytes_.MergeFrom(from.args_bytes_);
-  args_.MergeFrom(from.args_);
-  if (from.function().size() > 0) {
-    _internal_set_function(from._internal_function());
+  _this->_impl_.args_bytes_.MergeFrom(from._impl_.args_bytes_);
+  _this->_impl_.args_.MergeFrom(from._impl_.args_);
+  if (!from._internal_function().empty()) {
+    _this->_internal_set_function(from._internal_function());
   }
-}
-
-void InvokeScriptResult_Call::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:vrp.InvokeScriptResult.Call)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void InvokeScriptResult_Call::CopyFrom(const InvokeScriptResult_Call& from) {
@@ -3868,25 +3749,25 @@ bool InvokeScriptResult_Call::IsInitialized() const {
 
 void InvokeScriptResult_Call::InternalSwap(InvokeScriptResult_Call* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  args_bytes_.InternalSwap(&other->args_bytes_);
-  args_.InternalSwap(&other->args_);
-  function_.Swap(&other->function_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _impl_.args_bytes_.InternalSwap(&other->_impl_.args_bytes_);
+  _impl_.args_.InternalSwap(&other->_impl_.args_);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &_impl_.function_, lhs_arena,
+      &other->_impl_.function_, rhs_arena
+  );
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata InvokeScriptResult_Call::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_getter, &descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_once,
+      file_level_metadata_vrp_2finvoke_5fscript_5fresult_2eproto[11]);
 }
-
 
 // ===================================================================
 
-void InvokeScriptResult_Invocation::InitAsDefaultInstance() {
-  ::vrp::_InvokeScriptResult_Invocation_default_instance_._instance.get_mutable()->call_ = const_cast< ::vrp::InvokeScriptResult_Call*>(
-      ::vrp::InvokeScriptResult_Call::internal_default_instance());
-  ::vrp::_InvokeScriptResult_Invocation_default_instance_._instance.get_mutable()->statechanges_ = const_cast< ::vrp::InvokeScriptResult*>(
-      ::vrp::InvokeScriptResult::internal_default_instance());
-}
 class InvokeScriptResult_Invocation::_Internal {
  public:
   static const ::vrp::InvokeScriptResult_Call& call(const InvokeScriptResult_Invocation* msg);
@@ -3895,125 +3776,132 @@ class InvokeScriptResult_Invocation::_Internal {
 
 const ::vrp::InvokeScriptResult_Call&
 InvokeScriptResult_Invocation::_Internal::call(const InvokeScriptResult_Invocation* msg) {
-  return *msg->call_;
+  return *msg->_impl_.call_;
 }
 const ::vrp::InvokeScriptResult&
 InvokeScriptResult_Invocation::_Internal::statechanges(const InvokeScriptResult_Invocation* msg) {
-  return *msg->statechanges_;
+  return *msg->_impl_.statechanges_;
 }
 void InvokeScriptResult_Invocation::clear_payments() {
-  payments_.Clear();
+  _impl_.payments_.Clear();
 }
-InvokeScriptResult_Invocation::InvokeScriptResult_Invocation(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  payments_(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+InvokeScriptResult_Invocation::InvokeScriptResult_Invocation(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:vrp.InvokeScriptResult.Invocation)
 }
 InvokeScriptResult_Invocation::InvokeScriptResult_Invocation(const InvokeScriptResult_Invocation& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      payments_(from.payments_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  InvokeScriptResult_Invocation* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.payments_){from._impl_.payments_}
+    , decltype(_impl_.dapp_){}
+    , decltype(_impl_.call_){nullptr}
+    , decltype(_impl_.statechanges_){nullptr}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  dapp_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.dapp_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.dapp_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_dapp().empty()) {
-    dapp_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_dapp(),
-      GetArena());
+    _this->_impl_.dapp_.Set(from._internal_dapp(), 
+      _this->GetArenaForAllocation());
   }
   if (from._internal_has_call()) {
-    call_ = new ::vrp::InvokeScriptResult_Call(*from.call_);
-  } else {
-    call_ = nullptr;
+    _this->_impl_.call_ = new ::vrp::InvokeScriptResult_Call(*from._impl_.call_);
   }
   if (from._internal_has_statechanges()) {
-    statechanges_ = new ::vrp::InvokeScriptResult(*from.statechanges_);
-  } else {
-    statechanges_ = nullptr;
+    _this->_impl_.statechanges_ = new ::vrp::InvokeScriptResult(*from._impl_.statechanges_);
   }
   // @@protoc_insertion_point(copy_constructor:vrp.InvokeScriptResult.Invocation)
 }
 
-void InvokeScriptResult_Invocation::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_InvokeScriptResult_vrp_2finvoke_5fscript_5fresult_2eproto.base);
-  dapp_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::memset(&call_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&statechanges_) -
-      reinterpret_cast<char*>(&call_)) + sizeof(statechanges_));
+inline void InvokeScriptResult_Invocation::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.payments_){arena}
+    , decltype(_impl_.dapp_){}
+    , decltype(_impl_.call_){nullptr}
+    , decltype(_impl_.statechanges_){nullptr}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
+  _impl_.dapp_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.dapp_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 InvokeScriptResult_Invocation::~InvokeScriptResult_Invocation() {
   // @@protoc_insertion_point(destructor:vrp.InvokeScriptResult.Invocation)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void InvokeScriptResult_Invocation::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-  dapp_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) delete call_;
-  if (this != internal_default_instance()) delete statechanges_;
+inline void InvokeScriptResult_Invocation::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.payments_.~RepeatedPtrField();
+  _impl_.dapp_.Destroy();
+  if (this != internal_default_instance()) delete _impl_.call_;
+  if (this != internal_default_instance()) delete _impl_.statechanges_;
 }
 
-void InvokeScriptResult_Invocation::ArenaDtor(void* object) {
-  InvokeScriptResult_Invocation* _this = reinterpret_cast< InvokeScriptResult_Invocation* >(object);
-  (void)_this;
-}
-void InvokeScriptResult_Invocation::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void InvokeScriptResult_Invocation::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
-const InvokeScriptResult_Invocation& InvokeScriptResult_Invocation::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_InvokeScriptResult_vrp_2finvoke_5fscript_5fresult_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void InvokeScriptResult_Invocation::Clear() {
 // @@protoc_insertion_point(message_clear_start:vrp.InvokeScriptResult.Invocation)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  payments_.Clear();
-  dapp_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  if (GetArena() == nullptr && call_ != nullptr) {
-    delete call_;
+  _impl_.payments_.Clear();
+  _impl_.dapp_.ClearToEmpty();
+  if (GetArenaForAllocation() == nullptr && _impl_.call_ != nullptr) {
+    delete _impl_.call_;
   }
-  call_ = nullptr;
-  if (GetArena() == nullptr && statechanges_ != nullptr) {
-    delete statechanges_;
+  _impl_.call_ = nullptr;
+  if (GetArenaForAllocation() == nullptr && _impl_.statechanges_ != nullptr) {
+    delete _impl_.statechanges_;
   }
-  statechanges_ = nullptr;
+  _impl_.statechanges_ = nullptr;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* InvokeScriptResult_Invocation::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* InvokeScriptResult_Invocation::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // bytes dApp = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           auto str = _internal_mutable_dapp();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .vrp.InvokeScriptResult.Call call = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_call(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .vrp.Amount payments = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -4021,75 +3909,76 @@ const char* InvokeScriptResult_Invocation::_InternalParse(const char* ptr, ::PRO
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<26>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .vrp.InvokeScriptResult stateChanges = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_statechanges(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* InvokeScriptResult_Invocation::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* InvokeScriptResult_Invocation::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:vrp.InvokeScriptResult.Invocation)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // bytes dApp = 1;
-  if (this->dapp().size() > 0) {
+  if (!this->_internal_dapp().empty()) {
     target = stream->WriteBytesMaybeAliased(
         1, this->_internal_dapp(), target);
   }
 
   // .vrp.InvokeScriptResult.Call call = 2;
-  if (this->has_call()) {
-    target = stream->EnsureSpace(target);
+  if (this->_internal_has_call()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::call(this), target, stream);
+      InternalWriteMessage(2, _Internal::call(this),
+        _Internal::call(this).GetCachedSize(), target, stream);
   }
 
   // repeated .vrp.Amount payments = 3;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_payments_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_payments_size()); i < n; i++) {
+    const auto& repfield = this->_internal_payments(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(3, this->_internal_payments(i), target, stream);
+        InternalWriteMessage(3, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // .vrp.InvokeScriptResult stateChanges = 4;
-  if (this->has_statechanges()) {
-    target = stream->EnsureSpace(target);
+  if (this->_internal_has_statechanges()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        4, _Internal::statechanges(this), target, stream);
+      InternalWriteMessage(4, _Internal::statechanges(this),
+        _Internal::statechanges(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:vrp.InvokeScriptResult.Invocation)
@@ -4100,86 +3989,69 @@ size_t InvokeScriptResult_Invocation::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:vrp.InvokeScriptResult.Invocation)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .vrp.Amount payments = 3;
   total_size += 1UL * this->_internal_payments_size();
-  for (const auto& msg : this->payments_) {
+  for (const auto& msg : this->_impl_.payments_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // bytes dApp = 1;
-  if (this->dapp().size() > 0) {
+  if (!this->_internal_dapp().empty()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
         this->_internal_dapp());
   }
 
   // .vrp.InvokeScriptResult.Call call = 2;
-  if (this->has_call()) {
+  if (this->_internal_has_call()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *call_);
+        *_impl_.call_);
   }
 
   // .vrp.InvokeScriptResult stateChanges = 4;
-  if (this->has_statechanges()) {
+  if (this->_internal_has_statechanges()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *statechanges_);
+        *_impl_.statechanges_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void InvokeScriptResult_Invocation::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:vrp.InvokeScriptResult.Invocation)
-  GOOGLE_DCHECK_NE(&from, this);
-  const InvokeScriptResult_Invocation* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<InvokeScriptResult_Invocation>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:vrp.InvokeScriptResult.Invocation)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:vrp.InvokeScriptResult.Invocation)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData InvokeScriptResult_Invocation::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    InvokeScriptResult_Invocation::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*InvokeScriptResult_Invocation::GetClassData() const { return &_class_data_; }
 
-void InvokeScriptResult_Invocation::MergeFrom(const InvokeScriptResult_Invocation& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:vrp.InvokeScriptResult.Invocation)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void InvokeScriptResult_Invocation::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<InvokeScriptResult_Invocation*>(&to_msg);
+  auto& from = static_cast<const InvokeScriptResult_Invocation&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:vrp.InvokeScriptResult.Invocation)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  payments_.MergeFrom(from.payments_);
-  if (from.dapp().size() > 0) {
-    _internal_set_dapp(from._internal_dapp());
+  _this->_impl_.payments_.MergeFrom(from._impl_.payments_);
+  if (!from._internal_dapp().empty()) {
+    _this->_internal_set_dapp(from._internal_dapp());
   }
-  if (from.has_call()) {
-    _internal_mutable_call()->::vrp::InvokeScriptResult_Call::MergeFrom(from._internal_call());
+  if (from._internal_has_call()) {
+    _this->_internal_mutable_call()->::vrp::InvokeScriptResult_Call::MergeFrom(
+        from._internal_call());
   }
-  if (from.has_statechanges()) {
-    _internal_mutable_statechanges()->::vrp::InvokeScriptResult::MergeFrom(from._internal_statechanges());
+  if (from._internal_has_statechanges()) {
+    _this->_internal_mutable_statechanges()->::vrp::InvokeScriptResult::MergeFrom(
+        from._internal_statechanges());
   }
-}
-
-void InvokeScriptResult_Invocation::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:vrp.InvokeScriptResult.Invocation)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void InvokeScriptResult_Invocation::CopyFrom(const InvokeScriptResult_Invocation& from) {
@@ -4195,28 +4067,30 @@ bool InvokeScriptResult_Invocation::IsInitialized() const {
 
 void InvokeScriptResult_Invocation::InternalSwap(InvokeScriptResult_Invocation* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  payments_.InternalSwap(&other->payments_);
-  dapp_.Swap(&other->dapp_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _impl_.payments_.InternalSwap(&other->_impl_.payments_);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &_impl_.dapp_, lhs_arena,
+      &other->_impl_.dapp_, rhs_arena
+  );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(InvokeScriptResult_Invocation, statechanges_)
-      + sizeof(InvokeScriptResult_Invocation::statechanges_)
-      - PROTOBUF_FIELD_OFFSET(InvokeScriptResult_Invocation, call_)>(
-          reinterpret_cast<char*>(&call_),
-          reinterpret_cast<char*>(&other->call_));
+      PROTOBUF_FIELD_OFFSET(InvokeScriptResult_Invocation, _impl_.statechanges_)
+      + sizeof(InvokeScriptResult_Invocation::_impl_.statechanges_)
+      - PROTOBUF_FIELD_OFFSET(InvokeScriptResult_Invocation, _impl_.call_)>(
+          reinterpret_cast<char*>(&_impl_.call_),
+          reinterpret_cast<char*>(&other->_impl_.call_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata InvokeScriptResult_Invocation::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_getter, &descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_once,
+      file_level_metadata_vrp_2finvoke_5fscript_5fresult_2eproto[12]);
 }
-
 
 // ===================================================================
 
-void InvokeScriptResult::InitAsDefaultInstance() {
-  ::vrp::_InvokeScriptResult_default_instance_._instance.get_mutable()->error_message_ = const_cast< ::vrp::InvokeScriptResult_ErrorMessage*>(
-      ::vrp::InvokeScriptResult_ErrorMessage::internal_default_instance());
-}
 class InvokeScriptResult::_Internal {
  public:
   static const ::vrp::InvokeScriptResult_ErrorMessage& error_message(const InvokeScriptResult* msg);
@@ -4224,113 +4098,121 @@ class InvokeScriptResult::_Internal {
 
 const ::vrp::InvokeScriptResult_ErrorMessage&
 InvokeScriptResult::_Internal::error_message(const InvokeScriptResult* msg) {
-  return *msg->error_message_;
+  return *msg->_impl_.error_message_;
 }
 void InvokeScriptResult::clear_data() {
-  data_.Clear();
+  _impl_.data_.Clear();
 }
-InvokeScriptResult::InvokeScriptResult(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  data_(arena),
-  transfers_(arena),
-  issues_(arena),
-  reissues_(arena),
-  burns_(arena),
-  sponsor_fees_(arena),
-  leases_(arena),
-  lease_cancels_(arena),
-  invokes_(arena),
-  private_payment_(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+InvokeScriptResult::InvokeScriptResult(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:vrp.InvokeScriptResult)
 }
 InvokeScriptResult::InvokeScriptResult(const InvokeScriptResult& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      data_(from.data_),
-      transfers_(from.transfers_),
-      issues_(from.issues_),
-      reissues_(from.reissues_),
-      burns_(from.burns_),
-      sponsor_fees_(from.sponsor_fees_),
-      leases_(from.leases_),
-      lease_cancels_(from.lease_cancels_),
-      invokes_(from.invokes_),
-      private_payment_(from.private_payment_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  InvokeScriptResult* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.data_){from._impl_.data_}
+    , decltype(_impl_.transfers_){from._impl_.transfers_}
+    , decltype(_impl_.issues_){from._impl_.issues_}
+    , decltype(_impl_.reissues_){from._impl_.reissues_}
+    , decltype(_impl_.burns_){from._impl_.burns_}
+    , decltype(_impl_.sponsor_fees_){from._impl_.sponsor_fees_}
+    , decltype(_impl_.leases_){from._impl_.leases_}
+    , decltype(_impl_.lease_cancels_){from._impl_.lease_cancels_}
+    , decltype(_impl_.invokes_){from._impl_.invokes_}
+    , decltype(_impl_.private_payment_){from._impl_.private_payment_}
+    , decltype(_impl_.error_message_){nullptr}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_error_message()) {
-    error_message_ = new ::vrp::InvokeScriptResult_ErrorMessage(*from.error_message_);
-  } else {
-    error_message_ = nullptr;
+    _this->_impl_.error_message_ = new ::vrp::InvokeScriptResult_ErrorMessage(*from._impl_.error_message_);
   }
   // @@protoc_insertion_point(copy_constructor:vrp.InvokeScriptResult)
 }
 
-void InvokeScriptResult::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_InvokeScriptResult_vrp_2finvoke_5fscript_5fresult_2eproto.base);
-  error_message_ = nullptr;
+inline void InvokeScriptResult::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.data_){arena}
+    , decltype(_impl_.transfers_){arena}
+    , decltype(_impl_.issues_){arena}
+    , decltype(_impl_.reissues_){arena}
+    , decltype(_impl_.burns_){arena}
+    , decltype(_impl_.sponsor_fees_){arena}
+    , decltype(_impl_.leases_){arena}
+    , decltype(_impl_.lease_cancels_){arena}
+    , decltype(_impl_.invokes_){arena}
+    , decltype(_impl_.private_payment_){arena}
+    , decltype(_impl_.error_message_){nullptr}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
 }
 
 InvokeScriptResult::~InvokeScriptResult() {
   // @@protoc_insertion_point(destructor:vrp.InvokeScriptResult)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void InvokeScriptResult::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-  if (this != internal_default_instance()) delete error_message_;
+inline void InvokeScriptResult::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.data_.~RepeatedPtrField();
+  _impl_.transfers_.~RepeatedPtrField();
+  _impl_.issues_.~RepeatedPtrField();
+  _impl_.reissues_.~RepeatedPtrField();
+  _impl_.burns_.~RepeatedPtrField();
+  _impl_.sponsor_fees_.~RepeatedPtrField();
+  _impl_.leases_.~RepeatedPtrField();
+  _impl_.lease_cancels_.~RepeatedPtrField();
+  _impl_.invokes_.~RepeatedPtrField();
+  _impl_.private_payment_.~RepeatedPtrField();
+  if (this != internal_default_instance()) delete _impl_.error_message_;
 }
 
-void InvokeScriptResult::ArenaDtor(void* object) {
-  InvokeScriptResult* _this = reinterpret_cast< InvokeScriptResult* >(object);
-  (void)_this;
-}
-void InvokeScriptResult::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void InvokeScriptResult::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
-const InvokeScriptResult& InvokeScriptResult::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_InvokeScriptResult_vrp_2finvoke_5fscript_5fresult_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void InvokeScriptResult::Clear() {
 // @@protoc_insertion_point(message_clear_start:vrp.InvokeScriptResult)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  data_.Clear();
-  transfers_.Clear();
-  issues_.Clear();
-  reissues_.Clear();
-  burns_.Clear();
-  sponsor_fees_.Clear();
-  leases_.Clear();
-  lease_cancels_.Clear();
-  invokes_.Clear();
-  private_payment_.Clear();
-  if (GetArena() == nullptr && error_message_ != nullptr) {
-    delete error_message_;
+  _impl_.data_.Clear();
+  _impl_.transfers_.Clear();
+  _impl_.issues_.Clear();
+  _impl_.reissues_.Clear();
+  _impl_.burns_.Clear();
+  _impl_.sponsor_fees_.Clear();
+  _impl_.leases_.Clear();
+  _impl_.lease_cancels_.Clear();
+  _impl_.invokes_.Clear();
+  _impl_.private_payment_.Clear();
+  if (GetArenaForAllocation() == nullptr && _impl_.error_message_ != nullptr) {
+    delete _impl_.error_message_;
   }
-  error_message_ = nullptr;
+  _impl_.error_message_ = nullptr;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* InvokeScriptResult::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* InvokeScriptResult::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // repeated .vrp.DataTransactionData.DataEntry data = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -4338,11 +4220,12 @@ const char* InvokeScriptResult::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .vrp.InvokeScriptResult.Payment transfers = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -4350,11 +4233,12 @@ const char* InvokeScriptResult::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .vrp.InvokeScriptResult.Issue issues = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -4362,11 +4246,12 @@ const char* InvokeScriptResult::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<26>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .vrp.InvokeScriptResult.Reissue reissues = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -4374,11 +4259,12 @@ const char* InvokeScriptResult::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<34>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .vrp.InvokeScriptResult.Burn burns = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -4386,18 +4272,20 @@ const char* InvokeScriptResult::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<42>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .vrp.InvokeScriptResult.ErrorMessage error_message = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 50)) {
           ptr = ctx->ParseMessage(_internal_mutable_error_message(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .vrp.InvokeScriptResult.SponsorFee sponsor_fees = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -4405,11 +4293,12 @@ const char* InvokeScriptResult::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<58>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .vrp.InvokeScriptResult.Lease leases = 8;
       case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 66)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 66)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -4417,11 +4306,12 @@ const char* InvokeScriptResult::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<66>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .vrp.InvokeScriptResult.LeaseCancel lease_cancels = 9;
       case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 74)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -4429,11 +4319,12 @@ const char* InvokeScriptResult::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<74>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .vrp.InvokeScriptResult.Invocation invokes = 10;
       case 10:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 82)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 82)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -4441,11 +4332,12 @@ const char* InvokeScriptResult::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<82>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .vrp.InvokeScriptResult.PrivatePayment private_payment = 11;
       case 11:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 90)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 90)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -4453,126 +4345,127 @@ const char* InvokeScriptResult::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<90>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* InvokeScriptResult::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* InvokeScriptResult::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:vrp.InvokeScriptResult)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated .vrp.DataTransactionData.DataEntry data = 1;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_data_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_data_size()); i < n; i++) {
+    const auto& repfield = this->_internal_data(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, this->_internal_data(i), target, stream);
+        InternalWriteMessage(1, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // repeated .vrp.InvokeScriptResult.Payment transfers = 2;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_transfers_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_transfers_size()); i < n; i++) {
+    const auto& repfield = this->_internal_transfers(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_transfers(i), target, stream);
+        InternalWriteMessage(2, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // repeated .vrp.InvokeScriptResult.Issue issues = 3;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_issues_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_issues_size()); i < n; i++) {
+    const auto& repfield = this->_internal_issues(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(3, this->_internal_issues(i), target, stream);
+        InternalWriteMessage(3, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // repeated .vrp.InvokeScriptResult.Reissue reissues = 4;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_reissues_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_reissues_size()); i < n; i++) {
+    const auto& repfield = this->_internal_reissues(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(4, this->_internal_reissues(i), target, stream);
+        InternalWriteMessage(4, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // repeated .vrp.InvokeScriptResult.Burn burns = 5;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_burns_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_burns_size()); i < n; i++) {
+    const auto& repfield = this->_internal_burns(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(5, this->_internal_burns(i), target, stream);
+        InternalWriteMessage(5, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // .vrp.InvokeScriptResult.ErrorMessage error_message = 6;
-  if (this->has_error_message()) {
-    target = stream->EnsureSpace(target);
+  if (this->_internal_has_error_message()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        6, _Internal::error_message(this), target, stream);
+      InternalWriteMessage(6, _Internal::error_message(this),
+        _Internal::error_message(this).GetCachedSize(), target, stream);
   }
 
   // repeated .vrp.InvokeScriptResult.SponsorFee sponsor_fees = 7;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_sponsor_fees_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_sponsor_fees_size()); i < n; i++) {
+    const auto& repfield = this->_internal_sponsor_fees(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(7, this->_internal_sponsor_fees(i), target, stream);
+        InternalWriteMessage(7, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // repeated .vrp.InvokeScriptResult.Lease leases = 8;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_leases_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_leases_size()); i < n; i++) {
+    const auto& repfield = this->_internal_leases(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(8, this->_internal_leases(i), target, stream);
+        InternalWriteMessage(8, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // repeated .vrp.InvokeScriptResult.LeaseCancel lease_cancels = 9;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_lease_cancels_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_lease_cancels_size()); i < n; i++) {
+    const auto& repfield = this->_internal_lease_cancels(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(9, this->_internal_lease_cancels(i), target, stream);
+        InternalWriteMessage(9, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // repeated .vrp.InvokeScriptResult.Invocation invokes = 10;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_invokes_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_invokes_size()); i < n; i++) {
+    const auto& repfield = this->_internal_invokes(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(10, this->_internal_invokes(i), target, stream);
+        InternalWriteMessage(10, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // repeated .vrp.InvokeScriptResult.PrivatePayment private_payment = 11;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_private_payment_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_private_payment_size()); i < n; i++) {
+    const auto& repfield = this->_internal_private_payment(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(11, this->_internal_private_payment(i), target, stream);
+        InternalWriteMessage(11, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:vrp.InvokeScriptResult)
@@ -4583,138 +4476,120 @@ size_t InvokeScriptResult::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:vrp.InvokeScriptResult)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .vrp.DataTransactionData.DataEntry data = 1;
   total_size += 1UL * this->_internal_data_size();
-  for (const auto& msg : this->data_) {
+  for (const auto& msg : this->_impl_.data_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // repeated .vrp.InvokeScriptResult.Payment transfers = 2;
   total_size += 1UL * this->_internal_transfers_size();
-  for (const auto& msg : this->transfers_) {
+  for (const auto& msg : this->_impl_.transfers_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // repeated .vrp.InvokeScriptResult.Issue issues = 3;
   total_size += 1UL * this->_internal_issues_size();
-  for (const auto& msg : this->issues_) {
+  for (const auto& msg : this->_impl_.issues_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // repeated .vrp.InvokeScriptResult.Reissue reissues = 4;
   total_size += 1UL * this->_internal_reissues_size();
-  for (const auto& msg : this->reissues_) {
+  for (const auto& msg : this->_impl_.reissues_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // repeated .vrp.InvokeScriptResult.Burn burns = 5;
   total_size += 1UL * this->_internal_burns_size();
-  for (const auto& msg : this->burns_) {
+  for (const auto& msg : this->_impl_.burns_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // repeated .vrp.InvokeScriptResult.SponsorFee sponsor_fees = 7;
   total_size += 1UL * this->_internal_sponsor_fees_size();
-  for (const auto& msg : this->sponsor_fees_) {
+  for (const auto& msg : this->_impl_.sponsor_fees_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // repeated .vrp.InvokeScriptResult.Lease leases = 8;
   total_size += 1UL * this->_internal_leases_size();
-  for (const auto& msg : this->leases_) {
+  for (const auto& msg : this->_impl_.leases_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // repeated .vrp.InvokeScriptResult.LeaseCancel lease_cancels = 9;
   total_size += 1UL * this->_internal_lease_cancels_size();
-  for (const auto& msg : this->lease_cancels_) {
+  for (const auto& msg : this->_impl_.lease_cancels_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // repeated .vrp.InvokeScriptResult.Invocation invokes = 10;
   total_size += 1UL * this->_internal_invokes_size();
-  for (const auto& msg : this->invokes_) {
+  for (const auto& msg : this->_impl_.invokes_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // repeated .vrp.InvokeScriptResult.PrivatePayment private_payment = 11;
   total_size += 1UL * this->_internal_private_payment_size();
-  for (const auto& msg : this->private_payment_) {
+  for (const auto& msg : this->_impl_.private_payment_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // .vrp.InvokeScriptResult.ErrorMessage error_message = 6;
-  if (this->has_error_message()) {
+  if (this->_internal_has_error_message()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *error_message_);
+        *_impl_.error_message_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void InvokeScriptResult::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:vrp.InvokeScriptResult)
-  GOOGLE_DCHECK_NE(&from, this);
-  const InvokeScriptResult* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<InvokeScriptResult>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:vrp.InvokeScriptResult)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:vrp.InvokeScriptResult)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData InvokeScriptResult::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    InvokeScriptResult::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*InvokeScriptResult::GetClassData() const { return &_class_data_; }
 
-void InvokeScriptResult::MergeFrom(const InvokeScriptResult& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:vrp.InvokeScriptResult)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void InvokeScriptResult::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<InvokeScriptResult*>(&to_msg);
+  auto& from = static_cast<const InvokeScriptResult&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:vrp.InvokeScriptResult)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  data_.MergeFrom(from.data_);
-  transfers_.MergeFrom(from.transfers_);
-  issues_.MergeFrom(from.issues_);
-  reissues_.MergeFrom(from.reissues_);
-  burns_.MergeFrom(from.burns_);
-  sponsor_fees_.MergeFrom(from.sponsor_fees_);
-  leases_.MergeFrom(from.leases_);
-  lease_cancels_.MergeFrom(from.lease_cancels_);
-  invokes_.MergeFrom(from.invokes_);
-  private_payment_.MergeFrom(from.private_payment_);
-  if (from.has_error_message()) {
-    _internal_mutable_error_message()->::vrp::InvokeScriptResult_ErrorMessage::MergeFrom(from._internal_error_message());
+  _this->_impl_.data_.MergeFrom(from._impl_.data_);
+  _this->_impl_.transfers_.MergeFrom(from._impl_.transfers_);
+  _this->_impl_.issues_.MergeFrom(from._impl_.issues_);
+  _this->_impl_.reissues_.MergeFrom(from._impl_.reissues_);
+  _this->_impl_.burns_.MergeFrom(from._impl_.burns_);
+  _this->_impl_.sponsor_fees_.MergeFrom(from._impl_.sponsor_fees_);
+  _this->_impl_.leases_.MergeFrom(from._impl_.leases_);
+  _this->_impl_.lease_cancels_.MergeFrom(from._impl_.lease_cancels_);
+  _this->_impl_.invokes_.MergeFrom(from._impl_.invokes_);
+  _this->_impl_.private_payment_.MergeFrom(from._impl_.private_payment_);
+  if (from._internal_has_error_message()) {
+    _this->_internal_mutable_error_message()->::vrp::InvokeScriptResult_ErrorMessage::MergeFrom(
+        from._internal_error_message());
   }
-}
-
-void InvokeScriptResult::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:vrp.InvokeScriptResult)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void InvokeScriptResult::CopyFrom(const InvokeScriptResult& from) {
@@ -4730,68 +4605,83 @@ bool InvokeScriptResult::IsInitialized() const {
 
 void InvokeScriptResult::InternalSwap(InvokeScriptResult* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  data_.InternalSwap(&other->data_);
-  transfers_.InternalSwap(&other->transfers_);
-  issues_.InternalSwap(&other->issues_);
-  reissues_.InternalSwap(&other->reissues_);
-  burns_.InternalSwap(&other->burns_);
-  sponsor_fees_.InternalSwap(&other->sponsor_fees_);
-  leases_.InternalSwap(&other->leases_);
-  lease_cancels_.InternalSwap(&other->lease_cancels_);
-  invokes_.InternalSwap(&other->invokes_);
-  private_payment_.InternalSwap(&other->private_payment_);
-  swap(error_message_, other->error_message_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _impl_.data_.InternalSwap(&other->_impl_.data_);
+  _impl_.transfers_.InternalSwap(&other->_impl_.transfers_);
+  _impl_.issues_.InternalSwap(&other->_impl_.issues_);
+  _impl_.reissues_.InternalSwap(&other->_impl_.reissues_);
+  _impl_.burns_.InternalSwap(&other->_impl_.burns_);
+  _impl_.sponsor_fees_.InternalSwap(&other->_impl_.sponsor_fees_);
+  _impl_.leases_.InternalSwap(&other->_impl_.leases_);
+  _impl_.lease_cancels_.InternalSwap(&other->_impl_.lease_cancels_);
+  _impl_.invokes_.InternalSwap(&other->_impl_.invokes_);
+  _impl_.private_payment_.InternalSwap(&other->_impl_.private_payment_);
+  swap(_impl_.error_message_, other->_impl_.error_message_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata InvokeScriptResult::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_getter, &descriptor_table_vrp_2finvoke_5fscript_5fresult_2eproto_once,
+      file_level_metadata_vrp_2finvoke_5fscript_5fresult_2eproto[13]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace vrp
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::vrp::InvokeScriptResult_Payment* Arena::CreateMaybeMessage< ::vrp::InvokeScriptResult_Payment >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::vrp::InvokeScriptResult_Payment*
+Arena::CreateMaybeMessage< ::vrp::InvokeScriptResult_Payment >(Arena* arena) {
   return Arena::CreateMessageInternal< ::vrp::InvokeScriptResult_Payment >(arena);
 }
-template<> PROTOBUF_NOINLINE ::vrp::InvokeScriptResult_PrivatePayment* Arena::CreateMaybeMessage< ::vrp::InvokeScriptResult_PrivatePayment >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::vrp::InvokeScriptResult_PrivatePayment*
+Arena::CreateMaybeMessage< ::vrp::InvokeScriptResult_PrivatePayment >(Arena* arena) {
   return Arena::CreateMessageInternal< ::vrp::InvokeScriptResult_PrivatePayment >(arena);
 }
-template<> PROTOBUF_NOINLINE ::vrp::InvokeScriptResult_Issue* Arena::CreateMaybeMessage< ::vrp::InvokeScriptResult_Issue >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::vrp::InvokeScriptResult_Issue*
+Arena::CreateMaybeMessage< ::vrp::InvokeScriptResult_Issue >(Arena* arena) {
   return Arena::CreateMessageInternal< ::vrp::InvokeScriptResult_Issue >(arena);
 }
-template<> PROTOBUF_NOINLINE ::vrp::InvokeScriptResult_Reissue* Arena::CreateMaybeMessage< ::vrp::InvokeScriptResult_Reissue >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::vrp::InvokeScriptResult_Reissue*
+Arena::CreateMaybeMessage< ::vrp::InvokeScriptResult_Reissue >(Arena* arena) {
   return Arena::CreateMessageInternal< ::vrp::InvokeScriptResult_Reissue >(arena);
 }
-template<> PROTOBUF_NOINLINE ::vrp::InvokeScriptResult_Burn* Arena::CreateMaybeMessage< ::vrp::InvokeScriptResult_Burn >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::vrp::InvokeScriptResult_Burn*
+Arena::CreateMaybeMessage< ::vrp::InvokeScriptResult_Burn >(Arena* arena) {
   return Arena::CreateMessageInternal< ::vrp::InvokeScriptResult_Burn >(arena);
 }
-template<> PROTOBUF_NOINLINE ::vrp::InvokeScriptResult_SponsorFee* Arena::CreateMaybeMessage< ::vrp::InvokeScriptResult_SponsorFee >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::vrp::InvokeScriptResult_SponsorFee*
+Arena::CreateMaybeMessage< ::vrp::InvokeScriptResult_SponsorFee >(Arena* arena) {
   return Arena::CreateMessageInternal< ::vrp::InvokeScriptResult_SponsorFee >(arena);
 }
-template<> PROTOBUF_NOINLINE ::vrp::InvokeScriptResult_Lease* Arena::CreateMaybeMessage< ::vrp::InvokeScriptResult_Lease >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::vrp::InvokeScriptResult_Lease*
+Arena::CreateMaybeMessage< ::vrp::InvokeScriptResult_Lease >(Arena* arena) {
   return Arena::CreateMessageInternal< ::vrp::InvokeScriptResult_Lease >(arena);
 }
-template<> PROTOBUF_NOINLINE ::vrp::InvokeScriptResult_LeaseCancel* Arena::CreateMaybeMessage< ::vrp::InvokeScriptResult_LeaseCancel >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::vrp::InvokeScriptResult_LeaseCancel*
+Arena::CreateMaybeMessage< ::vrp::InvokeScriptResult_LeaseCancel >(Arena* arena) {
   return Arena::CreateMessageInternal< ::vrp::InvokeScriptResult_LeaseCancel >(arena);
 }
-template<> PROTOBUF_NOINLINE ::vrp::InvokeScriptResult_ErrorMessage* Arena::CreateMaybeMessage< ::vrp::InvokeScriptResult_ErrorMessage >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::vrp::InvokeScriptResult_ErrorMessage*
+Arena::CreateMaybeMessage< ::vrp::InvokeScriptResult_ErrorMessage >(Arena* arena) {
   return Arena::CreateMessageInternal< ::vrp::InvokeScriptResult_ErrorMessage >(arena);
 }
-template<> PROTOBUF_NOINLINE ::vrp::InvokeScriptResult_Call_Argument_List* Arena::CreateMaybeMessage< ::vrp::InvokeScriptResult_Call_Argument_List >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::vrp::InvokeScriptResult_Call_Argument_List*
+Arena::CreateMaybeMessage< ::vrp::InvokeScriptResult_Call_Argument_List >(Arena* arena) {
   return Arena::CreateMessageInternal< ::vrp::InvokeScriptResult_Call_Argument_List >(arena);
 }
-template<> PROTOBUF_NOINLINE ::vrp::InvokeScriptResult_Call_Argument* Arena::CreateMaybeMessage< ::vrp::InvokeScriptResult_Call_Argument >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::vrp::InvokeScriptResult_Call_Argument*
+Arena::CreateMaybeMessage< ::vrp::InvokeScriptResult_Call_Argument >(Arena* arena) {
   return Arena::CreateMessageInternal< ::vrp::InvokeScriptResult_Call_Argument >(arena);
 }
-template<> PROTOBUF_NOINLINE ::vrp::InvokeScriptResult_Call* Arena::CreateMaybeMessage< ::vrp::InvokeScriptResult_Call >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::vrp::InvokeScriptResult_Call*
+Arena::CreateMaybeMessage< ::vrp::InvokeScriptResult_Call >(Arena* arena) {
   return Arena::CreateMessageInternal< ::vrp::InvokeScriptResult_Call >(arena);
 }
-template<> PROTOBUF_NOINLINE ::vrp::InvokeScriptResult_Invocation* Arena::CreateMaybeMessage< ::vrp::InvokeScriptResult_Invocation >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::vrp::InvokeScriptResult_Invocation*
+Arena::CreateMaybeMessage< ::vrp::InvokeScriptResult_Invocation >(Arena* arena) {
   return Arena::CreateMessageInternal< ::vrp::InvokeScriptResult_Invocation >(arena);
 }
-template<> PROTOBUF_NOINLINE ::vrp::InvokeScriptResult* Arena::CreateMaybeMessage< ::vrp::InvokeScriptResult >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::vrp::InvokeScriptResult*
+Arena::CreateMaybeMessage< ::vrp::InvokeScriptResult >(Arena* arena) {
   return Arena::CreateMessageInternal< ::vrp::InvokeScriptResult >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

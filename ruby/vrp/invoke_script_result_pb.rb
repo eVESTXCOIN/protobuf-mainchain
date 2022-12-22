@@ -6,6 +6,7 @@ require 'google/protobuf'
 require 'vrp/transaction_pb'
 require 'vrp/amount_pb'
 require 'vrp/recipient_pb'
+
 Google::Protobuf::DescriptorPool.generated_pool.build do
   add_file("vrp/invoke_script_result.proto", :syntax => :proto3) do
     add_message "vrp.InvokeScriptResult" do

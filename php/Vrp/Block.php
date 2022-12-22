@@ -34,7 +34,7 @@ class Block extends \Google\Protobuf\Internal\Message
      *
      *     @type \Vrp\Block\Header $header
      *     @type string $signature
-     *     @type \Vrp\SignedTransaction[]|\Google\Protobuf\Internal\RepeatedField $transactions
+     *     @type array<\Vrp\SignedTransaction>|\Google\Protobuf\Internal\RepeatedField $transactions
      * }
      */
     public function __construct($data = NULL) {
@@ -44,11 +44,21 @@ class Block extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.Block.Header header = 1;</code>
-     * @return \Vrp\Block\Header
+     * @return \Vrp\Block\Header|null
      */
     public function getHeader()
     {
         return $this->header;
+    }
+
+    public function hasHeader()
+    {
+        return isset($this->header);
+    }
+
+    public function clearHeader()
+    {
+        unset($this->header);
     }
 
     /**
@@ -58,7 +68,7 @@ class Block extends \Google\Protobuf\Internal\Message
      */
     public function setHeader($var)
     {
-        GPBUtil::checkMessage($var, \Vrp\Block_Header::class);
+        GPBUtil::checkMessage($var, \Vrp\Block\Header::class);
         $this->header = $var;
 
         return $this;
@@ -97,7 +107,7 @@ class Block extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .vrp.SignedTransaction transactions = 3;</code>
-     * @param \Vrp\SignedTransaction[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Vrp\SignedTransaction>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setTransactions($var)

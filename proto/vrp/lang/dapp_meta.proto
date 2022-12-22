@@ -1,8 +1,8 @@
 syntax = "proto3";
-package vrp;
-option java_package = "com.vrp.protobuf.dapp";
-option go_package = "github.com/eVESTXCOIN/govrp/bread/meta/generated";
-option csharp_namespace = "Waves";
+package evestx;
+option java_package = "com.eVESTXCOIN.protobuf.dapp";
+option go_package = "github.com/eVESTXCOIN/govrp/pkg/bread/meta/generated";
+option csharp_namespace = "EVESTX";
 
 message DAppMeta {
     int32 version = 1;

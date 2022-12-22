@@ -92,74 +92,6 @@ public final class BlockOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private Block(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 10: {
-              com.vrp.protobuf.block.BlockOuterClass.Block.Header.Builder subBuilder = null;
-              if (header_ != null) {
-                subBuilder = header_.toBuilder();
-              }
-              header_ = input.readMessage(com.vrp.protobuf.block.BlockOuterClass.Block.Header.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(header_);
-                header_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 18: {
-
-              signature_ = input.readBytes();
-              break;
-            }
-            case 26: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                transactions_ = new java.util.ArrayList<com.vrp.protobuf.transaction.TransactionOuterClass.SignedTransaction>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              transactions_.add(
-                  input.readMessage(com.vrp.protobuf.transaction.TransactionOuterClass.SignedTransaction.parser(), extensionRegistry));
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          transactions_ = java.util.Collections.unmodifiableList(transactions_);
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return com.vrp.protobuf.block.BlockOuterClass.internal_static_vrp_Block_descriptor;
@@ -285,118 +217,6 @@ public final class BlockOuterClass {
       public final com.google.protobuf.UnknownFieldSet
       getUnknownFields() {
         return this.unknownFields;
-      }
-      private Header(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        this();
-        if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
-        }
-        int mutable_bitField0_ = 0;
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
-        try {
-          boolean done = false;
-          while (!done) {
-            int tag = input.readTag();
-            switch (tag) {
-              case 0:
-                done = true;
-                break;
-              case 8: {
-
-                chainId_ = input.readInt32();
-                break;
-              }
-              case 18: {
-
-                reference_ = input.readBytes();
-                break;
-              }
-              case 24: {
-
-                baseTarget_ = input.readInt64();
-                break;
-              }
-              case 34: {
-
-                generationSignature_ = input.readBytes();
-                break;
-              }
-              case 40: {
-                if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                  featureVotes_ = newIntList();
-                  mutable_bitField0_ |= 0x00000001;
-                }
-                featureVotes_.addInt(input.readUInt32());
-                break;
-              }
-              case 42: {
-                int length = input.readRawVarint32();
-                int limit = input.pushLimit(length);
-                if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                  featureVotes_ = newIntList();
-                  mutable_bitField0_ |= 0x00000001;
-                }
-                while (input.getBytesUntilLimit() > 0) {
-                  featureVotes_.addInt(input.readUInt32());
-                }
-                input.popLimit(limit);
-                break;
-              }
-              case 48: {
-
-                timestamp_ = input.readInt64();
-                break;
-              }
-              case 56: {
-
-                version_ = input.readInt32();
-                break;
-              }
-              case 66: {
-
-                generator_ = input.readBytes();
-                break;
-              }
-              case 72: {
-
-                rewardVote_ = input.readInt64();
-                break;
-              }
-              case 80: {
-
-                rewardBurned_ = input.readInt64();
-                break;
-              }
-              case 90: {
-
-                transactionsRoot_ = input.readBytes();
-                break;
-              }
-              default: {
-                if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
-                  done = true;
-                }
-                break;
-              }
-            }
-          }
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.setUnfinishedMessage(this);
-        } catch (java.io.IOException e) {
-          throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
-        } finally {
-          if (((mutable_bitField0_ & 0x00000001) != 0)) {
-            featureVotes_.makeImmutable(); // C
-          }
-          this.unknownFields = unknownFields.build();
-          makeExtensionsImmutable();
-        }
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
@@ -601,7 +421,7 @@ public final class BlockOuterClass {
         if (!transactionsRoot_.isEmpty()) {
           output.writeBytes(11, transactionsRoot_);
         }
-        unknownFields.writeTo(output);
+        getUnknownFields().writeTo(output);
       }
 
       @java.lang.Override
@@ -664,7 +484,7 @@ public final class BlockOuterClass {
           size += com.google.protobuf.CodedOutputStream
             .computeBytesSize(11, transactionsRoot_);
         }
-        size += unknownFields.getSerializedSize();
+        size += getUnknownFields().getSerializedSize();
         memoizedSize = size;
         return size;
       }
@@ -701,7 +521,7 @@ public final class BlockOuterClass {
             != other.getRewardBurned()) return false;
         if (!getTransactionsRoot()
             .equals(other.getTransactionsRoot())) return false;
-        if (!unknownFields.equals(other.unknownFields)) return false;
+        if (!getUnknownFields().equals(other.getUnknownFields())) return false;
         return true;
       }
 
@@ -740,7 +560,7 @@ public final class BlockOuterClass {
             getRewardBurned());
         hash = (37 * hash) + TRANSACTIONS_ROOT_FIELD_NUMBER;
         hash = (53 * hash) + getTransactionsRoot().hashCode();
-        hash = (29 * hash) + unknownFields.hashCode();
+        hash = (29 * hash) + getUnknownFields().hashCode();
         memoizedHashCode = hash;
         return hash;
       }
@@ -857,18 +677,13 @@ public final class BlockOuterClass {
 
         // Construct using com.vrp.protobuf.block.BlockOuterClass.Block.Header.newBuilder()
         private Builder() {
-          maybeForceBuilderInitialization();
+
         }
 
         private Builder(
             com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
           super(parent);
-          maybeForceBuilderInitialization();
-        }
-        private void maybeForceBuilderInitialization() {
-          if (com.google.protobuf.GeneratedMessageV3
-                  .alwaysUseFieldBuilders) {
-          }
+
         }
         @java.lang.Override
         public Builder clear() {
@@ -1025,7 +840,7 @@ public final class BlockOuterClass {
           if (other.getTransactionsRoot() != com.google.protobuf.ByteString.EMPTY) {
             setTransactionsRoot(other.getTransactionsRoot());
           }
-          this.mergeUnknownFields(other.unknownFields);
+          this.mergeUnknownFields(other.getUnknownFields());
           onChanged();
           return this;
         }
@@ -1040,17 +855,96 @@ public final class BlockOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          com.vrp.protobuf.block.BlockOuterClass.Block.Header parsedMessage = null;
+          if (extensionRegistry == null) {
+            throw new java.lang.NullPointerException();
+          }
           try {
-            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+            boolean done = false;
+            while (!done) {
+              int tag = input.readTag();
+              switch (tag) {
+                case 0:
+                  done = true;
+                  break;
+                case 8: {
+                  chainId_ = input.readInt32();
+
+                  break;
+                } // case 8
+                case 18: {
+                  reference_ = input.readBytes();
+
+                  break;
+                } // case 18
+                case 24: {
+                  baseTarget_ = input.readInt64();
+
+                  break;
+                } // case 24
+                case 34: {
+                  generationSignature_ = input.readBytes();
+
+                  break;
+                } // case 34
+                case 40: {
+                  int v = input.readUInt32();
+                  ensureFeatureVotesIsMutable();
+                  featureVotes_.addInt(v);
+                  break;
+                } // case 40
+                case 42: {
+                  int length = input.readRawVarint32();
+                  int limit = input.pushLimit(length);
+                  ensureFeatureVotesIsMutable();
+                  while (input.getBytesUntilLimit() > 0) {
+                    featureVotes_.addInt(input.readUInt32());
+                  }
+                  input.popLimit(limit);
+                  break;
+                } // case 42
+                case 48: {
+                  timestamp_ = input.readInt64();
+
+                  break;
+                } // case 48
+                case 56: {
+                  version_ = input.readInt32();
+
+                  break;
+                } // case 56
+                case 66: {
+                  generator_ = input.readBytes();
+
+                  break;
+                } // case 66
+                case 72: {
+                  rewardVote_ = input.readInt64();
+
+                  break;
+                } // case 72
+                case 80: {
+                  rewardBurned_ = input.readInt64();
+
+                  break;
+                } // case 80
+                case 90: {
+                  transactionsRoot_ = input.readBytes();
+
+                  break;
+                } // case 90
+                default: {
+                  if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                    done = true; // was an endgroup tag
+                  }
+                  break;
+                } // default:
+              } // switch (tag)
+            } // while (!done)
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (com.vrp.protobuf.block.BlockOuterClass.Block.Header) e.getUnfinishedMessage();
             throw e.unwrapIOException();
           } finally {
-            if (parsedMessage != null) {
-              mergeFrom(parsedMessage);
-            }
-          }
+            onChanged();
+          } // finally
           return this;
         }
         private int bitField0_;
@@ -1488,7 +1382,18 @@ public final class BlockOuterClass {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-          return new Header(input, extensionRegistry);
+          Builder builder = newBuilder();
+          try {
+            builder.mergeFrom(input, extensionRegistry);
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            throw e.setUnfinishedMessage(builder.buildPartial());
+          } catch (com.google.protobuf.UninitializedMessageException e) {
+            throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+          } catch (java.io.IOException e) {
+            throw new com.google.protobuf.InvalidProtocolBufferException(e)
+                .setUnfinishedMessage(builder.buildPartial());
+          }
+          return builder.buildPartial();
         }
       };
 
@@ -1608,7 +1513,7 @@ public final class BlockOuterClass {
       for (int i = 0; i < transactions_.size(); i++) {
         output.writeMessage(3, transactions_.get(i));
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -1629,7 +1534,7 @@ public final class BlockOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(3, transactions_.get(i));
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -1653,7 +1558,7 @@ public final class BlockOuterClass {
           .equals(other.getSignature())) return false;
       if (!getTransactionsList()
           .equals(other.getTransactionsList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -1674,7 +1579,7 @@ public final class BlockOuterClass {
         hash = (37 * hash) + TRANSACTIONS_FIELD_NUMBER;
         hash = (53 * hash) + getTransactionsList().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -1791,19 +1696,13 @@ public final class BlockOuterClass {
 
       // Construct using com.vrp.protobuf.block.BlockOuterClass.Block.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getTransactionsFieldBuilder();
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
@@ -1818,10 +1717,11 @@ public final class BlockOuterClass {
 
         if (transactionsBuilder_ == null) {
           transactions_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
+          transactions_ = null;
           transactionsBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -1944,7 +1844,7 @@ public final class BlockOuterClass {
             }
           }
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -1959,17 +1859,55 @@ public final class BlockOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.vrp.protobuf.block.BlockOuterClass.Block parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 10: {
+                input.readMessage(
+                    getHeaderFieldBuilder().getBuilder(),
+                    extensionRegistry);
+
+                break;
+              } // case 10
+              case 18: {
+                signature_ = input.readBytes();
+
+                break;
+              } // case 18
+              case 26: {
+                com.vrp.protobuf.transaction.TransactionOuterClass.SignedTransaction m =
+                    input.readMessage(
+                        com.vrp.protobuf.transaction.TransactionOuterClass.SignedTransaction.parser(),
+                        extensionRegistry);
+                if (transactionsBuilder_ == null) {
+                  ensureTransactionsIsMutable();
+                  transactions_.add(m);
+                } else {
+                  transactionsBuilder_.addMessage(m);
+                }
+                break;
+              } // case 26
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.vrp.protobuf.block.BlockOuterClass.Block) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -2399,7 +2337,18 @@ public final class BlockOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new Block(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -2501,76 +2450,6 @@ public final class BlockOuterClass {
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
-    }
-    private MicroBlock(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 8: {
-
-              version_ = input.readInt32();
-              break;
-            }
-            case 18: {
-
-              reference_ = input.readBytes();
-              break;
-            }
-            case 26: {
-
-              updatedBlockSignature_ = input.readBytes();
-              break;
-            }
-            case 34: {
-
-              senderPublicKey_ = input.readBytes();
-              break;
-            }
-            case 42: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                transactions_ = new java.util.ArrayList<com.vrp.protobuf.transaction.TransactionOuterClass.SignedTransaction>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              transactions_.add(
-                  input.readMessage(com.vrp.protobuf.transaction.TransactionOuterClass.SignedTransaction.parser(), extensionRegistry));
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          transactions_ = java.util.Collections.unmodifiableList(transactions_);
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
@@ -2698,7 +2577,7 @@ public final class BlockOuterClass {
       for (int i = 0; i < transactions_.size(); i++) {
         output.writeMessage(5, transactions_.get(i));
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -2727,7 +2606,7 @@ public final class BlockOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(5, transactions_.get(i));
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -2752,7 +2631,7 @@ public final class BlockOuterClass {
           .equals(other.getSenderPublicKey())) return false;
       if (!getTransactionsList()
           .equals(other.getTransactionsList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -2775,7 +2654,7 @@ public final class BlockOuterClass {
         hash = (37 * hash) + TRANSACTIONS_FIELD_NUMBER;
         hash = (53 * hash) + getTransactionsList().hashCode();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -2892,19 +2771,13 @@ public final class BlockOuterClass {
 
       // Construct using com.vrp.protobuf.block.BlockOuterClass.MicroBlock.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getTransactionsFieldBuilder();
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
@@ -2919,10 +2792,11 @@ public final class BlockOuterClass {
 
         if (transactionsBuilder_ == null) {
           transactions_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
+          transactions_ = null;
           transactionsBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -3049,7 +2923,7 @@ public final class BlockOuterClass {
             }
           }
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -3064,17 +2938,63 @@ public final class BlockOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.vrp.protobuf.block.BlockOuterClass.MicroBlock parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                version_ = input.readInt32();
+
+                break;
+              } // case 8
+              case 18: {
+                reference_ = input.readBytes();
+
+                break;
+              } // case 18
+              case 26: {
+                updatedBlockSignature_ = input.readBytes();
+
+                break;
+              } // case 26
+              case 34: {
+                senderPublicKey_ = input.readBytes();
+
+                break;
+              } // case 34
+              case 42: {
+                com.vrp.protobuf.transaction.TransactionOuterClass.SignedTransaction m =
+                    input.readMessage(
+                        com.vrp.protobuf.transaction.TransactionOuterClass.SignedTransaction.parser(),
+                        extensionRegistry);
+                if (transactionsBuilder_ == null) {
+                  ensureTransactionsIsMutable();
+                  transactions_.add(m);
+                } else {
+                  transactionsBuilder_.addMessage(m);
+                }
+                break;
+              } // case 42
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.vrp.protobuf.block.BlockOuterClass.MicroBlock) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
       private int bitField0_;
@@ -3484,7 +3404,18 @@ public final class BlockOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new MicroBlock(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 
@@ -3563,66 +3494,6 @@ public final class BlockOuterClass {
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
-    }
-    private SignedMicroBlock(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 10: {
-              com.vrp.protobuf.block.BlockOuterClass.MicroBlock.Builder subBuilder = null;
-              if (microBlock_ != null) {
-                subBuilder = microBlock_.toBuilder();
-              }
-              microBlock_ = input.readMessage(com.vrp.protobuf.block.BlockOuterClass.MicroBlock.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(microBlock_);
-                microBlock_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 18: {
-
-              signature_ = input.readBytes();
-              break;
-            }
-            case 26: {
-
-              totalBlockId_ = input.readBytes();
-              break;
-            }
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
@@ -3708,7 +3579,7 @@ public final class BlockOuterClass {
       if (!totalBlockId_.isEmpty()) {
         output.writeBytes(3, totalBlockId_);
       }
-      unknownFields.writeTo(output);
+      getUnknownFields().writeTo(output);
     }
 
     @java.lang.Override
@@ -3729,7 +3600,7 @@ public final class BlockOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(3, totalBlockId_);
       }
-      size += unknownFields.getSerializedSize();
+      size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -3753,7 +3624,7 @@ public final class BlockOuterClass {
           .equals(other.getSignature())) return false;
       if (!getTotalBlockId()
           .equals(other.getTotalBlockId())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
     }
 
@@ -3772,7 +3643,7 @@ public final class BlockOuterClass {
       hash = (53 * hash) + getSignature().hashCode();
       hash = (37 * hash) + TOTAL_BLOCK_ID_FIELD_NUMBER;
       hash = (53 * hash) + getTotalBlockId().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + getUnknownFields().hashCode();
       memoizedHashCode = hash;
       return hash;
     }
@@ -3889,18 +3760,13 @@ public final class BlockOuterClass {
 
       // Construct using com.vrp.protobuf.block.BlockOuterClass.SignedMicroBlock.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
@@ -4005,7 +3871,7 @@ public final class BlockOuterClass {
         if (other.getTotalBlockId() != com.google.protobuf.ByteString.EMPTY) {
           setTotalBlockId(other.getTotalBlockId());
         }
-        this.mergeUnknownFields(other.unknownFields);
+        this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
       }
@@ -4020,17 +3886,47 @@ public final class BlockOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.vrp.protobuf.block.BlockOuterClass.SignedMicroBlock parsedMessage = null;
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
         try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 10: {
+                input.readMessage(
+                    getMicroBlockFieldBuilder().getBuilder(),
+                    extensionRegistry);
+
+                break;
+              } // case 10
+              case 18: {
+                signature_ = input.readBytes();
+
+                break;
+              } // case 18
+              case 26: {
+                totalBlockId_ = input.readBytes();
+
+                break;
+              } // case 26
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.vrp.protobuf.block.BlockOuterClass.SignedMicroBlock) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
+          onChanged();
+        } // finally
         return this;
       }
 
@@ -4253,7 +4149,18 @@ public final class BlockOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new SignedMicroBlock(input, extensionRegistry);
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
       }
     };
 

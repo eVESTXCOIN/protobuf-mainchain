@@ -38,7 +38,7 @@ class Invocation extends \Google\Protobuf\Internal\Message
      *
      *     @type string $dApp
      *     @type \Vrp\InvokeScriptResult\Call $call
-     *     @type \Vrp\Amount[]|\Google\Protobuf\Internal\RepeatedField $payments
+     *     @type array<\Vrp\Amount>|\Google\Protobuf\Internal\RepeatedField $payments
      *     @type \Vrp\InvokeScriptResult $stateChanges
      * }
      */
@@ -71,11 +71,21 @@ class Invocation extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.InvokeScriptResult.Call call = 2;</code>
-     * @return \Vrp\InvokeScriptResult\Call
+     * @return \Vrp\InvokeScriptResult\Call|null
      */
     public function getCall()
     {
         return $this->call;
+    }
+
+    public function hasCall()
+    {
+        return isset($this->call);
+    }
+
+    public function clearCall()
+    {
+        unset($this->call);
     }
 
     /**
@@ -85,7 +95,7 @@ class Invocation extends \Google\Protobuf\Internal\Message
      */
     public function setCall($var)
     {
-        GPBUtil::checkMessage($var, \Vrp\InvokeScriptResult_Call::class);
+        GPBUtil::checkMessage($var, \Vrp\InvokeScriptResult\Call::class);
         $this->call = $var;
 
         return $this;
@@ -102,7 +112,7 @@ class Invocation extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .vrp.Amount payments = 3;</code>
-     * @param \Vrp\Amount[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Vrp\Amount>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setPayments($var)
@@ -115,11 +125,21 @@ class Invocation extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.InvokeScriptResult stateChanges = 4;</code>
-     * @return \Vrp\InvokeScriptResult
+     * @return \Vrp\InvokeScriptResult|null
      */
     public function getStateChanges()
     {
         return $this->stateChanges;
+    }
+
+    public function hasStateChanges()
+    {
+        return isset($this->stateChanges);
+    }
+
+    public function clearStateChanges()
+    {
+        unset($this->stateChanges);
     }
 
     /**

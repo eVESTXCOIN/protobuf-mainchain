@@ -1,8 +1,8 @@
 syntax = "proto3";
-package vrp;
-option java_package = "com.vrp.protobuf.transaction";
-option csharp_namespace = "VRP";
-option go_package = "github.com/eVESTXCOIN/govrp/grpc/generated/vrp";
+package evestx;
+option java_package = "com.eVESTXCOIN.protobuf.transaction";
+option csharp_namespace = "EVESTX";
+option go_package = "github.com/eVESTXCOIN/govrp/pkg/grpc/generated/vrp";
 
 import "vrp/amount.proto";
 import "vrp/recipient.proto";
@@ -12,6 +12,7 @@ message SignedTransaction {
     oneof transaction {
         Transaction vrp_transaction = 1;
         bytes ethereum_transaction = 3;
+        bytes private_transaction = 4;
     }
     repeated bytes proofs = 2;
 }
@@ -41,7 +42,6 @@ message Transaction {
         SetAssetScriptTransactionData set_asset_script = 115;
         InvokeScriptTransactionData invoke_script = 116;
         UpdateAssetInfoTransactionData update_asset_info = 117;
-        PrivatePaymentTransactionData anonymous_tx = 118;
     };
 };
 
@@ -106,10 +106,11 @@ message BurnTransactionData {
 message IssueTransactionData {
     string name = 1;
     string description = 2;
-    int64 amount = 3;
-    int32 decimals = 4;
-    bool reissuable = 5;
-    bytes script = 6;
+    string image = 3;
+    int64 amount = 4;
+    int32 decimals = 5;
+    bool reissuable = 6;
+    bytes script = 7;
 };
 
 message ReissueTransactionData {
@@ -153,9 +154,4 @@ message UpdateAssetInfoTransactionData {
 
 message InvokeExpressionTransactionData {
     bytes expression = 1;
-}
-
-message PrivatePaymentTransactionData{
-    bytes recipient_address = 1;
-    int64 amount = 2;
 }

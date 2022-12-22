@@ -34,11 +34,21 @@ class SponsorFee extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.Amount min_fee = 1;</code>
-     * @return \Vrp\Amount
+     * @return \Vrp\Amount|null
      */
     public function getMinFee()
     {
         return $this->min_fee;
+    }
+
+    public function hasMinFee()
+    {
+        return isset($this->min_fee);
+    }
+
+    public function clearMinFee()
+    {
+        unset($this->min_fee);
     }
 
     /**

@@ -1,10 +1,10 @@
 
 
 syntax = "proto3";
-package vrp.events.grpc;
-option java_package = "com.vrp.events.api.grpc.protobuf";
-option csharp_namespace = "VRP.Events.Grpc";
-option go_package = "github.com/eVESTXCOIN/govrp/grpc/generated/vrp/events/grpc";
+package evestx.events.grpc;
+option java_package = "com.eVESTXCOIN.events.api.grpc.protobuf";
+option csharp_namespace = "EVESTX.Events.Grpc";
+option go_package = "github.com/eVESTXCOIN/govrp/pkg/grpc/generated/vrp/events/grpc";
 
 import "vrp/events/events.proto";
 
@@ -19,7 +19,7 @@ message GetBlockUpdateRequest {
 }
 
 message GetBlockUpdateResponse {
-    vrp.events.BlockchainUpdated update = 1;
+    evestx.events.BlockchainUpdated update = 1;
 }
 
 message GetBlockUpdatesRangeRequest {
@@ -29,7 +29,7 @@ message GetBlockUpdatesRangeRequest {
 }
 
 message GetBlockUpdatesRangeResponse {
-    repeated vrp.events.BlockchainUpdated updates = 1;
+    repeated evestx.events.BlockchainUpdated updates = 1;
 }
 
 message SubscribeRequest {
@@ -40,5 +40,5 @@ message SubscribeRequest {
 }
 
 message SubscribeEvent {
-    vrp.events.BlockchainUpdated update = 1;
+    evestx.events.BlockchainUpdated update = 1;
 }

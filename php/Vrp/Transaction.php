@@ -117,11 +117,21 @@ class Transaction extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.Amount fee = 3;</code>
-     * @return \Vrp\Amount
+     * @return \Vrp\Amount|null
      */
     public function getFee()
     {
         return $this->fee;
+    }
+
+    public function hasFee()
+    {
+        return isset($this->fee);
+    }
+
+    public function clearFee()
+    {
+        unset($this->fee);
     }
 
     /**
@@ -183,11 +193,16 @@ class Transaction extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.GenesisTransactionData genesis = 101;</code>
-     * @return \Vrp\GenesisTransactionData
+     * @return \Vrp\GenesisTransactionData|null
      */
     public function getGenesis()
     {
         return $this->readOneof(101);
+    }
+
+    public function hasGenesis()
+    {
+        return $this->hasOneof(101);
     }
 
     /**
@@ -205,11 +220,16 @@ class Transaction extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.PaymentTransactionData payment = 102;</code>
-     * @return \Vrp\PaymentTransactionData
+     * @return \Vrp\PaymentTransactionData|null
      */
     public function getPayment()
     {
         return $this->readOneof(102);
+    }
+
+    public function hasPayment()
+    {
+        return $this->hasOneof(102);
     }
 
     /**
@@ -227,11 +247,16 @@ class Transaction extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.IssueTransactionData issue = 103;</code>
-     * @return \Vrp\IssueTransactionData
+     * @return \Vrp\IssueTransactionData|null
      */
     public function getIssue()
     {
         return $this->readOneof(103);
+    }
+
+    public function hasIssue()
+    {
+        return $this->hasOneof(103);
     }
 
     /**
@@ -249,11 +274,16 @@ class Transaction extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.TransferTransactionData transfer = 104;</code>
-     * @return \Vrp\TransferTransactionData
+     * @return \Vrp\TransferTransactionData|null
      */
     public function getTransfer()
     {
         return $this->readOneof(104);
+    }
+
+    public function hasTransfer()
+    {
+        return $this->hasOneof(104);
     }
 
     /**
@@ -271,11 +301,16 @@ class Transaction extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.ReissueTransactionData reissue = 105;</code>
-     * @return \Vrp\ReissueTransactionData
+     * @return \Vrp\ReissueTransactionData|null
      */
     public function getReissue()
     {
         return $this->readOneof(105);
+    }
+
+    public function hasReissue()
+    {
+        return $this->hasOneof(105);
     }
 
     /**
@@ -293,11 +328,16 @@ class Transaction extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.BurnTransactionData burn = 106;</code>
-     * @return \Vrp\BurnTransactionData
+     * @return \Vrp\BurnTransactionData|null
      */
     public function getBurn()
     {
         return $this->readOneof(106);
+    }
+
+    public function hasBurn()
+    {
+        return $this->hasOneof(106);
     }
 
     /**
@@ -315,11 +355,16 @@ class Transaction extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.ExchangeTransactionData exchange = 107;</code>
-     * @return \Vrp\ExchangeTransactionData
+     * @return \Vrp\ExchangeTransactionData|null
      */
     public function getExchange()
     {
         return $this->readOneof(107);
+    }
+
+    public function hasExchange()
+    {
+        return $this->hasOneof(107);
     }
 
     /**
@@ -337,11 +382,16 @@ class Transaction extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.LeaseTransactionData lease = 108;</code>
-     * @return \Vrp\LeaseTransactionData
+     * @return \Vrp\LeaseTransactionData|null
      */
     public function getLease()
     {
         return $this->readOneof(108);
+    }
+
+    public function hasLease()
+    {
+        return $this->hasOneof(108);
     }
 
     /**
@@ -359,11 +409,16 @@ class Transaction extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.LeaseCancelTransactionData lease_cancel = 109;</code>
-     * @return \Vrp\LeaseCancelTransactionData
+     * @return \Vrp\LeaseCancelTransactionData|null
      */
     public function getLeaseCancel()
     {
         return $this->readOneof(109);
+    }
+
+    public function hasLeaseCancel()
+    {
+        return $this->hasOneof(109);
     }
 
     /**
@@ -381,11 +436,16 @@ class Transaction extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.CreateAliasTransactionData create_alias = 110;</code>
-     * @return \Vrp\CreateAliasTransactionData
+     * @return \Vrp\CreateAliasTransactionData|null
      */
     public function getCreateAlias()
     {
         return $this->readOneof(110);
+    }
+
+    public function hasCreateAlias()
+    {
+        return $this->hasOneof(110);
     }
 
     /**
@@ -403,11 +463,16 @@ class Transaction extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.MassTransferTransactionData mass_transfer = 111;</code>
-     * @return \Vrp\MassTransferTransactionData
+     * @return \Vrp\MassTransferTransactionData|null
      */
     public function getMassTransfer()
     {
         return $this->readOneof(111);
+    }
+
+    public function hasMassTransfer()
+    {
+        return $this->hasOneof(111);
     }
 
     /**
@@ -425,11 +490,16 @@ class Transaction extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.DataTransactionData data_transaction = 112;</code>
-     * @return \Vrp\DataTransactionData
+     * @return \Vrp\DataTransactionData|null
      */
     public function getDataTransaction()
     {
         return $this->readOneof(112);
+    }
+
+    public function hasDataTransaction()
+    {
+        return $this->hasOneof(112);
     }
 
     /**
@@ -447,11 +517,16 @@ class Transaction extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.SetScriptTransactionData set_script = 113;</code>
-     * @return \Vrp\SetScriptTransactionData
+     * @return \Vrp\SetScriptTransactionData|null
      */
     public function getSetScript()
     {
         return $this->readOneof(113);
+    }
+
+    public function hasSetScript()
+    {
+        return $this->hasOneof(113);
     }
 
     /**
@@ -469,11 +544,16 @@ class Transaction extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.SponsorFeeTransactionData sponsor_fee = 114;</code>
-     * @return \Vrp\SponsorFeeTransactionData
+     * @return \Vrp\SponsorFeeTransactionData|null
      */
     public function getSponsorFee()
     {
         return $this->readOneof(114);
+    }
+
+    public function hasSponsorFee()
+    {
+        return $this->hasOneof(114);
     }
 
     /**
@@ -491,11 +571,16 @@ class Transaction extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.SetAssetScriptTransactionData set_asset_script = 115;</code>
-     * @return \Vrp\SetAssetScriptTransactionData
+     * @return \Vrp\SetAssetScriptTransactionData|null
      */
     public function getSetAssetScript()
     {
         return $this->readOneof(115);
+    }
+
+    public function hasSetAssetScript()
+    {
+        return $this->hasOneof(115);
     }
 
     /**
@@ -513,11 +598,16 @@ class Transaction extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.InvokeScriptTransactionData invoke_script = 116;</code>
-     * @return \Vrp\InvokeScriptTransactionData
+     * @return \Vrp\InvokeScriptTransactionData|null
      */
     public function getInvokeScript()
     {
         return $this->readOneof(116);
+    }
+
+    public function hasInvokeScript()
+    {
+        return $this->hasOneof(116);
     }
 
     /**
@@ -535,11 +625,16 @@ class Transaction extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.UpdateAssetInfoTransactionData update_asset_info = 117;</code>
-     * @return \Vrp\UpdateAssetInfoTransactionData
+     * @return \Vrp\UpdateAssetInfoTransactionData|null
      */
     public function getUpdateAssetInfo()
     {
         return $this->readOneof(117);
+    }
+
+    public function hasUpdateAssetInfo()
+    {
+        return $this->hasOneof(117);
     }
 
     /**
@@ -557,11 +652,16 @@ class Transaction extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.PrivatePaymentTransactionData anonymous_tx = 118;</code>
-     * @return \Vrp\PrivatePaymentTransactionData
+     * @return \Vrp\PrivatePaymentTransactionData|null
      */
     public function getAnonymousTx()
     {
         return $this->readOneof(118);
+    }
+
+    public function hasAnonymousTx()
+    {
+        return $this->hasOneof(118);
     }
 
     /**

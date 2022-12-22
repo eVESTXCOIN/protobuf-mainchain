@@ -27,7 +27,7 @@ class SignedTransaction extends \Google\Protobuf\Internal\Message
      *
      *     @type \Vrp\Transaction $vrp_transaction
      *     @type string $ethereum_transaction
-     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $proofs
+     *     @type array<string>|\Google\Protobuf\Internal\RepeatedField $proofs
      * }
      */
     public function __construct($data = NULL) {
@@ -37,11 +37,16 @@ class SignedTransaction extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.vrp.Transaction vrp_transaction = 1;</code>
-     * @return \Vrp\Transaction
+     * @return \Vrp\Transaction|null
      */
     public function getVrpTransaction()
     {
         return $this->readOneof(1);
+    }
+
+    public function hasVrpTransaction()
+    {
+        return $this->hasOneof(1);
     }
 
     /**
@@ -64,6 +69,11 @@ class SignedTransaction extends \Google\Protobuf\Internal\Message
     public function getEthereumTransaction()
     {
         return $this->readOneof(3);
+    }
+
+    public function hasEthereumTransaction()
+    {
+        return $this->hasOneof(3);
     }
 
     /**
@@ -90,7 +100,7 @@ class SignedTransaction extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated bytes proofs = 2;</code>
-     * @param string[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<string>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setProofs($var)
