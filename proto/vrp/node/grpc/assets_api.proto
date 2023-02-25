@@ -39,5 +39,4 @@ message AssetInfoResponse {
     int64 sponsorship = 9;
     SignedTransaction issue_transaction = 12;
     int64 sponsor_balance = 11;
-    string image = 13;
 }
